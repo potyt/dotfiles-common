@@ -20,9 +20,10 @@ export GPGID=p@pot.yt
 export GPGKEY=A9E8CD9D
 . ~/.env.gpg
 
-# keychain
+# SSH/keychain
 export KEYCHAIN_ENV_DIR="$HOME/.tmp/keychain"
 export KEYCHAIN_ENV_FILE="$KEYCHAIN_ENV_DIR/$HOSTNAME.sh"
+export SSH_AGENT_TIMEOUT=3600
 . ~/.env.keychain
 
 # PATH
