@@ -2,6 +2,9 @@
 # ~/.env
 #
 
+# hostname
+export HOSTNAME=`hostname`
+
 # temp directory
 export TMPDIR=~/.tmp
 
@@ -12,10 +15,15 @@ export XDG_CACHE_HOME="${TMPDIR}"
 export XDG_RUNTIME_DIR="${TMPDIR}"
 
 # GPG
-export GPG_AGENT_ENV_FILE="/home/pot/.tmp/gpg-agent.info"
+export GPG_AGENT_ENV_FILE="$HOME/.tmp/gpg-agent.info"
 export GPGID=p@pot.yt
 export GPGKEY=A9E8CD9D
-. ~/.gpgenv
+. ~/.env.gpg
+
+# keychain
+export KEYCHAIN_ENV_DIR="$HOME/.tmp/keychain"
+export KEYCHAIN_ENV_FILE="$KEYCHAIN_ENV_DIR/$HOSTNAME.sh"
+. ~/.env.keychain
 
 # PATH
 export PATH=~/scripts:$PATH
