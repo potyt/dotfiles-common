@@ -1,0 +1,5 @@
+#
+# ~/.zprofile
+#
+
+umask 077

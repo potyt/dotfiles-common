@@ -1,0 +1,43 @@
+#
+# ~/.zshenv
+#
+
+# source base environment
+. ~/.env
+
+# Vim
+export VIMINIT='let $MYVIMRC="$XDG_CONFIG_HOME/vim/vimrc" | source $MYVIMRC'
+
+# GPG
+export GPG_TTY=$(tty)
+
+# standard environment variables
+export PAGER=less
+export VISUAL=vim
+export EDITOR=$VISUAL
+export TERMINAL=urxvtc
+export XTERM=$TERMINAL
+export BROWSER=chromium
+
+# zsh related
+export HISTFILE="${TMPDIR}/zsh_history"
+export HISTSIZE=10000
+export SAVEHIST=10000
+export READNULLCMD="${PAGER}"
+
+# less
+export LESSOPEN="| /usr/bin/source-highlight-esc.sh %s"
+export LESSHISTFILE="${TMPDIR}/lesshst"
+export LESS=' -R'
+
+# urxvt
+export RXVT_SOCKET="${TMPDIR}/urxvt-`hostname`"
+
+# par
+export PARINIT="rTbgqR B=.,?_A_a Q=_s>|"
+
+# Java
+export _JAVA_OPTIONS="-Dawt.useSystemAAFontSettings=lcd -Dswing.defaultlaf=com.sun.java.swing.plaf.gtk.GTKLookAndFeel"
+export JAVA_FONTS=/usr/share/fonts/TTF
+
+export http_proxy=localhost:8118

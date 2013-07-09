@@ -1,0 +1,30 @@
+#
+# ~/.env
+#
+
+# temp directory
+export TMPDIR=~/.tmp
+
+# XDG
+export XDG_CONFIG_HOME=~/.config
+export XDG_DATA_HOME=~/.local/share
+export XDG_CACHE_HOME="${TMPDIR}"
+export XDG_RUNTIME_DIR="${TMPDIR}"
+
+# GPG
+export GPG_AGENT_ENV_FILE="/home/pot/.tmp/gpg-agent.info"
+export GPG_AGENT_TTL=600
+export GPG_AGENT_SSH_TTL=600
+export GPG_AGENT_MAX_TTL=86400
+export GPG_AGENT_SSH_MAX_TTL=86400
+. ~/.gpgenv
+export GPGID=p@pot.yt
+#export GPGKEY=545CEB1A
+export GPGKEY=A9E8CD9D
+
+# PATH
+export PATH=~/scripts:$PATH
+
+# Python
+export WORKON_HOME=$HOME/.virtualenvs
+. /usr/bin/virtualenvwrapper.sh

@@ -1,0 +1,8 @@
+#
+# ~/.cronenv
+#
+
+# source base environment
+. ~/.env
+
+export BATCH=1
