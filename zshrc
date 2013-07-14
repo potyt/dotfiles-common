@@ -43,6 +43,14 @@ source $ZSH/oh-my-zsh.sh
 unsetopt correct_all
 unsetopt nomatch
 unsetopt share_history
+
+# completion
+zstyle ':completion:*:cd:*' ignore-parents parent pwd
+zstyle ':completion:*:(all-|)files' ignored-patterns '(|*/)CVS'
+zstyle ':completion:*:cd:*' ignored-patterns '(*/)#CVS'
+zstyle ':completion:*:(all-|)files' ignored-patterns '(|*/)__pycache__'
+zstyle ':completion:*:cd:*' ignored-patterns '(*/)#__pycache__'
+
 eval $(dircolors -b ~/.dir_colors)
 . ~/.zshrc.functions
 . ~/.alias

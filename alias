@@ -1,61 +1,64 @@
-alias ls="ls --color=always"
-alias ll="ls -l"
+alias ls='ls --color=always'
+alias ll='ls -l'
 
-alias grep="grep --color=always"
-alias ngrep="grep -n"
+alias grep='grep --color=always'
+alias ngrep='grep -n'
 
-alias cp="cp -ia"
-alias mv="mv -i"
-alias rm="rm -i"
-alias shred="shred -uz"
+alias cp='cp -ia'
+alias mv='mv -i'
+alias rm='rm -i'
+alias shred='shred -uz'
 
-alias pacup="sudo pacman -Syu"
-alias pacorph="pacman -Qdt"
+alias pacup='sudo pacman -Syu'
+alias pacorph='pacman -Qdt'
 
-alias upmem="ps -eo pmem,pcpu,rss,vsize,args | sort -k 1"
-alias top="htop"
-alias iodrag="ionice -c3 nice -n19"
+alias upmem='ps -eo pmem,pcpu,rss,vsize,args | sort -k 1'
+alias top='htop'
+alias iodrag='ionice -c3 nice -n19'
 
-alias df="df -hT"
-alias du="du -hc"
-alias dus="du -S | sort -n"
-alias free="free -m"
-alias su="su - "
+alias df='df -hT'
+alias du='du -hc'
+alias dus='du -S | sort -n'
+alias free='free -m'
+alias su='su - '
 
-alias eject="eject -v /dev/sr0 "
-alias retract="eject -t -v /dev/sr0 "
+alias eject='eject -v /dev/sr0 '
+alias retract='eject -t -v /dev/sr0 '
 
-alias vuser="fuser -v "
-alias ping="ping -c 5"
-alias more="less"
-alias play="play -v"
-alias xtr="extract"
-alias last="last -adn 10"
+alias vuser='fuser -v '
+alias ping='ping -c 5'
+alias more='less'
+alias play='play -v'
+alias xtr='extract'
+alias last='last -adn 10'
 
-alias bat="acpitool -b"
+alias bat='acpitool -b'
 
-alias spell="aspell -a <<< "
+alias spell='aspell -a <<< '
 
-alias passgen="< /dev/urandom tr -cd \[:graph:\] | fold -w 32 | head -n 5"
-alias xpop="xprop | grep --color=none 'WM_CLASS\|^WM_NAME' | xmessage -file -"
+alias passgen='< /dev/urandom tr -cd \[:graph:\] | fold -w 32 | head -n 5'
+alias xpop='xprop | grep --color=none 'WM_CLASS\|^WM_NAME' | xmessage -file -'
 
-alias chromium-tor="chromium --user-data-dir=$HOME/.config/chromium-tor --proxy-server=localhost:9118 --incognito"
+alias chromium-tor='chromium --user-data-dir=$HOME/.config/chromium-tor --proxy-server=localhost:9118 --incognito'
 
 # burning
-#makeiso="mkisofs -V volume_name -J -r -o isoimage.iso ~/folder"
+#makeiso='mkisofs -V volume_name -J -r -o isoimage.iso ~/folder'
 #cdrecord -v dev=/dev/sr0 isoimage.iso
 
 # virtualenv
-alias v="workon"
-alias v.deactivate="deactivate"
-alias v.mk="mkvirtualenv --no-site-packages"
-alias v.mk_withsitepackages="mkvirtualenv"
-alias v.rm="rmvirtualenv"
-alias v.switch="workon"
-alias v.add2virtualenv="add2virtualenv"
-alias v.cdsitepackages="cdsitepackages"
-alias v.cd="cdvirtualenv"
-alias v.lssitepackages="lssitepackages"
+alias v='workon'
+alias v.deactivate='deactivate'
+alias v.mk='mkvirtualenv --no-site-packages'
+alias v.mk_withsitepackages='mkvirtualenv'
+alias v.rm='rmvirtualenv'
+alias v.switch='workon'
+alias v.add2virtualenv='add2virtualenv'
+alias v.cdsitepackages='cdsitepackages'
+alias v.cd='cdvirtualenv'
+alias v.lssitepackages='lssitepackages'
+
+# sphinx docs
+alias mksphinx='sphinx-apidoc -f -o doc/source/api `basename $PWD`; (cd doc; make html)'
 
 # arp poison
 alias arp='sudo ettercap -Tqi wlan0 -l log -M arp:remote // //'
