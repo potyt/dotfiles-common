@@ -1,0 +1,18 @@
+set mouse-=a
+set guicursor=i:ver1,a:blinkon0
+set guifont=Andale\ Mono
+set guioptions=caig
+set guioptions-=LlrbtT
+set mouseshape=n:beam,ve:beam,sd:updown
+
+set numberwidth=5
+
+set spell
+set spelllang=en
+set spellsuggest=9
+
+" tag list
+let g:Tlist_Show_Menu=1
+
+au GUIEnter * :call Maximize_Window()
+au BufEnter * let &titlestring=expand("%:p:~")
