@@ -1,0 +1,19 @@
+" strip whitespace
+function TrimWhiteSpace()
+    %s/\s*$//
+    ''
+:endfunction
+
+" maximise window
+function Maximize_Window()
+    silent !wmctrl -r :ACTIVE: -b add,maximized_vert,maximized_horz
+endfunction
+
+" map F1 appropriately
+function! MapF1()
+    if &buftype == "help"
+        exec 'quit'
+    else
+        exec 'help'
+    endif
+endfunction
