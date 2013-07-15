@@ -1,0 +1,64 @@
+general {
+        output_format = "i3bar"
+        colors = true
+        color_good = "#c0bed1"
+        color_degraded = "#efef8f"
+        color_bad = "#ef5f5f"
+        color_separator = "#3f3f3f"
+        interval = 5
+}
+
+order += "wireless wlan0"
+order += "ethernet eth0"
+order += "run_watch DHCP"
+order += "run_watch VPN"
+order += "battery 0"
+order += "cpu_temperature 0"
+order += "load"
+order += "volume master"
+order += "time"
+
+wireless wlan0 {
+        format_up = "W: (%quality at %essid, %bitrate) %ip"
+        format_down = "W: down"
+}
+
+ethernet eth0 {
+        # if you use %speed, i3status requires the cap_net_admin capability
+        # format_up = "E: %ip (%speed)"
+        format_up = "E: %ip"
+        format_down = "E: down"
+}
+
+run_watch VPN {
+        pidfile = "/var/run/vpnc/pid"
+        format = "V: %status"
+}
+
+battery 0 {
+        # format = "B: %status %percentage (%remaining)"
+        format = "B: %status %percentage"
+        path = "/sys/class/power_supply/BAT%d/uevent"
+        threshold_type = time
+        low_threshold = 10
+}
+
+cpu_temperature 0 {
+        format = "T: %degrees°C"
+        path = "/sys/devices/platform/coretemp.0/temp1_input"
+}
+
+load {
+        format = "L: %1min %5min"
+}
+
+volume master {
+        format = "♪: %volume"
+        device = "default"
+        mixer = "Master"
+        mixer_idx = 0
+}
+
+time {
+        format = "%Y-%m-%d %H:%M"
+}

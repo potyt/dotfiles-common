@@ -1,0 +1,1 @@
+/home/pot/scripts/i3status/gpg.py
