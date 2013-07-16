@@ -57,6 +57,9 @@ alias v.cdsitepackages='cdsitepackages'
 alias v.cd='cdvirtualenv'
 alias v.lssitepackages='lssitepackages'
 
+# git
+alias g.inc='git fetch && git log ..origin/master'
+
 # sphinx docs
 alias mksphinx='sphinx-apidoc -f -o doc/source/api `basename $PWD`; (cd doc; make html)'
 
