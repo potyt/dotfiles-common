@@ -1,9 +1,15 @@
 set mouse-=a
-set guicursor=i:ver1,a:blinkon0
 set guifont=Andale\ Mono
 set guioptions=caig
 set guioptions-=LlrbtT
 set mouseshape=n:beam,ve:beam,sd:updown
+
+highlight CommandCursor guifg=white guibg=steelblue
+highlight InsertCursor guifg=white guibg=red
+set guicursor=n-v-c:block-CommandCursor
+set guicursor+=i:ver100-InsertCursor
+set guicursor+=i:blinkwait10
+set guicursor+=n-v-c:blinkon0
 
 set numberwidth=5
 

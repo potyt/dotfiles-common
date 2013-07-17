@@ -6,7 +6,8 @@
 . ~/.env
 
 # Vim
-export VIMINIT='let $MYVIMRC="$XDG_CONFIG_HOME/vim/vimrc" | source $MYVIMRC'
+export MYVIMDIR="$XDG_CONFIG_HOME/vim"
+export VIMINIT='let $MYVIMRC="$MYVIMDIR/vimrc" | let $MYGVIMRC="$MYVIMDIR/gvimrc" | source $MYVIMRC | source $MYGVIMRC'
 
 # GPG
 export GPG_TTY=$(tty)
