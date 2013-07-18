@@ -8,14 +8,10 @@ xset -b
 # keyboard layout
 setxkbmap "us,gb" -option "grp:shifts_toggle"
 
-# load host-specific keys
-rm -f ~/.Xmodmap; ln -s .Xmodmap.`hostname` .Xmodmap
-
 # set brightness
 xbacklight -set 90
 
 # start services
-#compton -cGb
 urxvtd -q -o -f
 xhost +si:localuser:$(whoami)
 xautolock -time 10 -locker "i3lock -i ~/background/lock -u" -detectsleep &
