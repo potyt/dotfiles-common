@@ -29,6 +29,11 @@ export SSH_AGENT_TIMEOUT=3600
 # PATH
 export PATH=~/scripts:$PATH
 
+# clones
+for i in ~/clones/*.env; do
+    . $i
+done
+
 # Python
 export WORKON_HOME=$HOME/.virtualenvs
 . /usr/bin/virtualenvwrapper.sh
