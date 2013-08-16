@@ -28,6 +28,7 @@ Bundle "TaskList.vim"
 Bundle "FuzzyFinder"
 Bundle "buftabs"
 Bundle "grep.vim"
+Bundle "bufkill.vim"
 "Bundle "Python-mode-klen"
 
 " vundle-end
@@ -170,6 +171,9 @@ map <M-k> :cprevious<CR>
 nnoremap <C-n> :bnext<CR>
 nnoremap <C-p> :bprevious<CR>
 nnoremap <F5> :buffers<CR>:buffer<Space>
+
+" kill buffers easily
+nnoremap <leader>d :BD<CR>
 
 " buftabs
 let g:buftabs_only_basename = 1
