@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<application>
+  <component name="libraryTable">
+    <library name="asm">
+      <CLASSES>
+        <root url="jar://$USER_HOME$/repo/asm/lib/asm-3.3.1.jar!/" />
+        <root url="jar://$USER_HOME$/repo/asm/lib/asm-analysis-3.3.1.jar!/" />
+        <root url="jar://$USER_HOME$/repo/asm/lib/asm-commons-3.3.1.jar!/" />
+        <root url="jar://$USER_HOME$/repo/asm/lib/asm-tree-3.3.1.jar!/" />
+        <root url="jar://$USER_HOME$/repo/asm/lib/asm-util-3.3.1.jar!/" />
+        <root url="jar://$USER_HOME$/repo/asm/lib/asm-xml-3.3.1.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="file://$USER_HOME$/repo/asm/doc/api" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="file://$USER_HOME$/repo/asm" />
+      </SOURCES>
+      <jarDirectory url="file://$USER_HOME$/repo/asm" recursive="false" type="SOURCES" />
+    </library>
+    <library name="gmbal">
+      <CLASSES>
+        <root url="jar://$USER_HOME$/repo/gmbal/lib/gmbal-3.2.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="file://$USER_HOME$/repo/gmbal/doc/api" />
+      </JAVADOC>
+      <SOURCES />
+    </library>
+    <library name="grizzly">
+      <CLASSES>
+        <root url="jar://$USER_HOME$/repo/grizzly/lib/grizzly-comet-2.2.19.jar!/" />
+        <root url="jar://$USER_HOME$/repo/grizzly/lib/grizzly-framework-2.2.19.jar!/" />
+        <root url="jar://$USER_HOME$/repo/grizzly/lib/grizzly-http-2.2.19.jar!/" />
+        <root url="jar://$USER_HOME$/repo/grizzly/lib/grizzly-http-ajp-2.2.19.jar!/" />
+        <root url="jar://$USER_HOME$/repo/grizzly/lib/grizzly-http-server-2.2.19.jar!/" />
+        <root url="jar://$USER_HOME$/repo/grizzly/lib/grizzly-http-server-jaxws-2.2.19.jar!/" />
+        <root url="jar://$USER_HOME$/repo/grizzly/lib/grizzly-http-servlet-2.2.19.jar!/" />
+        <root url="jar://$USER_HOME$/repo/grizzly/lib/grizzly-portunif-2.2.19.jar!/" />
+        <root url="jar://$USER_HOME$/repo/grizzly/lib/grizzly-websockets-2.2.19.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="file://$USER_HOME$/repo/grizzly/doc/api" />
+      </JAVADOC>
+      <SOURCES />
+    </library>
+    <library name="javamail">
+      <CLASSES>
+        <root url="jar://$USER_HOME$/repo/javamail/lib/javamail-dsn-1.4.6.jar!/" />
+        <root url="jar://$USER_HOME$/repo/javamail/lib/javamail-gimap-1.4.6.jar!/" />
+        <root url="jar://$USER_HOME$/repo/javamail/lib/javamail-imap-1.4.6.jar!/" />
+        <root url="jar://$USER_HOME$/repo/javamail/lib/javamail-mailapi-1.4.6.jar!/" />
+        <root url="jar://$USER_HOME$/repo/javamail/lib/javamail-pop3-1.4.6.jar!/" />
+        <root url="jar://$USER_HOME$/repo/javamail/lib/javamail-smtp-1.4.6.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="file://$USER_HOME$/repo/javamail/doc/api" />
+      </JAVADOC>
+      <SOURCES />
+    </library>
+    <library name="jax-rs">
+      <CLASSES>
+        <root url="jar://$USER_HOME$/repo/jax-rs/lib/jsr311-api-1.1.1.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="file://$USER_HOME$/repo/jax-rs/doc/api" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="file://$USER_HOME$/repo/jax-rs" />
+      </SOURCES>
+      <jarDirectory url="file://$USER_HOME$/repo/jax-rs" recursive="false" type="SOURCES" />
+    </library>
+    <library name="jersey">
+      <CLASSES>
+        <root url="jar://$USER_HOME$/repo/jersey/lib/jersey-atom-1.17.jar!/" />
+        <root url="jar://$USER_HOME$/repo/jersey/lib/jersey-client-1.17.jar!/" />
+        <root url="jar://$USER_HOME$/repo/jersey/lib/jersey-core-1.17.jar!/" />
+        <root url="jar://$USER_HOME$/repo/jersey/lib/jersey-fastinfoset-1.17.jar!/" />
+        <root url="jar://$USER_HOME$/repo/jersey/lib/jersey-grizzly2-1.17.jar!/" />
+        <root url="jar://$USER_HOME$/repo/jersey/lib/jersey-grizzly2-servlet-1.17.jar!/" />
+        <root url="jar://$USER_HOME$/repo/jersey/lib/jersey-json-1.17.jar!/" />
+        <root url="jar://$USER_HOME$/repo/jersey/lib/jersey-multipart-1.17.jar!/" />
+        <root url="jar://$USER_HOME$/repo/jersey/lib/jersey-server-1.17.jar!/" />
+        <root url="jar://$USER_HOME$/repo/jersey/lib/jersey-servlet-1.17.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="file://$USER_HOME$/repo/jersey/doc/api" />
+      </JAVADOC>
+      <SOURCES />
+    </library>
+    <library name="logback">
+      <CLASSES />
+      <JAVADOC />
+      <SOURCES>
+        <root url="jar://$USER_HOME$/repo/logback/src/logback-access-1.0.12-sources.jar!/" />
+        <root url="jar://$USER_HOME$/repo/logback/src/logback-classic-1.0.12-sources.jar!/" />
+        <root url="jar://$USER_HOME$/repo/logback/src/logback-core-1.0.12-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="msgpack">
+      <CLASSES>
+        <root url="jar://$USER_HOME$/repo/msgpack/lib/msgpack-0.6.7.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://$USER_HOME$/repo/msgpack/doc/api/msgpack-0.6.7-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://$USER_HOME$/repo/msgpack/msgpack-0.6.7-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="servlet-api">
+      <CLASSES>
+        <root url="jar://$USER_HOME$/repo/servlet-api/lib/servlet-api-2.5-6.1.14.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="file://$USER_HOME$/repo/servlet-api/doc/api" />
+      </JAVADOC>
+      <SOURCES />
+    </library>
+    <library name="slf4j-api">
+      <CLASSES>
+        <root url="jar://$USER_HOME$/repo/slf4j/lib/jcl-over-slf4j-1.7.5.jar!/" />
+        <root url="jar://$USER_HOME$/repo/slf4j/lib/jul-to-slf4j-1.7.5.jar!/" />
+        <root url="jar://$USER_HOME$/repo/slf4j/lib/log4j-over-slf4j-1.7.5.jar!/" />
+        <root url="jar://$USER_HOME$/repo/slf4j/lib/slf4j-api-1.7.5.jar!/" />
+        <root url="jar://$USER_HOME$/repo/slf4j/lib/slf4j-ext-1.7.5.jar!/" />
+        <root url="jar://$USER_HOME$/repo/slf4j/lib/slf4j-jcl-1.7.5.jar!/" />
+        <root url="jar://$USER_HOME$/repo/slf4j/lib/slf4j-jdk14-1.7.5.jar!/" />
+        <root url="jar://$USER_HOME$/repo/slf4j/lib/slf4j-log4j12-1.7.5.jar!/" />
+        <root url="jar://$USER_HOME$/repo/slf4j/lib/slf4j-migrator-1.7.5.jar!/" />
+        <root url="jar://$USER_HOME$/repo/slf4j/lib/slf4j-nop-1.7.5.jar!/" />
+        <root url="jar://$USER_HOME$/repo/slf4j/lib/slf4j-simple-1.7.5.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="file://$USER_HOME$/repo/slf4j/doc/api/slf4j-api-1.7.5-javadoc" />
+        <root url="file://$USER_HOME$/repo/slf4j/doc/api/slf4j-ext-1.7.5-javadoc" />
+        <root url="file://$USER_HOME$/repo/slf4j/doc/api/slf4j-jcl-1.7.5-javadoc" />
+        <root url="file://$USER_HOME$/repo/slf4j/doc/api/slf4j-nop-1.7.5-javadoc" />
+        <root url="file://$USER_HOME$/repo/slf4j/doc/api/slf4j-jdk14-1.7.5-javadoc" />
+        <root url="file://$USER_HOME$/repo/slf4j/doc/api/jul-to-slf4j-1.7.5-javadoc" />
+        <root url="file://$USER_HOME$/repo/slf4j/doc/api/slf4j-simple-1.7.5-javadoc" />
+        <root url="file://$USER_HOME$/repo/slf4j/doc/api/slf4j-log4j12-1.7.5-javadoc" />
+        <root url="file://$USER_HOME$/repo/slf4j/doc/api/jcl-over-slf4j-1.7.5-javadoc" />
+        <root url="file://$USER_HOME$/repo/slf4j/doc/api/slf4j-migrator-1.7.5-javadoc" />
+        <root url="file://$USER_HOME$/repo/slf4j/doc/api/log4j-over-slf4j-1.7.5-javadoc" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://$USER_HOME$/repo/slf4j/src/jcl-over-slf4j-1.7.5-sources.jar!/" />
+        <root url="jar://$USER_HOME$/repo/slf4j/src/jul-to-slf4j-1.7.5-sources.jar!/" />
+        <root url="jar://$USER_HOME$/repo/slf4j/src/log4j-over-slf4j-1.7.5-sources.jar!/" />
+        <root url="jar://$USER_HOME$/repo/slf4j/src/slf4j-api-1.7.5-sources.jar!/" />
+        <root url="jar://$USER_HOME$/repo/slf4j/src/slf4j-ext-1.7.5-sources.jar!/" />
+        <root url="jar://$USER_HOME$/repo/slf4j/src/slf4j-jcl-1.7.5-sources.jar!/" />
+        <root url="jar://$USER_HOME$/repo/slf4j/src/slf4j-jdk14-1.7.5-sources.jar!/" />
+        <root url="jar://$USER_HOME$/repo/slf4j/src/slf4j-log4j12-1.7.5-sources.jar!/" />
+        <root url="jar://$USER_HOME$/repo/slf4j/src/slf4j-nop-1.7.5-sources.jar!/" />
+        <root url="jar://$USER_HOME$/repo/slf4j/src/slf4j-simple-1.7.5-sources.jar!/" />
+      </SOURCES>
+    </library>
+  </component>
+</application>
+

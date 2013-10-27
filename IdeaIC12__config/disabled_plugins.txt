@@ -1,0 +1,10 @@
+com.nmatveev.idea-plugin-protobuf
+com.atlassian.clover
+net.nicoulaj.idea.markdown
+com.jetbrains.ec2manager
+IdeaVIM
+CVS
+org.jetbrains.idea.eclipse
+Subversion
+org.jetbrains.idea.maven
+hg4idea
