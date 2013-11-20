@@ -1,0 +1,4 @@
+R_HOME_USER = /home/pot/R
+R_PROFILE_USER = ${HOME}/.config/r/Rprofile.r
+R_LIBS_USER = /home/pot/R/library
+R_HISTFILE = /${XDG_CACHE_HOME}/.Rhistory   # Do not forget to append the .Rhistory
