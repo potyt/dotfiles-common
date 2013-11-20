@@ -1,7 +1,7 @@
-alias ls='ls --color=always'
+alias ls='ls --color=auto'
 alias ll='ls -l'
 
-alias grep='grep --color=always'
+alias grep='grep --color=auto'
 alias ngrep='grep -n'
 
 alias cp='cp -ia'
@@ -40,6 +40,11 @@ alias passgen='< /dev/urandom tr -cd \[:graph:\] | fold -w 32 | head -n 5'
 alias xpop='xprop | grep --color=none 'WM_CLASS\|^WM_NAME' | xmessage -file -'
 
 alias chromium-tor='chromium --user-data-dir=$HOME/.config/chromium-tor --proxy-server=localhost:9118 --incognito'
+
+alias R='R --quiet'
+
+# kernel version
+alias linver='uname -r; pacman -Q linux'
 
 # burning
 #makeiso='mkisofs -V volume_name -J -r -o isoimage.iso ~/folder'
