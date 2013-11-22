@@ -37,3 +37,6 @@ done
 # Python
 export WORKON_HOME=$HOME/.virtualenvs
 . /usr/bin/virtualenvwrapper.sh
+
+# OpenMAMA
+. ~/.env.openmama
