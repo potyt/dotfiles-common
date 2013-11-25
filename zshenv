@@ -2,9 +2,6 @@
 # ~/.zshenv
 #
 
-# source base environment
-. ~/.env
-
 # Vim
 export MYVIMDIR="$XDG_CONFIG_HOME/vim"
 export VIMINIT='let $MYVIMRC="$MYVIMDIR/vimrc" | let $MYGVIMRC="$MYVIMDIR/gvimrc" | source $MYVIMRC | source $MYGVIMRC'
@@ -36,11 +33,3 @@ export RXVT_SOCKET="${TMPDIR}/urxvt-`hostname`"
 
 # par
 export PARINIT="rTbgqR B=.,?_A_a Q=_s>|"
-
-# Java
-export _JAVA_OPTIONS="-Dawt.useSystemAAFontSettings=lcd -Dswing.defaultlaf=com.sun.java.swing.plaf.gtk.GTKLookAndFeel"
-export JAVA_FONTS=/usr/share/fonts/TTF
-#export JAVA_HOME=/usr/lib/jvm/bin32-java-7-openjdk/jre
-#export PATH=/usr/lib/jvm/bin32-java-7-openjdk/jre/bin:$PATH
-
-export http_proxy=localhost:8118
