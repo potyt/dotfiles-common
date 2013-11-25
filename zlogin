@@ -2,8 +2,8 @@
 # ~/.zlogin
 #
 
-# set up $TMPDIR on tmpfs
-rm -rf ${TMPDIR%/}; mkdir -p /tmp/pot; ln -s /tmp/pot ${TMPDIR%/}
+# source base environment
+. ~/.env.base
 
 # start keychain if needed
 . ~/scripts/keychain-start

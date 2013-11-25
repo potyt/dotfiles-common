@@ -54,6 +54,3 @@ zstyle ':completion:*:cd:*' ignored-patterns '(*/)#__pycache__'
 eval $(dircolors -b ~/.dir_colors)
 . ~/.zshrc.functions
 . ~/.alias
-#
-# source base environment
-. ~/.env.base
