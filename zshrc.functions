@@ -22,3 +22,7 @@ function extract () {
         echo "Error: $1 is not a valid file for extraction"
     fi
 }
+
+function gp2d(){
+    gprof2dot.py -f pstats $1 | dot -Tpng -o $2
+}
