@@ -2,6 +2,9 @@
 # ~/.zshenv
 #
 
+# base environment
+. ~/.env.base
+
 # Vim
 export MYVIMDIR="$XDG_CONFIG_HOME/vim"
 export VIMINIT='let $MYVIMRC="$MYVIMDIR/vimrc" | let $MYGVIMRC="$MYVIMDIR/gvimrc" | source $MYVIMRC | source $MYGVIMRC'
