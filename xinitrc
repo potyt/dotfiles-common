@@ -17,6 +17,9 @@ fi
 [ -f /etc/xprofile ] && . /etc/xprofile
 [ -f ~/.xprofile ] && . ~/.xprofile
 
+# set up display
+display-layout
+
 # start a session
 DEFAULT_SESSION=i3
 case $1 in

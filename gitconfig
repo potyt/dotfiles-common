@@ -21,3 +21,6 @@
 	default = simple
 [credential]
 	helper = cache --timeout=3600
+[pack]
+	windowMemory = 256m
+	sizeLimit = 256m

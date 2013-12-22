@@ -14,6 +14,9 @@ setxkbmap "us,gb" -option "grp:shifts_toggle"
 # set brightness
 xbacklight -set 90
 
+# no beep
+xset -b
+
 # start services
 xhost +si:localuser:$(whoami)
 xautolock -time 10 -locker "i3lock -i ~/background/lock -u" -detectsleep -corners +-00  -cornerdelay 4 -cornerredelay 4 &
@@ -21,3 +24,6 @@ dunst &
 xbindkeys &
 syndaemon -t -k -i 2 -d &
 urxvtd -q -o -f
+
+# pulseaudio
+/usr/bin/start-pulseaudio-x11
