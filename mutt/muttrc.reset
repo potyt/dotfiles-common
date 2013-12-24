@@ -1,0 +1,22 @@
+# null out any folder specific keys.
+bind index @ noop
+
+# blank alternates
+unalternates *
+
+# attribution
+set attribution = "On %{%d/%m/%y %H:%M}, %n wrote:"
+
+# reset any headers that may have been set in other folder-hooks
+unmy_hdr From:
+unmy_hdr Reply-To:
+unmy_hdr Fcc:
+unmy_hdr Return-Receipt-To:
+unmy_hdr Organization:
+unmy_hdr X-URL:
+
+unmy_hdr X-Face:
+
+# my_hdr From: pot <p@pot.yt>
+# my_hdr Organization: (pot 'yt)
+# my_hdr X-URL: http://pot.yt

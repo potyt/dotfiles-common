@@ -1,0 +1,11 @@
+"/usr/bin/amixer -q sset Master 5+"
+    m:0x15 + c:21
+    Control+Shift+Mod2 + equal
+
+"/usr/bin/amixer -q sset Master 5-"
+    m:0x15 + c:20
+    Control+Shift+Mod2 + minus
+
+"~/scripts/toggle-trackpad"
+     m:0x5 + c:65
+     Control+Shift+Mod2 + space

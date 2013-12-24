@@ -1,0 +1,19 @@
+# show the incoming mailboxes list (just like "mutt -y") and back when pressing "y"
+macro index,pager y "<change-folder>?<toggle-mailboxes>" "show incoming mailboxes list"
+bind browser y exit
+
+# identify chooser
+macro compose v "<edit-from>^Uidentity_<tab>" "From:"
+
+# launch folder browser when moving or copying
+#macro index,pager M "<save-message>?<toggle-mailboxes>" "move a message to a mailbox"
+#macro index,pager C "<copy-message>?<toggle-mailboxes>" "copy a message to a mailbox"
+macro index,pager M "<save-message>?" "move a message to a mailbox"
+macro index,pager C "<copy-message>?" "copy a message to a mailbox"
+
+# next unread/new mail
+bind index,pager ] next-new-then-unread
+bind index,pager [ previous-new-then-unread
+
+# next unread mailbox
+bind index,pager <TAB> next-unread-mailbox

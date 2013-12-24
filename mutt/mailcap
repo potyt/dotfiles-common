@@ -1,0 +1,29 @@
+image/*; mutt-bgrun feh %s; needsterminal
+text/html; mutt-bgrun surf '%s' >/dev/null 2>&1 &; test=test-x; needsterminal;
+text/html; links -dump -force-html %s; nametemplate=%s.html; copiousoutput;
+application/pdf; mutt-bgrun zathura %s; needsterminal;
+application/pdf; pdftohtml -q -stdout %s | links -dump -force-html; copiousoutput
+
+application/msword; mutt-bgrun libreoffice %s; test=test-x
+application/vnd.ms-word.document.macroenabled.12; mutt-bgrun libreoffice %s; test=test-x
+application/vnd.ms-word.template.macroenabled.12; mutt-bgrun libreoffice %s; test=test-x
+
+application/vnd.ms-excel; mutt-bgrun libreoffice %s; test=test-x
+application/vnd.ms-excel.sheet.macroenabled.12; mutt-bgrun libreoffice %s; test=test-x
+application/vnd.ms-excel.template.macroenabled.12; mutt-bgrun libreoffice %s; test=test-x
+application/vnd.ms-excel.sheet.binary.macroenabled.12; mutt-bgrun libreoffice %s; test=test-x
+
+application/vnd.ms-powerpoint; mutt-bgrun libreoffice %s; test=test-x
+application/vnd.ms-powerpoint.slide.macroenabled.12; mutt-bgrun libreoffice %s; test=test-x
+application/vnd.ms-powerpoint.template.macroenabled.12; mutt-bgrun libreoffice %s; test=test-x
+application/vnd.ms-powerpoint.presentation.macroenabled.12; mutt-bgrun libreoffice %s; test=test-x
+application/vnd.ms-powerpoint.slideshow.macroenabled.12; mutt-bgrun libreoffice %s; test=test-x
+
+application/vnd.openxmlformats-officedocument.wordprocessingml.template; mutt-bgrun libreoffice %s; test=test-x
+application/vnd.openxmlformats-officedocument.presentationml.presentation; mutt-bgrun libreoffice %s; test=test-x
+application/vnd.openxmlformats-officedocument.presentationml.slide; mutt-bgrun libreoffice %s; test=test-x
+application/vnd.openxmlformats-officedocument.presentationml.slideshow; mutt-bgrun libreoffice %s; test=test-x
+application/vnd.openxmlformats-officedocument.presentationml.template; mutt-bgrun libreoffice %s; test=test-x
+application/vnd.openxmlformats-officedocument.spreadsheetml.sheet; mutt-bgrun libreoffice %s; test=test-x
+application/vnd.openxmlformats-officedocument.spreadsheetml.template; mutt-bgrun libreoffice %s; test=test-x
+application/vnd.openxmlformats-officedocument.wordprocessingml.document; mutt-bgrun libreoffice %s; test=test-x

@@ -1,0 +1,7 @@
+# archive
+macro index,pager d "<save-message>$my_archive<enter><sync-mailbox>" "archive message"
+
+# trash
+macro index,pager d "<save-message>$my_trash<enter><sync-mailbox>" "move message to the trash"
+
+set my_common_name = $my_name
