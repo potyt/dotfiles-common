@@ -4,20 +4,27 @@
   <option name="EDITOR_FONT_SIZE" value="14" />
   <option name="EDITOR_FONT_NAME" value="Ubuntu Mono" />
   <colors>
+    <option name="ADDED_LINES_COLOR" value="bfbfbf" />
     <option name="ANNOTATIONS_COLOR" value="3399ff" />
     <option name="ANNOTATIONS_MERGED_COLOR" value="cccc" />
     <option name="CARET_COLOR" value="ffffff" />
     <option name="CARET_ROW_COLOR" value="" />
     <option name="CONSOLE_BACKGROUND_KEY" value="" />
-    <option name="GUTTER_BACKGROUND" value="6e6e6e" />
+    <option name="FILESTATUS_ADDED" value="3c8232" />
+    <option name="FILESTATUS_MERGED" value="8c28f0" />
+    <option name="FILESTATUS_MODIFIED" value="4b7da0" />
+    <option name="FILESTATUS_UNKNOWN" value="d23214" />
+    <option name="GUTTER_BACKGROUND" value="3f3f3f" />
+    <option name="INDENT_GUIDE" value="" />
     <option name="LINE_NUMBERS_COLOR" value="aaaaaa" />
     <option name="METHOD_SEPARATORS_COLOR" value="505050" />
     <option name="READONLY_FRAGMENT_BACKGROUND" value="323232" />
     <option name="RECURSIVE_CALL_ATTRIBUTES" value="0" />
     <option name="RIGHT_MARGIN_COLOR" value="505050" />
+    <option name="SELECTED_INDENT_GUIDE" value="" />
     <option name="SELECTED_TEARLINE_COLOR" value="ffffff" />
     <option name="SOFT_WRAP_SIGN_COLOR" value="e6e6e6" />
-    <option name="TEARLINE_COLOR" value="c0c0c0" />
+    <option name="TEARLINE_COLOR" value="7f7f7f" />
     <option name="WHITESPACES" value="ffffff" />
   </colors>
   <attributes>
@@ -130,6 +137,13 @@
       <value>
         <option name="FOREGROUND" value="dddd7f" />
         <option name="FONT_TYPE" value="1" />
+      </value>
+    </option>
+    <option name="CTRL_CLICKABLE">
+      <value>
+        <option name="FOREGROUND" value="3232ff" />
+        <option name="EFFECT_COLOR" value="ff" />
+        <option name="EFFECT_TYPE" value="1" />
       </value>
     </option>
     <option name="CUSTOM_INVALID_STRING_ESCAPE_ATTRIBUTES">

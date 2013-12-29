@@ -18,6 +18,7 @@ cmus/command-history
 cmus/lib.pl
 cmus/playlist.pl
 cmus/search-history
+IdeaIC12__config/componentVersions/*
 mcabber/otr
 mutt/aliases.bak
 surf/cookies.txt

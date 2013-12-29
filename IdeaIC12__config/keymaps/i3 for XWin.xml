@@ -5,8 +5,8 @@
     <keyboard-shortcut first-keystroke="altGraph INSERT" />
   </action>
   <action id="ShowIntentionActions">
-    <keyboard-shortcut first-keystroke="alt ENTER" />
-    <keyboard-shortcut first-keystroke="altGraph ENTER" />
+    <keyboard-shortcut first-keystroke="INPUT_METHOD_ON_OFF" second-keystroke="ENTER" />
+    <keyboard-shortcut first-keystroke="WINDOWS" second-keystroke="ENTER" />
   </action>
   <action id="SwitchApply">
     <keyboard-shortcut first-keystroke="shift alt ENTER" />
