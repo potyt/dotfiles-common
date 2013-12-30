@@ -22,6 +22,17 @@ IdeaIC12__config/componentVersions/*
 mcabber/otr
 mutt/aliases.bak
 surf/cookies.txt
+IdeaIC13__config/componentVersions/*
+IdeaIC13__config/options/appComponentVersions.xml
+IdeaIC13__config/options/feature.usage.statistics.xml
+IdeaIC13__config/options/jdk.table.xml
+IdeaIC13__config/options/options.xml
+IdeaIC13__config/options/other.xml
+IdeaIC13__config/options/runner.layout.xml
+IdeaIC13__config/options/statistics.application.usages.xml
+IdeaIC13__config/options/vcs.xml
+IdeaIC13__config/options/usage.statistics.xml
+IdeaIC13__config/plugins/*
 VirtualBox/*.log*
 VirtualBox/VirtualBox.xml-prev
 VirtualBox/compreg.dat
