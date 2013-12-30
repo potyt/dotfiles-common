@@ -22,3 +22,7 @@ IdeaIC12__config/componentVersions/*
 mcabber/otr
 mutt/aliases.bak
 surf/cookies.txt
+VirtualBox/*.log*
+VirtualBox/VirtualBox.xml-prev
+VirtualBox/compreg.dat
+VirtualBox/xpti.dat
