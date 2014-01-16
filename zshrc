@@ -40,6 +40,7 @@ source $ZSH/oh-my-zsh.sh
 
 # Customize to your needs...
 
+setopt histignorespace
 unsetopt correct_all
 unsetopt nomatch
 unsetopt share_history
