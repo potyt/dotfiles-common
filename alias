@@ -62,6 +62,9 @@ alias v.cdsitepackages='cdsitepackages'
 alias v.cd='cdvirtualenv'
 alias v.lssitepackages='lssitepackages'
 
+# sandboxed skype
+alias skype="xhost +local: && sudo -u skype-$USERNAME `/usr/bin/which skype`"
+
 # git
 alias g.inc='git fetch && git log ..origin/master'
 

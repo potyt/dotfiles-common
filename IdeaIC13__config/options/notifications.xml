@@ -22,6 +22,7 @@
     <notification groupId="Common Version Control Messages" displayType="TOOL_WINDOW" />
     <notification groupId="Vcs Important Messages" displayType="STICKY_BALLOON" />
     <notification groupId="Vcs Minor Notifications" />
+    <notification groupId="Project Loading Error" />
     <toolWindow group="Git Messages" />
     <toolWindow group="External Executable Critical Failures" />
     <toolWindow group="Gradle warnings" />
