@@ -12,6 +12,13 @@ config/libreoffice/4/user/registrymodifications.xcu
 config/libreoffice/4/user/store/.templdir.cache
 config/libreoffice/4/user/temp/document_io_logring.txt
 config/libreoffice/4/user/uno_packages/*
+config/LightTable/Cache/*
+config/LightTable/cookies
+config/LightTable/cookies-journal
+config/LightTable/GPUCache/*
+config/LightTable/Local Storage/*
+config/LightTable/logs/*
+config/LightTable/ltcache/*
 config/pavucontrol.ini
 config/pulse/*
 config/Trolltech.conf
