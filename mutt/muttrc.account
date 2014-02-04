@@ -1,0 +1,9 @@
+set folder = "$HOME/mail/$my_account"
+set spoolfile = "+Inbox"
+set record = "+Sent Items"
+set postponed = "+Drafts"
+set my_trash = "+Trash"
+set my_archive = "+Archive"
+
+source $my_conf/muttrc.folder
+source $my_conf/muttrc.status

@@ -15,6 +15,22 @@ set sleep_time = 0
 set reverse_name = yes
 set reverse_realname = yes
 
+# status line
+set status_on_top
+
+# nagigation
+bind index,pager ] next-new-then-unread
+bind index,pager [ previous-new-then-unread
+bind index,pager <TAB> next-unread-mailbox
+
+# show the incoming mailboxes list (just like "mutt -y") and back when pressing "y"
+macro index,pager y "<change-folder>?<toggle-mailboxes>" "show incoming mailboxes list"
+bind browser y exit
+
+# launch folder browser when moving or copying
+macro index,pager M "<save-message>?" "move a message to a mailbox"
+macro index,pager C "<copy-message>?" "copy a message to a mailbox"
+
 # reading
 set mailcap_path = ~/.mutt/mailcap
 auto_view text/html application/pdf
@@ -101,6 +117,11 @@ source $alias_file
 set query_command = "abook --mutt-query '%s'"
 macro index,pager a "<pipe-message>abook --add-email<return>"
 
+# identity chooser
+set my_identity = 0
+macro index,pager,compose I ":set my_identity = $my_identity<enter>"
+#macro index,pager,compose I ":source $my_private_conf/identity_\`echo $(($(date +%s) % $(ls $my_private_conf/* | wc -l) + 1))\`\n"
+
 # gpg
 source $my_conf/gpg.rc
 set pgp_sign_as = "$GPGSIGNKEY"
@@ -118,12 +139,7 @@ set crypt_autoencrypt = yes
 set crypt_replyencrypt = yes
 set crypt_replysignencrypted = yes
 
-# standard bindings
-source $my_conf/muttrc.bindings
-
 # folder hooks
-
-# reset
 folder-hook . source $my_conf/muttrc.reset
 source "~/scripts/mutt-folder-hook-gen $folder |"
 folder-hook . source $my_conf/muttrc.account

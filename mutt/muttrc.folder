@@ -1,5 +1,5 @@
 # recalculate trash folder-hook
-folder-hook $my_trash source $my_conf/muttrc.trash
+folder-hook $my_trash bind index,pager d delete-message
 
 # archive
 macro index,pager A "<save-message>$my_archive<enter><sync-mailbox>" "archive message"

@@ -1,2 +1,0 @@
-# just delete message, don't move to ourself
-bind index,pager d delete-message
