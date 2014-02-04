@@ -4,6 +4,18 @@ bind index @ noop
 # blank alternates
 unalternates *
 
+# delete any identity aliases
+unalias identity_0
+unalias identity_1
+unalias identity_2
+unalias identity_3
+unalias identity_4
+unalias identity_5
+unalias identity_6
+unalias identity_7
+unalias identity_8
+unalias identity_9
+
 # attribution
 set attribution = "On %{%d/%m/%y %H:%M}, %n wrote:"
 
@@ -16,7 +28,4 @@ unmy_hdr Organization:
 unmy_hdr X-URL:
 
 unmy_hdr X-Face:
-
-# my_hdr From: pot <p@pot.yt>
-# my_hdr Organization: (pot 'yt)
-# my_hdr X-URL: http://pot.yt
+unmy_hdr X-PGP-Key:

@@ -1,5 +1,5 @@
 set my_conf = $HOME/.mutt
-set my_private_conf = $HOME/private/mutt
+set my_private_conf = $HOME/.mutt-private
 
 # global settings
 set sendmail = ~/scripts/msmtp-enqueue
@@ -93,9 +93,6 @@ source $my_conf/color.zenburn
 # mailboxes
 mailboxes `find ~/mail -follow -mindepth 1 -maxdepth 1 -type d -printf "+'%f/Inbox' "`
 
-# identities
-source $my_conf/identity
-
 # aliases
 set alias_file = $my_private_conf/aliases
 set sort_alias = alias
@@ -106,7 +103,7 @@ macro index,pager a "<pipe-message>abook --add-email<return>"
 
 # gpg
 source $my_conf/gpg.rc
-set pgp_sign_as = "AA305414"
+set pgp_sign_as = "$GPGSIGNKEY"
 set pgp_verify_sig = yes
 set pgp_autosign = yes
 set pgp_autoencrypt = yes
@@ -128,15 +125,8 @@ source $my_conf/muttrc.bindings
 
 # reset
 folder-hook . source $my_conf/muttrc.reset
-# account specific
-folder-hook archive source $my_conf/muttrc.archive
-folder-hook localhost source $my_conf/muttrc.localhost
-folder-hook fastmail source $my_conf/muttrc.fastmail
-folder-hook mchambers source $my_conf/muttrc.mchambers
-folder-hook recovr source $my_conf/muttrc.recovr
-folder-hook slush source $my_conf/muttrc.slush
-# folder type specific
-folder-hook $my_trash source $my_conf/muttrc.trash
+source "~/scripts/mutt-folder-hook-gen $folder |"
+folder-hook . source $my_conf/muttrc.account
 
-# change to default folder
-source $my_conf/muttrc.default
+# change to local folder
+push "<change-folder>?<toggle-mailboxes>/localhost<enter><enter>"

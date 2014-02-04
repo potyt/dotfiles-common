@@ -2,7 +2,8 @@
 macro index,pager y "<change-folder>?<toggle-mailboxes>" "show incoming mailboxes list"
 bind browser y exit
 
-# identify chooser
+# identity chooser
+#macro index,pager,compose I ":source $my_conf/identity_\`echo $(($(date +%s) % $(ls $my_conf/identity_[0-9]* | wc -l) + 1))\`\n"
 macro compose v "<edit-from>^Uidentity_<tab>" "From:"
 
 # launch folder browser when moving or copying

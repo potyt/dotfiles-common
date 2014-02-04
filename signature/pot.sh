@@ -1,1 +1,0 @@
-/home/pot/scripts/signature.sh

@@ -1,7 +1,8 @@
+# recalculate trash folder-hook
+folder-hook $my_trash source $my_conf/muttrc.trash
+
 # archive
-macro index,pager d "<save-message>$my_archive<enter><sync-mailbox>" "archive message"
+macro index,pager A "<save-message>$my_archive<enter><sync-mailbox>" "archive message"
 
 # trash
 macro index,pager d "<save-message>$my_trash<enter><sync-mailbox>" "move message to the trash"
-
-set my_common_name = $my_name
