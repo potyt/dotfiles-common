@@ -105,6 +105,11 @@ set pager_context = 5
 set pager_index_lines = 15
 set pager_stop = "yes"
 set tilde
+unset markers
+set quote_regexp = "^( {0,4}[>|:#%]| {0,4}[a-z0-9]+[>|]+)+"
+bind pager gg top
+bind pager G bottom
+bind attach <return> view-mailcap
 
 # index/pager
 bind index,pager R group-reply
@@ -126,6 +131,8 @@ set sort_alias = alias
 set reverse_alias = yes
 source $alias_file
 set query_command = "abook --mutt-query '%s'"
+bind editor <tab> complete-query
+bind editor ^T complete
 macro index,pager a "<pipe-message>abook --add-email<return>"
 
 # rotate identities
@@ -153,6 +160,21 @@ set crypt_replysignencrypted = yes
 # folder hooks
 source "~/scripts/mutt-folder-hook-gen $folder |"
 folder-hook . source $my_conf/muttrc.folder
+
+# notmuch
+macro index <F8> \
+    "<enter-command>set my_old_pipe_decode=\$pipe_decode my_old_wait_key=\$wait_key nopipe_decode nowait_key<enter>\
+    <shell-escape>notmuch-mutt -r --prompt search<enter>\
+    <change-folder-readonly>`echo ${XDG_CACHE_HOME:-$HOME/.cache}/notmuch/mutt/results`<enter>\
+    <enter-command>set pipe_decode=\$my_old_pipe_decode wait_key=\$my_old_wait_key<enter>" \
+    "notmuch: search mail"
+
+macro index <F9> \
+    "<enter-command>set my_old_pipe_decode=\$pipe_decode my_old_wait_key=\$wait_key nopipe_decode nowait_key<enter>\
+    <pipe-message>notmuch-mutt -r thread<enter>\
+    <change-folder-readonly>`echo ${XDG_CACHE_HOME:-$HOME/.cache}/notmuch/mutt/results`<enter>\
+    <enter-command>set pipe_decode=\$my_old_pipe_decode wait_key=\$my_old_wait_key<enter>" \
+    "notmuch: reconstruct thread"
 
 # change to local folder
 push "<change-folder>?<toggle-mailboxes>/localhost<enter><enter>"
