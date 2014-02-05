@@ -1,10 +1,11 @@
-set my_conf = $HOME/.mutt
-set my_private_conf = $HOME/.mutt-private
+set my_conf = $MUTT_DIR
+set my_private_conf = $MUTT_PRIVATE_DIR
 
 # global settings
+set quit
 set sendmail = ~/scripts/msmtp-enqueue
 set mbox_type = Maildir
-set folder = $HOME/mail
+set folder = $MAILDIR
 set header_cache = $XDG_CACHE_HOME/mutt_hcache
 set bounce_delivered = no
 set check_new = yes
@@ -14,6 +15,7 @@ set mail_check_recent = no
 set sleep_time = 0
 set reverse_name = yes
 set reverse_realname = yes
+set send_charset="utf-8"
 
 # status line
 set status_on_top
@@ -21,7 +23,6 @@ set status_on_top
 # nagigation
 bind index,pager ] next-new-then-unread
 bind index,pager [ previous-new-then-unread
-bind index,pager <TAB> next-unread-mailbox
 
 # show the incoming mailboxes list (just like "mutt -y") and back when pressing "y"
 macro index,pager y "<change-folder>?<toggle-mailboxes>" "show incoming mailboxes list"
@@ -84,12 +85,19 @@ set index_format = "%?M?+& ?%2M %2e %4C %Z %{%d %b %Y %R}  %-30.30L (%?l?%4l&%4c
 set date_format = "!%a, %d %b, %Y at %I:%M:%S%p %Z"
 set mark_old = no
 set delete = yes
-set sort = threads
 set strict_threads = yes
+set sort = threads
 set sort_aux = reverse-last-date-received
 unset collapse_unread
+unset uncollapse_jump
+set sort_re
+set reply_regexp = "^(([Rr][Ee]?(\[[0-9]+\])?: *)?(\[[^]]+\] *)?)*"
 bind index - collapse-thread
 bind index _ collapse-all
+bind index gg first-entry
+bind index G last-entry
+bind index <space>  collapse-thread
+bind index <tab> sync-mailbox
 
 # pager
 set pager = "builtin"
@@ -97,6 +105,9 @@ set pager_context = 5
 set pager_index_lines = 15
 set pager_stop = "yes"
 set tilde
+
+# index/pager
+bind index,pager R group-reply
 
 # headers
 ignore *		
@@ -107,7 +118,7 @@ hdr_order Date From Reply-To To Cc Subject X-Mailer
 source $my_conf/color.zenburn
 
 # mailboxes
-mailboxes `find ~/mail -follow -mindepth 1 -maxdepth 1 -type d -printf "+'%f/Inbox' "`
+mailboxes `find $MAILDIR -follow -mindepth 1 -maxdepth 1 -type d -printf "+'%f/Inbox' "`
 
 # aliases
 set alias_file = $my_private_conf/aliases
@@ -117,10 +128,10 @@ source $alias_file
 set query_command = "abook --mutt-query '%s'"
 macro index,pager a "<pipe-message>abook --add-email<return>"
 
-# identity chooser
-set my_identity = 0
-macro index,pager,compose I ":set my_identity = $my_identity<enter>"
-#macro index,pager,compose I ":source $my_private_conf/identity_\`echo $(($(date +%s) % $(ls $my_private_conf/* | wc -l) + 1))\`\n"
+# rotate identities
+set my_idx = 1
+macro index,pager,compose I ":source $my_conf/muttrc.identity<enter>"
+push "I"
 
 # gpg
 source $my_conf/gpg.rc
@@ -140,9 +151,8 @@ set crypt_replyencrypt = yes
 set crypt_replysignencrypted = yes
 
 # folder hooks
-folder-hook . source $my_conf/muttrc.reset
 source "~/scripts/mutt-folder-hook-gen $folder |"
-folder-hook . source $my_conf/muttrc.account
+folder-hook . source $my_conf/muttrc.folder
 
 # change to local folder
 push "<change-folder>?<toggle-mailboxes>/localhost<enter><enter>"

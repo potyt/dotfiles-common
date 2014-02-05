@@ -1,8 +1,15 @@
+set folder = "$HOME/mail/$my_account"
+set spoolfile = "+Inbox"
+set record = "+Sent Items"
+set postponed = "+Drafts"
+set my_trash = "+Trash"
+set my_archive = "+Archive"
+
 # recalculate trash folder-hook
 folder-hook $my_trash bind index,pager d delete-message
-
 # archive
 macro index,pager A "<save-message>$my_archive<enter><sync-mailbox>" "archive message"
-
 # trash
 macro index,pager d "<save-message>$my_trash<enter><sync-mailbox>" "move message to the trash"
+
+source $my_conf/muttrc.status
