@@ -68,6 +68,7 @@ set editor="vim"
 #    +'set tw=72' +'$?^-- $?+1 | normal gqq' \
 #    +'$?^-- $?-1' %s \
 #"
+set include = yes
 set user_agent = no
 set use_from = yes
 set envelope_from = yes
