@@ -16,6 +16,7 @@ set sleep_time = 0
 set reverse_name = yes
 set reverse_realname = yes
 set send_charset="utf-8"
+unset metoo
 
 # status line
 set status_on_top
@@ -63,11 +64,6 @@ set wrap = 72
 
 # editor
 set editor="vim"
-#set editor=" \
-#    $my_editor +startinsert \
-#    +'set tw=72' +'$?^-- $?+1 | normal gqq' \
-#    +'$?^-- $?-1' %s \
-#"
 set include = yes
 set user_agent = no
 set use_from = yes
@@ -163,14 +159,14 @@ source "~/scripts/mutt-folder-hook-gen $folder |"
 folder-hook . source $my_conf/muttrc.folder
 
 # notmuch
-macro index <F8> \
+macro index,pager <F8> \
     "<enter-command>set my_old_pipe_decode=\$pipe_decode my_old_wait_key=\$wait_key nopipe_decode nowait_key<enter>\
     <shell-escape>notmuch-mutt -r --prompt search<enter>\
     <change-folder-readonly>`echo ${XDG_CACHE_HOME:-$HOME/.cache}/notmuch/mutt/results`<enter>\
     <enter-command>set pipe_decode=\$my_old_pipe_decode wait_key=\$my_old_wait_key<enter>" \
     "notmuch: search mail"
 
-macro index <F9> \
+macro index,pager <F9> \
     "<enter-command>set my_old_pipe_decode=\$pipe_decode my_old_wait_key=\$wait_key nopipe_decode nowait_key<enter>\
     <pipe-message>notmuch-mutt -r thread<enter>\
     <change-folder-readonly>`echo ${XDG_CACHE_HOME:-$HOME/.cache}/notmuch/mutt/results`<enter>\
