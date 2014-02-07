@@ -60,10 +60,10 @@ macro pager p "<display-toggle-weed><print-message><display-toggle-weed>"
 
 # format flowed
 set text_flowed = no
-set wrap = 72
+set wrap = 80
 
 # editor
-set editor="vim"
+set editor="vim +/^$"
 set include = yes
 set user_agent = no
 set use_from = yes
@@ -113,8 +113,8 @@ bind index,pager R group-reply
 
 # headers
 ignore *		
-unignore Date From Reply-To To Cc Subject X-Mailer
-hdr_order Date From Reply-To To Cc Subject X-Mailer		
+unignore Date From Reply-To To Cc Subject X-Label
+hdr_order Date From Reply-To To Cc Subject X-Label
 
 # color scheme
 source $my_conf/color.zenburn
