@@ -1,0 +1,37 @@
+directory: ~/scratch/beets_import
+library: ~/music/beets.blb
+replace:
+    '[\\/]': _
+    '^\.': 
+    '[\x00-\x1f]': _
+    '\s+$': ''
+threaded: no
+plugins: fetchart lastgenre scrub
+
+import:
+    write: yes
+    copy: yes
+
+match:
+    preferred:
+        countries: ['GB|UK']
+        media: ['CD']
+
+paths:
+    default: $albumartist/$album%aunique{}/$track - $title
+    singleton: Non-Album/$artist/$title
+    comp: Various Artists/$album%aunique{}/$track - $title
+
+fetchart:
+    auto: yes
+    remote_priority: true
+    cover_names: front back
+
+scrub:
+    auto: yes
+
+lastgenre:
+    force: no
+    canonical: ''
+    source: track
+    count: 2
