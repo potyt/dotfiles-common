@@ -1,7 +1,9 @@
 abook/addressbook~
+config/beets/state.pickle
 config/chromium/*
 config/chromium-tor/*
 config/dconf/user
+config/easytag
 config/gtk-2.0/gtkfilechooser.ini
 config/gconf/*
 config/libreoffice/4/.lock
