@@ -6,6 +6,7 @@ config/dconf/user
 config/easytag
 config/gtk-2.0/gtkfilechooser.ini
 config/gconf/*
+config/htop/htoprc
 config/libreoffice/4/.lock
 config/libreoffice/4/user/backup/*
 config/libreoffice/4/user/config/javasettings_Linux_X86_64.xml
