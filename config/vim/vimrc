@@ -51,7 +51,6 @@ set number
 set numberwidth=5
 set visualbell
 set mouse-=a
-set colorcolumn=+1
 
 set autowrite
 set noautochdir
