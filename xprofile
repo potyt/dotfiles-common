@@ -18,6 +18,7 @@ dunst &
 xbindkeys &
 syndaemon -t -k -i 2 -d &
 urxvtd -q -o -f
+xcmenu --daemon
 
 # pulseaudio
 /usr/bin/start-pulseaudio-x11
