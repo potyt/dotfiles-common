@@ -1,6 +1,0 @@
-push ":set my_idx = \`echo $(( $my_idx % $(ls $my_private_conf/identity/* | wc -l) + 1 ))\`<enter>"
-push ":set my_id = \`ls $my_private_conf/identity/* | sed '$my_idx!d' | xargs -n 1 basename\`<enter>"
-
-source $my_conf/muttrc.identity-reset
-source $my_private_conf/identity/$my_id
-source $my_conf/muttrc.status

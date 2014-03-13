@@ -132,11 +132,6 @@ bind editor <tab> complete-query
 bind editor ^T complete
 macro index,pager a "<pipe-message>abook --add-email<return>"
 
-# rotate identities
-set my_idx = 1
-macro index,pager,compose I ":source $my_conf/muttrc.identity<enter>"
-push "I"
-
 # gpg
 source $my_conf/gpg.rc
 set pgp_sign_as = "$GPGSIGNKEY"
@@ -173,5 +168,11 @@ macro index,pager <F9> \
     <enter-command>set pipe_decode=\$my_old_pipe_decode wait_key=\$my_old_wait_key<enter>" \
     "notmuch: reconstruct thread"
 
-# change to local folder
-push "<change-folder>?<toggle-mailboxes>/localhost<enter><enter>"
+# rotate identities
+macro index,pager,compose I ":source $my_conf/muttrc.identity-rotate<enter>"
+
+# rotate folders
+macro index,pager <TAB> ":source $my_conf/muttrc.folder-rotate<enter>"
+
+# load private setup
+source $my_private_conf/muttrc.private

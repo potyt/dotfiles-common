@@ -1,0 +1,3 @@
+source $my_conf/muttrc.identity-reset
+source $my_private_conf/identity/$my_id
+source $my_conf/muttrc.status
