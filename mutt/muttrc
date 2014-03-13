@@ -78,7 +78,7 @@ set confirmappend = no
 set write_bcc = no
 
 # index
-set index_format = "%?M?+& ?%2M %2e %4C %Z %{%d %b %Y %R}  %-30.30L (%?l?%4l&%4c?) %s"
+set index_format = "%?M?+& ?%2M %2e %4C %Z %{%d %b %Y %R}  %-20.20L (%?l?%4l&%4c?) %s"
 set date_format = "!%a, %d %b, %Y at %I:%M:%S%p %Z"
 set mark_old = no
 set delete = yes
