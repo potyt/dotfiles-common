@@ -28,6 +28,7 @@ config/pulse/*
 config/Trolltech.conf
 config/ranger/bookmarks
 config/ranger/history
+config/ranger/tagged
 cmus/autosave
 cmus/cache
 cmus/command-history
