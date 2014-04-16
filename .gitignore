@@ -26,6 +26,7 @@ config/LightTable/ltcache/*
 config/pavucontrol.ini
 config/pulse/*
 config/Trolltech.conf
+config/ranger/bookmarks
 config/ranger/history
 cmus/autosave
 cmus/cache
