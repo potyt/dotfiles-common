@@ -41,11 +41,11 @@ alternative_order text/plain text/enriched text/html
 # extract urls
 macro index,pager ,b "<enter-command> set my_pdsave=\$pipe_decode<enter>\
     <enter-command> unset pipe_decode<enter>\
-    <pipe-message>extract_url | urlview<enter>\
+    <pipe-message>extract_url<enter>\
     <enter-command> set pipe_decode=\$my_pdsave<enter>" "get URLs"
 macro index,pager ,B "<enter-command> set my_pdsave=\$pipe_decode<enter>\
     <enter-command> set pipe_decode<enter>\
-    <pipe-message>extract_url | urlview<enter>\
+    <pipe-message>extract_url<enter>\
     <enter-command> set pipe_decode=\$my_pdsave<enter>" "decrypt message, then get URLs"
 
 message-hook .  'macro index,pager \cb ,b "URL viewer"'
@@ -78,7 +78,7 @@ set confirmappend = no
 set write_bcc = no
 
 # index
-set index_format = "%?M?+& ?%2M %2e %4C %Z %{%d %b %Y %R}  %-20.20L (%?l?%4l&%4c?) %s"
+set index_format = "%?M?+& ?%2M %2e %4C %Z %{%d %b %Y %R}  %-25.25L (%?l?%4l&%4c?) %s"
 set date_format = "!%a, %d %b, %Y at %I:%M:%S%p %Z"
 set mark_old = no
 set delete = yes
