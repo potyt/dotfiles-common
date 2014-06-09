@@ -1,5 +1,4 @@
 set my_conf = $MUTT_DIR
-set my_private_conf = $MUTT_PRIVATE_DIR
 
 # global settings
 set quit
@@ -123,7 +122,7 @@ source $my_conf/color.zenburn
 mailboxes `find $MAILDIR -follow -mindepth 1 -maxdepth 1 -type d -printf "+'%f/Inbox' "`
 
 # aliases
-set alias_file = $my_private_conf/aliases
+set alias_file = $my_conf/aliases
 set sort_alias = alias
 set reverse_alias = yes
 source $alias_file
@@ -175,4 +174,4 @@ macro index,pager,compose I ":source $my_conf/muttrc.identity-rotate<enter>"
 macro index,pager <TAB> ":source $my_conf/muttrc.folder-rotate<enter>"
 
 # load private setup
-source $my_private_conf/muttrc.private
+source $my_conf/muttrc.private
