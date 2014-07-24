@@ -29,6 +29,7 @@ Bundle "FuzzyFinder"
 Bundle "buftabs"
 Bundle "grep.vim"
 Bundle "bufkill.vim"
+Bundle "https://github.com/tpope/vim-fugitive"
 "Bundle "Python-mode-klen"
 
 " vundle-end
