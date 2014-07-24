@@ -31,6 +31,7 @@ config/Trolltech.conf
 config/ranger/bookmarks
 config/ranger/history
 config/ranger/tagged
+config/vim/bundle/
 config/ViTables/*
 config/vlc/vlc-qt-interface.conf
 cmus/autosave
