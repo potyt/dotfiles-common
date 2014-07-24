@@ -14,6 +14,8 @@
         <option value="java.annotations" />
         <option value="jvm.static.member.name" />
         <option value="properties.index" />
+        <option value="java.method.parameter.types" />
+        <option value="dom.elementClass" />
       </list>
     </option>
   </component>

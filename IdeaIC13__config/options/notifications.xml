@@ -30,6 +30,7 @@
     <toolWindow group="HotSwap" />
     <toolWindow group="Common Version Control Messages" />
     <toolWindow group="Debugger messages" />
+    <toolWindow group="Find in Path" />
   </component>
 </application>
 

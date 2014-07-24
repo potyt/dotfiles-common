@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <application>
   <component name="GeneralSettings">
-    <option name="browserPath" value="" />
     <option name="lastTip" value="2" />
     <option name="showTipsOnStartup" value="false" />
     <option name="showOccupiedMemory" value="false" />
