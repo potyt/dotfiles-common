@@ -36,3 +36,6 @@ export RXVT_SOCKET="${TMPDIR}/urxvt-`hostname`"
 
 # par
 export PARINIT="rTbgqR B=.,?_A_a Q=_s>|"
+
+# aws completion
+source $(locate aws_zsh_completer.sh)
