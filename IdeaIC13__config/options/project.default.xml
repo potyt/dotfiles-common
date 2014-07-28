@@ -62,8 +62,8 @@
             <option name="LOG_MESSAGE" value="" />
           </breakpoint>
         </breakpoint_any>
-        <ui_properties converted="true" />
         <breakpoint_rules converted="true" />
+        <ui_properties converted="true" />
       </component>
       <component name="DependencyValidationManager">
         <option name="SKIP_IMPORT_STATEMENTS" value="false" />
@@ -90,6 +90,10 @@
         <property name="MemberChooser.sorted" value="false" />
         <property name="MemberChooser.showClasses" value="true" />
         <property name="MemberChooser.copyJavadoc" value="false" />
+        <property name="options.lastSelected" value="appearance" />
+        <property name="options.splitter.main.proportions" value="0.3" />
+        <property name="options.splitter.details.proportions" value="0.2" />
+        <property name="options.searchVisible" value="true" />
       </component>
       <component name="RunManager">
         <configuration default="true" type="Remote" factoryName="Remote">
@@ -98,6 +102,19 @@
           <option name="SHMEM_ADDRESS" value="javadebug" />
           <option name="HOST" value="localhost" />
           <option name="PORT" value="5005" />
+          <method />
+        </configuration>
+        <configuration default="true" type="Applet" factoryName="Applet">
+          <module name="" />
+          <option name="MAIN_CLASS_NAME" />
+          <option name="HTML_FILE_NAME" />
+          <option name="HTML_USED" value="false" />
+          <option name="WIDTH" value="400" />
+          <option name="HEIGHT" value="300" />
+          <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+          <option name="VM_PARAMETERS" />
+          <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+          <option name="ALTERNATIVE_JRE_PATH" />
           <method />
         </configuration>
         <configuration default="true" type="TestNG" factoryName="TestNG">
@@ -125,19 +142,6 @@
           <envs />
           <properties />
           <listeners />
-          <method />
-        </configuration>
-        <configuration default="true" type="Applet" factoryName="Applet">
-          <module name="" />
-          <option name="MAIN_CLASS_NAME" />
-          <option name="HTML_FILE_NAME" />
-          <option name="HTML_USED" value="false" />
-          <option name="WIDTH" value="400" />
-          <option name="HEIGHT" value="300" />
-          <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
-          <option name="VM_PARAMETERS" />
-          <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-          <option name="ALTERNATIVE_JRE_PATH" />
           <method />
         </configuration>
         <configuration default="true" type="Application" factoryName="Application">
@@ -168,6 +172,14 @@
           <Host>localhost</Host>
           <Port>5050</Port>
         </configuration>
+      </component>
+      <component name="VcsContentAnnotationSettings">
+        <option name="myLimit" value="2678400000" />
+      </component>
+      <component name="VcsManagerConfiguration">
+        <option name="myTodoPanelSettings">
+          <TodoPanelSettings />
+        </option>
       </component>
       <component name="masterDetails">
         <states>
