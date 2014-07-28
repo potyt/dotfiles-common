@@ -12,5 +12,6 @@
 .recently-used
 .virtualenvs
 .Xauthority
+.zcompdump
 .zcompdump-beast-5.0.5
 .zsh-update
