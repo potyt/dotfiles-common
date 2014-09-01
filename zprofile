@@ -4,4 +4,4 @@
 
 umask 077
 
-setterm -blength 0
+[[ $(uname) == "Linux" ]] && setterm -blength 0
