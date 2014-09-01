@@ -36,6 +36,7 @@ COMPLETION_WAITING_DOTS="true"
 # plugins=(archlinux battery git history mercurial pip python ssh-agent vi-mode)
 plugins=(archlinux battery git history mercurial pip python vi-mode)
 
+autoload -Uz add-zsh-hook
 source $ZSH/oh-my-zsh.sh
 
 # Customize to your needs...

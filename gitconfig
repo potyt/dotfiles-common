@@ -1,6 +1,7 @@
 [user]
 	name = pot
 	email = p@pot.yt
+	signingkey = A9E8CD9D
 [core]
 	editor = vim
 	autocrlf = input

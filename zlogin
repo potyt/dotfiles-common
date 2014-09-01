@@ -14,4 +14,4 @@
 . ~/.env.gpg
 
 # start mpd if no other user instance exists
-[ ! -s ~/.config/mpd/pid ] && mpd
+#[ ! -s ~/.config/mpd/pid ] && mpd

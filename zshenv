@@ -38,4 +38,7 @@ export RXVT_SOCKET="${TMPDIR}/urxvt-`hostname`"
 export PARINIT="rTbgqR B=.,?_A_a Q=_s>|"
 
 # aws completion
-source $(locate aws_zsh_completer.sh)
+aws_zsh_completer=$(locate aws_zsh_completer.sh)
+if [[ -n $aws_zsh_completer ]]; then
+    source $aws_zsh_completer
+fi
