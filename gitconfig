@@ -6,7 +6,7 @@
 	editor = vim
 	autocrlf = input
 	safecrlf = true
-	excludesfile = /home/pot/.gitignore
+	excludesfile = ~/.gitignore
 	pager = less -FRSX
 [merge]
 	tool = vimdiff
