@@ -12,8 +12,8 @@ set viminfo+=n$XDG_CACHE_HOME/vim/viminfo
 
 " vundle-start
 filetype off
-set rtp+=$XDG_CONFIG_HOME/vim/bundle/vundle/
-call vundle#rc($XDG_CONFIG_HOME."/vim/bundle")
+set rtp+=$HOME/var/vim/bundle/Vundle.vim/
+call vundle#rc($HOME."/vim/bundle")
 
 " bundles
 Bundle "gmarik/vundle"
