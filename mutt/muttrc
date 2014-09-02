@@ -173,5 +173,14 @@ macro index,pager,compose I ":source $my_conf/muttrc.identity-rotate<enter>"
 # rotate folders
 macro index,pager <TAB> ":source $my_conf/muttrc.folder-rotate<enter>"
 
+# sidebar
+source "`FILE=$MUTT_DIR/muttrc.sidebar; mutt -v | grep -Fq sidebar || FILE=/dev/null; echo $FILE`" 
+
+# notmuch
+source "`FILE=$MUTT_DIR/muttrc.notmuch; mutt -v | grep -Fq notmuch || FILE=/dev/null; echo $FILE`" 
+
+# xface
+source "`FILE=$MUTT_DIR/muttrc.xface; mutt -v | grep -Fq w3mface || FILE=/dev/null; echo $FILE`" 
+
 # load private setup
 source $my_conf/muttrc.private

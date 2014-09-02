@@ -1,0 +1,22 @@
+set nm_hidden_tags = "INBOX,sent,signed,flagged,draft,unread,passed,replied,archive,lists,automatic,attachment"
+set nm_unread_tag = "unread"
+set nm_query_type = "threads"
+set nm_default_uri = "notmuch:///$HOME/mail"
+set virtual_spoolfile = yes
+
+bind index Q vfolder-from-query
+
+tag-transforms \
+    "inbox"   "i"   \
+    "unread"  "u"   \
+    "replied" "↻ "  \
+    "sent"    "➥ "  \
+    "todo"    "T"   \
+    "deleted" "DEL" \
+    "invites" "CAL"
+
+virtual-mailboxes \
+    "INBOX"         "notmuch://?query=folder:INBOX" \
+    "Other Unread"  "notmuch://?query=is:unread NOT folder:INBOX NOT folder:spam NOT folder:trash" \
+    "Today"         "notmuch://?query=date:1d.." \
+    "This Week"     "notmuch://?query=date:1w.."
