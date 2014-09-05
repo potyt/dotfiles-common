@@ -13,7 +13,7 @@ xbacklight -set 90
 
 # start services
 xhost +si:localuser:$(whoami)
-xautolock -time 10 -locker "i3lock -i ~/background/lock -u" -detectsleep -corners +-00  -cornerdelay 4 -cornerredelay 4 &
+xautolock -time 10 -locker "lock-desktop" -detectsleep -corners +-00  -cornerdelay 4 -cornerredelay 4 &
 dunst &
 xbindkeys &
 syndaemon -t -k -i 2 -d &
