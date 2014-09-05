@@ -18,7 +18,7 @@ export VISUAL=vim
 export EDITOR=$VISUAL
 export TERMINAL=urxvtc
 export XTERM=$TERMINAL
-export BROWSER=uzbl
+export BROWSER=uzbl-browser
 
 # zsh related
 export HISTFILE="${TMPDIR}/zsh_history"
