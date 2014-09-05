@@ -30,6 +30,9 @@ bindsym $mod+Return exec i3-sensible-terminal
 # kill focused window
 bindsym $mod+Shift+q kill
 
+# display layout
+bindsym Control+$mod+l exec --no-startup-id display-layout
+
 # start dmenu (a program launcher)
 bindsym $mod+d exec dmenu_run
 # There also is the (new) i3-dmenu-desktop which only displays applications
@@ -42,6 +45,8 @@ bindsym $mod+h focus left
 bindsym $mod+j focus down
 bindsym $mod+k focus up
 bindsym $mod+l focus right
+bindsym $mod+x [urgent=latest] focus
+force_display_urgency_hint 500 ms
 
 # alternatively, you can use the cursor keys:
 bindsym $mod+Left focus left
@@ -66,7 +71,7 @@ bindsym $mod+g split h
 bindsym $mod+v split v
 
 # enter fullscreen mode for the focused container
-bindsym $mod+f fullscreen
+bindsym $mod+Shift+f fullscreen
 
 # change container layout (stacked, tabbed, toggle split)
 bindsym $mod+s layout stacking
@@ -89,29 +94,39 @@ bindsym $mod+a focus parent
 # focus the child container
 bindsym $mod+c focus child
 
-# switch to workspace
-bindsym $mod+1 workspace 1
-bindsym $mod+2 workspace 2
-bindsym $mod+3 workspace 3
-bindsym $mod+4 workspace 4
-bindsym $mod+5 workspace 5
-bindsym $mod+6 workspace 6
-bindsym $mod+7 workspace 7
-bindsym $mod+8 workspace 8
-bindsym $mod+9 workspace 9
-bindsym $mod+0 workspace 10
+# numbered workspaces
+bindsym $mod+1 workspace number 1
+bindsym $mod+2 workspace number 2
+bindsym $mod+3 workspace number 3
+bindsym $mod+4 workspace number 4
+bindsym $mod+5 workspace number 5
+bindsym $mod+6 workspace number 6
+bindsym $mod+7 workspace number 7
+bindsym $mod+8 workspace number 8
+bindsym $mod+9 workspace number 9
+bindsym $mod+0 workspace number 10
 
-# move focused container to workspace
-bindsym $mod+Shift+1 move container to workspace 1
-bindsym $mod+Shift+2 move container to workspace 2
-bindsym $mod+Shift+3 move container to workspace 3
-bindsym $mod+Shift+4 move container to workspace 4
-bindsym $mod+Shift+5 move container to workspace 5
-bindsym $mod+Shift+6 move container to workspace 6
-bindsym $mod+Shift+7 move container to workspace 7
-bindsym $mod+Shift+8 move container to workspace 8
-bindsym $mod+Shift+9 move container to workspace 9
-bindsym $mod+Shift+0 move container to workspace 10
+bindsym $mod+Shift+1 move container to workspace number 1
+bindsym $mod+Shift+2 move container to workspace number 2
+bindsym $mod+Shift+3 move container to workspace number 3
+bindsym $mod+Shift+4 move container to workspace number 4
+bindsym $mod+Shift+5 move container to workspace number 5
+bindsym $mod+Shift+6 move container to workspace number 6
+bindsym $mod+Shift+7 move container to workspace number 7
+bindsym $mod+Shift+8 move container to workspace number 8
+bindsym $mod+Shift+9 move container to workspace number 9
+bindsym $mod+Shift+0 move container to workspace number 10
+
+# next/prev workspace
+bindsym $mod+n workspace next
+bindsym $mod+p workspace prev
+bindsym $mod+Shift+n move container to workspace next
+bindsym $mod+Shift+p move container to workspace prev
+
+# workspace toggle
+workspace_auto_back_and_forth no
+bindsym $mod+z workspace back_and_forth
+bindsym $mod+Shift+z move container to workspace back_and_forth
 
 # reload the configuration file
 bindsym $mod+Shift+c reload
@@ -119,50 +134,39 @@ bindsym $mod+Shift+c reload
 # restart i3 inplace (preserves your layout/session, can be used to upgrade i3)
 bindsym $mod+Shift+r restart
 
-# exit i3 (logs you out of your X session)
-#bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'Exit i3?' -b 'Yes, exit i3' 'i3-msg exit'"
-
 # Create Log out, Reboot, Poweroff bindings
-mode "Exit (L)ogout, (R)eboot, (P)oweroff" {
-        bindsym $mod+l exit
-        bindsym $mod+r exec reboot
-        bindsym $mod+p exec poweroff
+set $mode_system "System (l) lock, (e) logout, (s) suspend, (h) hibernate, (r) reboot, (Shift+s) shutdown"
+mode $mode_system {
+    bindsym l exec --no-startup-id i3exit lock, mode "default"
+    bindsym e exec --no-startup-id i3exit logout, mode "default"
+    bindsym s exec --no-startup-id i3exit suspend, mode "default"
+    bindsym h exec --no-startup-id i3exit hibernate, mode "default"
+    bindsym r exec --no-startup-id i3exit reboot, mode "default"
+    bindsym Shift+s exec --no-startup-id i3exit shutdown, mode "default"
 
-        # back to normal: Enter or Escape
-        bindsym Return mode "default"
-        bindsym Escape mode "default"
+    bindsym Return mode "default"
+    bindsym Escape mode "default"
 }
-
-bindsym $mod+Shift+e mode "Exit (L)ogout, (R)eboot, (P)oweroff"
+bindsym $mod+Shift+e mode $mode_system
 
 # resize window (you can also use the mouse for that)
 mode "resize" {
-        # These bindings trigger as soon as you enter the resize mode
+    bindsym h resize shrink width 10 px or 10 ppt
+    bindsym j resize grow height 10 px or 10 ppt
+    bindsym k resize shrink height 10 px or 10 ppt
+    bindsym l resize grow width 10 px or 10 ppt
 
-        # Pressing left will shrink the window’s width.
-        # Pressing right will grow the window’s width.
-        # Pressing up will shrink the window’s height.
-        # Pressing down will grow the window’s height.
-        bindsym h resize shrink width 10 px or 10 ppt
-        bindsym j resize grow height 10 px or 10 ppt
-        bindsym k resize shrink height 10 px or 10 ppt
-        bindsym l resize grow width 10 px or 10 ppt
+    # same bindings, but for the arrow keys
+    bindsym Left resize shrink width 10 px or 10 ppt
+    bindsym Down resize grow height 10 px or 10 ppt
+    bindsym Up resize shrink height 10 px or 10 ppt
+    bindsym Right resize grow width 10 px or 10 ppt
 
-        # same bindings, but for the arrow keys
-        bindsym Left resize shrink width 10 px or 10 ppt
-        bindsym Down resize grow height 10 px or 10 ppt
-        bindsym Up resize shrink height 10 px or 10 ppt
-        bindsym Right resize grow width 10 px or 10 ppt
-
-        # back to normal: Enter or Escape
-        bindsym Return mode "default"
-        bindsym Escape mode "default"
+    # back to normal: Enter or Escape
+    bindsym Return mode "default"
+    bindsym Escape mode "default"
 }
-
 bindsym $mod+r mode "resize"
-
-# border changing
-bindsym $mod+b border toggle
 
 # special keys
 bindsym XF86AudioLowerVolume exec /usr/bin/pactl set-sink-volume 1 -- '-5%'
@@ -174,41 +178,67 @@ bindsym XF86MonBrightnessDown exec /usr/bin/xbacklight -dec 5
 # $mod+n reserved for close all notifications
 # see ~/.config/dunst/dunstrc for more
 
-# Start i3bar to display a workspace bar (plus the system information i3status
-# finds out, if available)
+# i3bar
 bar {
-        status_command i3status | ~/scripts/i3status-wrapper
-	colors {
-		background #3f3f3f
-		statusline #dcdccc
-		focused_workspace #dca3a3 #3f3f3f #f0dfaf
-		active_workspace #3f3f3f #3f3f3f #c0bed1
-		inactive_workspace #3f3f3f #3f3f3f #c0bed1
-		urgent_workspace #3f3f3f #f8f893 #385f38
-	}
-	position top
-	modifier Mod4
+    status_command i3status | ~/scripts/i3status-wrapper
+    colors {
+        background #3f3f3f
+        statusline #dcdccc
+        focused_workspace #dca3a3 #3f3f3f #f0dfaf
+        active_workspace #3f3f3f #3f3f3f #c0bed1
+        inactive_workspace #3f3f3f #3f3f3f #c0bed1
+        urgent_workspace #3f3f3f #f8f893 #385f38
+    }
+    position top
+    modifier Mod4
 
-	tray_output primary
-	workspace_buttons yes
+    tray_output primary
+    workspace_buttons yes
+    strip_workspace_numbers yes
 }
 
-# lock screen
-bindsym $win+l exec i3lock -i ~/background/lock -u
+# mark/focus
+mode "focused" {
+    # hardcoded focus keybindings
+    bindsym b [class="(?i)^uzbl-core$"] focus; mode "default"
+    bindsym m [instance="^mail$"] focus; mode "default"
+    bindsym f [instance="^files$"] focus; mode "default"
+    bindsym x [instance="xmpp"] focus; mode "default"
 
-# default workspaces
-#workspace 1:main
-#workspace 2:www
-#workspace 3:dev
-#workspace 4:gfx
-#workspace 5:tmp
+    # keybindings for marking and jumping to clients
+    bindsym a exec i3-input -F "mark %s" -P "Mark: "
+    bindsym g exec i3-input -F "[con_mark=%s] focus" -P "Goto: "
 
-# custom window settings
-for_window [class="^URxvt$" instance="scratchpad"] border 1pixel; move scratchpad
+    # Assign marks to keys 1-5
+    bindsym Shift+1 mark mark1; mode "default"
+    bindsym Shift+2 mark mark2; mode "default"
+    bindsym Shift+3 mark mark3; mode "default"
+    bindsym Shift+4 mark mark4; mode "default"
+    bindsym Shift+5 mark mark5; mode "default"
 
-# workspace assignment (use "xprop")
-#assign [class="^Google-chrome$"] 3
-#assign [class="^URxvt$" instance="^mail$"] 4
+    # Jump to clients marked 1-5
+    bindsym 1 [con_mark="mark1"] focus; mode "default"
+    bindsym 2 [con_mark="mark2"] focus; mode "default"
+    bindsym 3 [con_mark="mark3"] focus; mode "default"
+    bindsym 4 [con_mark="mark4"] focus; mode "default"
+    bindsym 5 [con_mark="mark5"] focus; mode "default"
 
-# autostart
-exec --no-startup-id "~/.config/i3/autostart.sh"
+    # Exit to the default mode
+    bindsym Return mode "default"
+    bindsym Escape mode "default"
+}
+bindsym $mod+f mode "focused"
+
+set $www 3
+
+# window rules
+for_window [instance="^scratchpad$"] border 1pixel; move scratchpad
+for_window [class="(?i)^uzbl-core$" instance="^tmp$"] floating enable
+for_window [class="(?i)^uzbl-core$" instance="(?!^tmp$).*"] move window to workspace number $www, workspace $www, lagout stacking
+for_window [class="^urxvt$"] border 1pixel
+
+# set background
+exec --no-startup-id "feh --no-fehbg --bg-fill ~/background/desktop"
+
+# load layout
+exec --no-startup-id "~/.config/i3/layout.sh comm main www dev1 dev2 gfx tmp"
