@@ -1,7 +1,7 @@
 set my_conf = $MUTT_DIR
 
 # global settings
-set quit
+set quit = ask-yes
 set sendmail = ~/scripts/msmtp-enqueue
 set mbox_type = Maildir
 set folder = $MAILDIR
