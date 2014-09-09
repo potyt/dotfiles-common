@@ -235,8 +235,8 @@ mode "focused" {
 }
 bindsym $mod+f mode "focused"
 
-set $ws_comm 1
-set $ws_1 comm
+set $ws_msg 1
+set $ws_1 msg
 set $ws_mon 2
 set $ws_2 mon
 set $ws_main 3
@@ -247,18 +247,19 @@ set $ws_dev1 5
 set $ws_5 dev1
 set $ws_dev2 6
 set $ws_6 dev2
-set $ws_gfx 7
-set $ws_7 gfx
-set $ws_tmp1 8
-set $ws_8 tmp1
-set $ws_tmp2 9
-set $ws_9 tmp2
+set $ws_dev3 7
+set $ws_7 dev3
+set $ws_gfx 8
+set $ws_8 gfx
+set $ws_tmp 9
+set $ws_9 tmp
 
 # window rules
 #for_window [class="^URxvt$" instance="^scratchpad$"] border 1pixel; move scratchpad
 for_window [class="^Uzbl-core$" instance="^tmp$"] floating enable
 for_window [class="^Uzbl-core$" instance="^uzbl-core$"] move window to workspace number $ws_www, workspace $ws_www, layout stacking
 for_window [class="^Pinentry-gtk-2$" instance="^pinentry-gtk-2$"] floating enable
+for_window [class="^jetbrains-idea-ce$"] move window to workspace number $ws_dev1, workspace $ws_dev1
 
 # launch scratchpad
 #exec --no-startup-id "urxvtc -name scratchpad"
