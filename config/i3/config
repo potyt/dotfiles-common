@@ -27,6 +27,7 @@ floating_modifier $mod
 
 # start standard apps
 bindsym $mod+Return exec i3-sensible-terminal
+bindsym $mod+Shift+s exec scrot -e gimp
 #bindsym $opt+Return exec uzbl-browser
 
 # kill focused window
@@ -35,9 +36,12 @@ bindsym $mod+Shift+q kill
 # borders
 new_window normal 2
 hide_edge_borders none
+    
+# rename workspace
+bindsym $mod+Control+r exec i3-input -f 'xft:DejaVu Sans Mono 12' -F "rename workspace to %s" -P "Rename Workspace: "
 
 # display layout
-bindsym Control+$mod+l exec --no-startup-id display-layout
+bindsym $mod+Control+l exec --no-startup-id display-layout
 
 # start dmenu (a program launcher)
 bindsym $mod+d exec dmenu_run
@@ -212,8 +216,8 @@ mode "focused" {
     bindsym x [instance="xmpp"] focus; mode "default"
 
     # keybindings for marking and jumping to clients
-    bindsym a exec i3-input -F "mark %s" -P "Mark: "
-    bindsym g exec i3-input -F "[con_mark=%s] focus" -P "Goto: "
+    bindsym a exec i3-input -f 'xft:DejaVu Sans Mono 12' -F "mark %s" -P "Mark: "
+    bindsym g exec i3-input -f 'xft:DejaVu Sans Mono 12' -F "[con_mark=%s] focus" -P "Goto: "
 
     # Assign marks to keys 1-5
     bindsym Shift+1 mark mark1; mode "default"
@@ -251,22 +255,32 @@ set $ws_dev3 7
 set $ws_7 dev3
 set $ws_gfx 8
 set $ws_8 gfx
-set $ws_tmp 9
-set $ws_9 tmp
+set $ws_photo 9
+set $ws_9 photo
+set $ws_tmp 0
+set $ws_0 tmp
+
+# floating dialogs
+for_window [class="^Pinentry-gtk-2$" instance="^pinentry-gtk-2$"] floating enable
 
 # window rules
-#for_window [class="^URxvt$" instance="^scratchpad$"] border 1pixel; move scratchpad
 for_window [class="^Uzbl-core$" instance="^tmp$"] floating enable
-for_window [class="^Uzbl-core$" instance="^uzbl-core$"] move window to workspace number $ws_www, workspace $ws_www, layout stacking
-for_window [class="^Pinentry-gtk-2$" instance="^pinentry-gtk-2$"] floating enable
-for_window [class="^jetbrains-idea-ce$"] move window to workspace number $ws_dev1, workspace $ws_dev1
-
-# launch scratchpad
-#exec --no-startup-id "urxvtc -name scratchpad"
+for_window [class="^Uzbl-core$" instance="^uzbl-core$"] move window to workspace number $ws_www, layout stacking
+for_window [class="^jetbrains-idea-ce$"] move window to workspace number $ws_dev1
+for_window [class="^Gvim$"] move window to workspace number $ws_dev2
+for_window [class="^Ltbin$"] move window to workspace number $ws_dev3
+for_window [class="^Gimp$"] move window to workspace number $ws_gfx
+for_window [class="^Darktable$"] move window to workspace number $ws_photo
 
 # load layout
-exec --no-startup-id "~/.config/i3/layout.sh 1 LVDS $ws_1 $ws_2"
-exec --no-startup-id "~/.config/i3/layout.sh 3 DisplayPort-0 $ws_3 $ws_4 $ws_5 $ws_6 $ws_7 $ws_8 $ws_9"
+exec --no-startup-id "~/.config/i3/workspace.sh $ws_1 $ws_2 $ws_3 $ws_4 $ws_5 $ws_6 $ws_7 $ws_8 $ws_9 $ws_0"
+exec --no-startup-id "~/.config/i3/layout.sh 1 LVDS $ws_msg $ws_mon"
+exec --no-startup-id "~/.config/i3/layout.sh 2 DisplayPort-0 $ws_main $ws_www $ws_dev1 $ws_dev2 $ws_dev3 $ws_gfx $ws_photo $ws_tmp"
+exec --no-startup-id "~/.config/i3/visit.sh 3 $ws_msg $ws_main"
+
+# launch scratchpad
+#for_window [class="^URxvt$" instance="^scratchpad$"] border 1pixel; move scratchpad
+#exec --no-startup-id "urxvtc -name scratchpad"
 
 # set background
 exec --no-startup-id "feh --no-fehbg --bg-fill ~/background/desktop"

@@ -1,0 +1,1 @@
+urxvtc -name tmp
