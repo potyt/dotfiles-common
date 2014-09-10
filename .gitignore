@@ -24,6 +24,9 @@ config/LightTable/GPUCache/*
 config/LightTable/Local Storage/*
 config/LightTable/logs/*
 config/LightTable/ltcache/*
+config/LightTable/SingletonCookie
+config/LightTable/SingletonLock
+config/LightTable/SingletonSocket
 config/pavucontrol.ini
 config/pulse/*
 config/Trolltech.conf
