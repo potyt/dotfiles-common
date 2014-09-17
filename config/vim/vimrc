@@ -17,7 +17,6 @@ call vundle#rc($HOME."/var/vim/bundle")
 
 " bundles
 Bundle "gmarik/vundle"
-Bundle "darkburn"
 Bundle "Zenburn"
 Bundle "L9"
 Bundle "taglist.vim"
@@ -30,7 +29,6 @@ Bundle "buftabs"
 Bundle "grep.vim"
 Bundle "bufkill.vim"
 Bundle "Syntastic"
-Bundle "https://github.com/tpope/vim-fugitive"
 "Bundle "Python-mode-klen"
 
 " vundle-end
