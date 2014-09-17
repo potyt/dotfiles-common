@@ -9,25 +9,26 @@
   <Global>
     <ExtraData>
       <ExtraDataItem name="GUI/DetailsPageBoxes" value="general,preview,system,display,storage,audio,network,usb,sharedFolders,description"/>
-      <ExtraDataItem name="GUI/GroupDefinitions/" value="m=39aa87f3-3e0b-4de7-8ee5-7be7b1296622,m=d1a18460-9aac-425c-b663-e9db23cd06ca"/>
+      <ExtraDataItem name="GUI/GroupDefinitions/" value="m=39aa87f3-3e0b-4de7-8ee5-7be7b1296622"/>
       <ExtraDataItem name="GUI/HideDescriptionForWizards" value="CloneVM"/>
       <ExtraDataItem name="GUI/HostScreenSaverDisabled" value="false"/>
       <ExtraDataItem name="GUI/Input/AutoCapture" value="true"/>
       <ExtraDataItem name="GUI/Input/HostKeyCombination" value="65027"/>
-      <ExtraDataItem name="GUI/LastItemSelected" value="m=Vista Bloomberg"/>
-      <ExtraDataItem name="GUI/LastWindowPosition" value="2,41,1916,1037"/>
+      <ExtraDataItem name="GUI/LastItemSelected" value="m=Vista Base"/>
+      <ExtraDataItem name="GUI/LastWindowPosition" value="2084,231,956,1037"/>
       <ExtraDataItem name="GUI/RecentFolderCD" value="/home/pot/download/vista_iso"/>
       <ExtraDataItem name="GUI/RecentFolderHD" value="/home/pot/data/vbox_vms/Vista Bloomberg"/>
       <ExtraDataItem name="GUI/RecentListCD" value="/home/pot/download/vista_iso/vista.iso;"/>
       <ExtraDataItem name="GUI/RecentListHD" value="/home/pot/data/vbox_vms/Vista Bloomberg/Vista Bloomberg.vdi;/home/pot/data/vbox_vms/Vista Base/Vista Base.vdi;"/>
-      <ExtraDataItem name="GUI/SplitterSizes" value="505,1407"/>
+      <ExtraDataItem name="GUI/SplitterSizes" value="251,701"/>
       <ExtraDataItem name="GUI/SuppressMessages" value=",remindAboutMouseIntegrationOn,confirmInputCapture,remindAboutAutoCapture,confirmGoingFullscreen,remindAboutWrongColorDepth"/>
       <ExtraDataItem name="GUI/TrayIcon/Enabled" value="false"/>
       <ExtraDataItem name="GUI/UpdateDate" value="never"/>
+      <ExtraDataItem name="HostOnly/vboxnet0/IPAddress" value="192.168.56.1"/>
+      <ExtraDataItem name="HostOnly/vboxnet0/IPNetMask" value="255.255.255.0"/>
     </ExtraData>
     <MachineRegistry>
-      <MachineEntry uuid="{d1a18460-9aac-425c-b663-e9db23cd06ca}" src="/home/pot/data/vbox_vms/Vista Bloomberg/Vista Bloomberg.vbox"/>
-      <MachineEntry uuid="{39aa87f3-3e0b-4de7-8ee5-7be7b1296622}" src="/home/pot/data/vbox_vms/Vista Base/Vista Base.vbox"/>
+      <MachineEntry uuid="{39aa87f3-3e0b-4de7-8ee5-7be7b1296622}" src="/home/vm/vbox/Vista Base/Vista Base.vbox"/>
     </MachineRegistry>
     <MediaRegistry>
       <HardDisks/>
