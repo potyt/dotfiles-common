@@ -8,5 +8,8 @@
       </array>
     </option>
   </component>
+  <component name="PasswordSafe">
+    <option name="PROVIDER" value="DO_NOT_STORE" />
+  </component>
 </application>
 
