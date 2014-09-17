@@ -1,7 +1,8 @@
 /home/pot/cv
 /home/pot/dev/*
-/home/pot/dotfiles
-/home/pot/dotfiles-private
+/home/pot/dotfiles/dotfiles-common
+/home/pot/dotfiles/dotfiles-private
+/home/pot/dotfiles/dotfiles-beast
 /home/pot/fonts
 /home/pot/java-lib
 /home/pot/scripts
