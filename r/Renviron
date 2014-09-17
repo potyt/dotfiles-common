@@ -1,4 +1,4 @@
-R_HOME_USER = /home/pot/R
+R_HOME_USER = ${HOME}/R
 R_PROFILE_USER = ${HOME}/dotfiles/r/Rprofile.r
-R_LIBS_USER = /home/pot/R/library
-R_HISTFILE = /${XDG_CACHE_HOME}/.Rhistory
+R_LIBS_USER = ${HOME}/R/library
+R_HISTFILE = ${XDG_CACHE_HOME}/.Rhistory
