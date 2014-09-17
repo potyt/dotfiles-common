@@ -5273,13 +5273,13 @@
         (proc-arg 3 "alpha" "The amount of the filter to apply")
         (proc-arg 3 "radius" "The filter radius")
         (proc-arg 0 "filter" "The Filter to Run, 0 - alpha trimmed mean; 1 - optimal estimation (alpha controls noise variance); 2 - edge enhancement")))
-(plug-in-def "/usr/lib/gimp/2.0/plug-ins/gutenprint" 1368965301
+(plug-in-def "/usr/lib/gimp/2.0/plug-ins/gutenprint" 1400681642
     (proc-def "file_print_gutenprint" 1
          "This plug-in prints images from The GIMP using Gutenprint directly."
          "Prints images to many printers."
          "Michael Sweet <mike@easysw.com> and Robert Krawitz <rlk@alum.mit.edu>"
          "Copyright 1997-2006 by Michael Sweet and Robert Krawitz"
-         "5.2.9 - 07 Jul 2012"
+         "5.2.10 - 18 May 2014"
          "_Print with Gutenprint..."
          1
         (menu-path "<Image>/File/Send")
