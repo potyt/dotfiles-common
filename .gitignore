@@ -1,7 +1,5 @@
 abook/addressbook~
 config/beets/state.pickle
-config/chromium/*
-config/chromium-tor/*
 config/dconf/user
 config/easytag
 config/gtk-2.0/gtkfilechooser.ini
@@ -33,8 +31,7 @@ config/Trolltech.conf
 config/ranger/bookmarks
 config/ranger/history
 config/ranger/tagged
-config/vim/bundle/
-config/ViTables/*
+config/vim/.netrwhist
 config/vlc/vlc-qt-interface.conf
 cmus/autosave
 cmus/cache
