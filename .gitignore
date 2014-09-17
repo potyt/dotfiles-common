@@ -56,6 +56,7 @@ IdeaIC13/config/options/usage.statistics.xml
 IdeaIC13/config/options/vcs.xml
 IdeaIC13/config/options/window.manager.xml
 IdeaIC13/config/plugins/*
+IdeaIC13/system/*
 VirtualBox/*.log*
 VirtualBox/VirtualBox.xml
 VirtualBox/VirtualBox.xml-prev
