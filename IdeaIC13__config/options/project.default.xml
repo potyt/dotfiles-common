@@ -25,46 +25,6 @@
       <component name="DaemonCodeAnalyzer">
         <disable_hints />
       </component>
-      <component name="DebuggerManager">
-        <breakpoint_any converted="true">
-          <breakpoint>
-            <option name="NOTIFY_CAUGHT" value="true" />
-            <option name="NOTIFY_UNCAUGHT" value="true" />
-            <option name="ENABLED" value="false" />
-            <option name="LOG_ENABLED" value="false" />
-            <option name="LOG_EXPRESSION_ENABLED" value="false" />
-            <option name="REMOVE_AFTER_HIT" value="false" />
-            <option name="SUSPEND_POLICY" value="SuspendAll" />
-            <option name="SUSPEND" value="true" />
-            <option name="COUNT_FILTER_ENABLED" value="false" />
-            <option name="COUNT_FILTER" value="0" />
-            <option name="CONDITION_ENABLED" value="true" />
-            <option name="CLASS_FILTERS_ENABLED" value="false" />
-            <option name="INSTANCE_FILTERS_ENABLED" value="false" />
-            <option name="CONDITION" value="" />
-            <option name="LOG_MESSAGE" value="" />
-          </breakpoint>
-          <breakpoint>
-            <option name="NOTIFY_CAUGHT" value="true" />
-            <option name="NOTIFY_UNCAUGHT" value="true" />
-            <option name="ENABLED" value="false" />
-            <option name="LOG_ENABLED" value="false" />
-            <option name="LOG_EXPRESSION_ENABLED" value="false" />
-            <option name="REMOVE_AFTER_HIT" value="false" />
-            <option name="SUSPEND_POLICY" value="SuspendAll" />
-            <option name="SUSPEND" value="true" />
-            <option name="COUNT_FILTER_ENABLED" value="false" />
-            <option name="COUNT_FILTER" value="0" />
-            <option name="CONDITION_ENABLED" value="true" />
-            <option name="CLASS_FILTERS_ENABLED" value="false" />
-            <option name="INSTANCE_FILTERS_ENABLED" value="false" />
-            <option name="CONDITION" value="" />
-            <option name="LOG_MESSAGE" value="" />
-          </breakpoint>
-        </breakpoint_any>
-        <breakpoint_rules converted="true" />
-        <ui_properties converted="true" />
-      </component>
       <component name="DependencyValidationManager">
         <option name="SKIP_IMPORT_STATEMENTS" value="false" />
       </component>
@@ -90,10 +50,6 @@
         <property name="MemberChooser.sorted" value="false" />
         <property name="MemberChooser.showClasses" value="true" />
         <property name="MemberChooser.copyJavadoc" value="false" />
-        <property name="options.lastSelected" value="appearance" />
-        <property name="options.splitter.main.proportions" value="0.3" />
-        <property name="options.splitter.details.proportions" value="0.2" />
-        <property name="options.searchVisible" value="true" />
       </component>
       <component name="RunManager">
         <configuration default="true" type="Remote" factoryName="Remote">
@@ -158,13 +114,27 @@
           <envs />
           <method />
         </configuration>
-        <list size="0" />
-        <configuration name="&lt;template&gt;" type="JUnit" default="true" selected="false">
+        <configuration default="true" type="JUnit" factoryName="JUnit">
+          <module name="" />
+          <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+          <option name="ALTERNATIVE_JRE_PATH" />
+          <option name="PACKAGE_NAME" />
           <option name="MAIN_CLASS_NAME" />
+          <option name="METHOD_NAME" />
+          <option name="TEST_OBJECT" value="class" />
           <option name="VM_PARAMETERS" value="-ea" />
           <option name="PARAMETERS" />
           <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+          <option name="ENV_VARIABLES" />
+          <option name="PASS_PARENT_ENVS" value="true" />
+          <option name="TEST_SEARCH_SCOPE">
+            <value defaultName="moduleWithDependencies" />
+          </option>
+          <envs />
+          <patterns />
+          <method />
         </configuration>
+        <list size="0" />
         <configuration name="&lt;template&gt;" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" default="true" selected="false">
           <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m -ea" />
         </configuration>
@@ -172,30 +142,6 @@
           <Host>localhost</Host>
           <Port>5050</Port>
         </configuration>
-      </component>
-      <component name="VcsContentAnnotationSettings">
-        <option name="myLimit" value="2678400000" />
-      </component>
-      <component name="VcsManagerConfiguration">
-        <option name="myTodoPanelSettings">
-          <TodoPanelSettings />
-        </option>
-      </component>
-      <component name="masterDetails">
-        <states>
-          <state key="ProjectJDKs.UI">
-            <settings>
-              <last-edited>1.7</last-edited>
-              <splitter-proportions>
-                <option name="proportions">
-                  <list>
-                    <option value="0.2" />
-                  </list>
-                </option>
-              </splitter-proportions>
-            </settings>
-          </state>
-        </states>
       </component>
     </defaultProject>
   </component>
