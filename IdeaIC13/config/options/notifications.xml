@@ -23,6 +23,7 @@
     <notification groupId="Vcs Important Messages" displayType="STICKY_BALLOON" />
     <notification groupId="Vcs Minor Notifications" />
     <notification groupId="Project Loading Error" />
+    <notification groupId="ideavim-sticky" displayType="STICKY_BALLOON" />
     <toolWindow group="Git Messages" />
     <toolWindow group="External Executable Critical Failures" />
     <toolWindow group="Gradle warnings" />
