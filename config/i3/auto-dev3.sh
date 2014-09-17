@@ -1,1 +1,1 @@
-lighttable
+lighttable &

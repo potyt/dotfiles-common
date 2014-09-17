@@ -1,1 +1,1 @@
-idea.sh
+idea.sh &

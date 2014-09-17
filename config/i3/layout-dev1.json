@@ -12,8 +12,8 @@
     "percent": 1,
     "swallows": [
        {
-         "class": "^jetbrains\\-idea\\-ceQ$",
-         "instance": "^sun\\-awt\\-X11\\-XFramePeer$"
+         "class": "^jetbrains-idea-ce$",
+         "instance": "^sun-awt-X11-XFramePeer$"
        }
     ],
     "type": "con"

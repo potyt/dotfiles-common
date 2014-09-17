@@ -1,6 +1,5 @@
-gvim
-urxvtc -name tig
 urxvtc
 urxvtc
+gvim &
 urxvtc
 urxvtc
