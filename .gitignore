@@ -1,5 +1,6 @@
 abook/addressbook~
 config/beets/state.pickle
+config/darktable/library.db
 config/dconf/user
 config/easytag
 config/gtk-2.0/gtkfilechooser.ini
