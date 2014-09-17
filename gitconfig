@@ -25,3 +25,5 @@
 [pack]
 	windowMemory = 256m
 	sizeLimit = 256m
+[web]
+	browser = uzbl-browser
