@@ -1,6 +1,22 @@
-.idea/workspace.xml
-__pycache__
-*.pyc
+# general
 *~
+*.lock
+*.swp
+*.out
+
+# apple
 .DS_Store
 .localized
+
+# Java/IDEA
+*.class
+.idea/workspace.xml
+
+# python
+__pycache__
+*.pyc
+
+# SCM
+.hg
+.svn
+CVS
