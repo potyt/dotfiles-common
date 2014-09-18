@@ -26,7 +26,7 @@ font xft:DejaVu Sans Mono 10
 # class                 border  backgrd text    indicator
 client.unfocused        #506070 #3f3f3f #a96f89 #ec93d3
 client.focused_inactive #506070 #3f3f3f #a96f89 #ec93d3
-client.focused          #506070 #8a4040 #94bff3 #1e2320
+client.focused          #506070 #306fa9 #ffafaf #1e2320
 client.urgent           #506070 #ca4040 #34ff83 #705050
 client.background       #3f3f3f
 
