@@ -14,6 +14,9 @@ set $win Mod4
 #set $opt Muhenkan
 #set $opt Henkan_Mode
 
+set $i3_font "xft:DejaVu Sans Mono 10"
+set $dm_font "DejaVu Sans Mono-10"
+
 # Font for window titles. Will also be used by the bar unless a different font
 # is used in the bar {} block below. ISO 10646 = Unicode
 # font -misc-fixed-medium-r-normal--13-120-75-75-C-70-iso10646-1
@@ -21,7 +24,7 @@ set $win Mod4
 # clear in small sizes. However, if you need a lot of unicode glyphs or
 # right-to-left text rendering, you should instead use pango for rendering and
 # chose a FreeType font.
-font xft:DejaVu Sans Mono 10
+font $i3_font
 
 # class                 border  backgrd text    indicator
 client.unfocused        #506070 #3f3f3f #a96f89 #ec93d3
@@ -48,17 +51,17 @@ new_window normal 2
 hide_edge_borders none
     
 # rename workspace
-bindsym $mod+Control+r exec i3-input -f 'xft:DejaVu Sans Mono 12' -F "rename workspace to %s" -P "Rename Workspace: "
+bindsym $mod+Control+r exec i3-input -f $i3_font -F "rename workspace to %s" -P "Rename Workspace: "
 
 # display layout
 bindsym $mod+Control+l exec --no-startup-id display-layout
 
-# start dmenu (a program launcher)
-# bindsym $mod+d exec dmenu_run
-# There also is the (new) i3-dmenu-desktop which only displays applications
-# shipping a .desktop file. It is a wrapper around dmenu, so you need that
-# installed.
-bindsym $mod+d exec --no-startup-id i3-dmenu-desktop --entry-type=name --dmenu="dmenu -fn 'DejaVu Sans Mono-10'"
+# i3-dmenu-desktop
+bindsym $mod+d exec --no-startup-id i3-dmenu-desktop --entry-type=name --dmenu='dmenu -fn $dm_font'
+
+# passmenu
+bindsym $mod+Control+p exec --no-startup-id passmenu -fn $dm_font 
+bindsym $mod+Shift+Control+p exec --no-startup-id passmenu --type -fn $dm_font 
 
 # change focus
 bindsym $mod+h focus left
