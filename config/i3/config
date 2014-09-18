@@ -202,12 +202,12 @@ bindsym XF86MonBrightnessDown exec /usr/bin/xbacklight -dec 5
 bar {
     status_command i3status | ~/scripts/i3status-wrapper
     colors {
-        background #3f3f3f
+        background #343434
         statusline #dcdccc
-        focused_workspace #dca3a3 #3f3f3f #f0dfaf
-        active_workspace #3f3f3f #3f3f3f #c0bed1
-        inactive_workspace #3f3f3f #3f3f3f #c0bed1
-        urgent_workspace #3f3f3f #f8f893 #385f38
+        focused_workspace  #dca3a3 #343434 #f0dfaf
+        active_workspace   #343434 #343434 #c0bed1
+        inactive_workspace #343434 #343434 #c0bed1
+        urgent_workspace   #f8f893 #f8f893 #385f38
     }
     position top
     modifier Mod4
