@@ -22,6 +22,16 @@ set $win Mod4
 # right-to-left text rendering, you should instead use pango for rendering and
 # chose a FreeType font.
 font xft:DejaVu Sans Mono 10
+
+# class                 border  backgrd text    indicator
+client.unfocused        #506070 #3f3f3f #506070 #ec93d3
+client.focused_inactive #506070 #3f3f3f #696f89 #ec93d3
+client.focused          #506070 #8a5050 #94bff3 #1e2320
+client.urgent           #506070 #ca5050 #34ff83 #705050
+client.background       #3f3f3f
+
+exec --no-startup-id xsetroot -solid "#3f3f3f"
+
 # Use Mouse+$mod to drag floating windows to their wanted position
 floating_modifier $mod
 
