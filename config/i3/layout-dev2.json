@@ -12,7 +12,7 @@
             "border": "normal",
             "floating": "auto_off",
             "layout": "splitv",
-            "percent": 0.288775510204082,
+            "percent": 0.275,
             "type": "con",
             "nodes": [
                 {
@@ -65,7 +65,7 @@
                "y": 0
             },
             "name": "GVim",
-            "percent": 0.8,
+            "percent": 0.45,
             "swallows": [
                {
                  "class": "^Gvim$",
@@ -79,7 +79,7 @@
             "border": "normal",
             "floating": "auto_off",
             "layout": "splitv",
-            "percent": 0.283333333333333,
+            "percent": 0.275,
             "type": "con",
             "nodes": [
                 {

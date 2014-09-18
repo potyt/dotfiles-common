@@ -1,1 +1,3 @@
+urxvtc
+urxvtc
 idea.sh &
