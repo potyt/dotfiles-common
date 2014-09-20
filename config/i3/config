@@ -61,7 +61,7 @@ bindsym $mod+d exec --no-startup-id i3-dmenu-desktop --entry-type=name --dmenu='
 
 # passmenu
 bindsym $mod+Control+p exec --no-startup-id passmenu -fn $dm_font 
-bindsym $mod+Shift+Control+p exec --no-startup-id passmenu --type -fn $dm_font 
+bindsym $mod+Control+o exec --no-startup-id passmenu --type -fn $dm_font 
 
 # change focus
 bindsym $mod+h focus left
