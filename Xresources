@@ -27,15 +27,11 @@ URxvt*override-redirect:  false
 URxvt*borderLess:         false
 URxvt*internalBorder:     0
 URxvt*externalBorder:     0
+URxvt.intensityStyles:    false
 !
 ! Annoying Ctrl-Shift mode
 URxvt*iso14755:     false
 URxvt*iso14755_52:  false
-!
-! Perl Extensions
-!URxvt.perl-ext-common:    default,matcher,vtwheel
-!URxvt.url-launcher:       /usr/bin/surf
-!URxvt.matcher.button:     1
 !
 ! Appearance
 URxvt*font:        xft:ubuntu mono:pixelsize=14
@@ -137,42 +133,13 @@ xterm*color13:     #ec93d3
 xterm*color14:     #93e0e3
 xterm*color15:     #ffffff
 !
-! Colored man pages
+! Consistent bold colors
 !
-*VT100.colorBDMode:true
-*VT100.colorBD:    #f0dfaf
-*VT100.colorULMode:true
-*VT100.colorUL:    #93e0e3
-!
-! Decorations and colors
-!
-*VT100.veryBoldColors: 6
-!}}}
-
-
-!{{{ XMESSAGE
-Xmessage*font:                  -xos4-terminus-medium-*-*-*-14-*-*-*-*-*-iso8859-2
-Xmessage*background:            #3f3f3f
-Xmessage*foreground:            #f0dfaf
-Xmessage*form.*.shapeStyle:     rectangle
-Xmessage*Scrollbar.width:       1
-Xmessage*Scrollbar.borderWidth: 0
-!Xmessage.form.message.Scroll:  WhenNeeded
-Xmessage*Buttons:               Quit
-Xmessage*defaultButton:         Quit
-!Xmessage*geometry:             +20+20
-!}}}
-
-
-!{{{ XCLIPBOARD
-xclipboard.geometry:	  287x195+993+15
-XClipboard*international: true
-XClipboard*font:          -xos4-terminus-medium-*-*-*-14-*-*-*-*-*-iso8859-2
-XClipboard*borderColor:	  #3f3f3f
-XClipboard*cursorColor:	  gray93
-XClipboard*Foreground:    #f0dfaf
-XClipboard*Background:    #3f3f3f
-XClipboard*form.*.shapeStyle: rectangle
+*VT100.colorBDMode:false
+*VT100.colorBLMode:false
+*VT100.colorULMode:false
+*VT100.colorRVMode:false
+*VT100.veryBoldColors: 0
 !}}}
 
 
