@@ -8,13 +8,13 @@
 # start gpg-agent if needed
 . ~/scripts/gpg-agent-start
 . ~/.env.gpg
-~/scripts/gpg-flush-cache
-~/scripts/gpg-cache-key
+gpg-flush-cache
+gpg-cache-key
 
 # start keychain if needed
 . ~/scripts/keychain-start
 . ~/.env.keychain
-~/scripts/keychain-cache-keys
+ssh-cache-keys
 
 # git annex assistant
 git annex assistant --autostart
