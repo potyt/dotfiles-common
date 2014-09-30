@@ -1,4 +1,4 @@
-uzbl-browser &
-uzbl-browser &
-uzbl-browser &
-uzbl-browser &
+uzbl &
+uzbl &
+uzbl &
+uzbl &
