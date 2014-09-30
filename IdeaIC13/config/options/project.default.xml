@@ -126,33 +126,6 @@
           <option name="PORT" value="5005" />
           <method />
         </configuration>
-        <configuration default="true" type="TestNG" factoryName="TestNG">
-          <module name="" />
-          <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-          <option name="ALTERNATIVE_JRE_PATH" />
-          <option name="SUITE_NAME" />
-          <option name="PACKAGE_NAME" />
-          <option name="MAIN_CLASS_NAME" />
-          <option name="METHOD_NAME" />
-          <option name="GROUP_NAME" />
-          <option name="TEST_OBJECT" value="CLASS" />
-          <option name="VM_PARAMETERS" value="-ea" />
-          <option name="PARAMETERS" />
-          <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-          <option name="OUTPUT_DIRECTORY" />
-          <option name="ANNOTATION_TYPE" />
-          <option name="ENV_VARIABLES" />
-          <option name="PASS_PARENT_ENVS" value="true" />
-          <option name="TEST_SEARCH_SCOPE">
-            <value defaultName="moduleWithDependencies" />
-          </option>
-          <option name="USE_DEFAULT_REPORTERS" value="false" />
-          <option name="PROPERTIES_FILE" />
-          <envs />
-          <properties />
-          <listeners />
-          <method />
-        </configuration>
         <configuration default="true" type="Applet" factoryName="Applet">
           <module name="" />
           <option name="MAIN_CLASS_NAME" />
