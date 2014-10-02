@@ -11,6 +11,7 @@ config/libreoffice/4/user/backup/*
 config/libreoffice/4/user/config/fontnameboxmruentries
 config/libreoffice/4/user/config/javasettings_Linux_X86_64.xml
 config/libreoffice/4/user/extensions/*
+config/libreoffice/4/user/gallery/*
 config/libreoffice/4/user/psprint/pspfontcache
 config/libreoffice/4/user/registrymodifications.xcu
 config/libreoffice/4/user/store/.templdir.cache
