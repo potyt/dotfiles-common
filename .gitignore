@@ -4,6 +4,7 @@ config/darktable/library.db
 config/dconf/user
 config/easytag
 config/gtk-2.0/gtkfilechooser.ini
+config/geeqie/*
 config/gconf/*
 config/icedtea-web/*
 config/libreoffice/4/.lock
