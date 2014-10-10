@@ -41,8 +41,6 @@ alias spell='aspell -a <<< '
 alias passgen='< /dev/urandom tr -cd \[:graph:\] | fold -w 32 | head -n 5'
 alias xpop='xprop | grep --color=none 'WM_CLASS\|^WM_NAME' | xmessage -file -'
 
-alias chromium-tor='chromium --user-data-dir=$HOME/.config/chromium-tor --proxy-server=localhost:9118 --incognito'
-
 alias uzbl='uzbl-browser'
 
 alias R='R --quiet'
