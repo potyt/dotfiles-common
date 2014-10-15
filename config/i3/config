@@ -40,8 +40,8 @@ floating_modifier $mod
 
 # start standard apps
 bindsym $mod+Return exec i3-sensible-terminal
-bindsym $mod+Shift+s exec scrot -e gimp
-#bindsym $opt+Return exec uzbl-browser
+bindsym $mod+Shift+s exec scrot
+bindsym $mod+Shift+b exec firefox-aurora
 
 # kill focused window
 bindsym $mod+Shift+q kill
