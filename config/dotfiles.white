@@ -5,6 +5,7 @@
 .IdeaIC13
 .keychain
 .git-credential-cache
+.kde
 .local
 .msmtpqueue
 .oh-my-zsh
