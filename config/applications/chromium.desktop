@@ -2,12 +2,12 @@
 Version=1.0
 Type=Application
 Terminal=false
-Icon[en_US]=/usr/share/icons/hicolor/256x256/apps/chromium.png
-Name[en_US]=Chromium (Incognito)
-Exec=chromium
-Name=Chromium (Incognito)
 GenericName=Web Browser
+Name=Chromium (_user)
 Icon=/usr/share/icons/hicolor/256x256/apps/chromium.png
+Name[en_US]=Chromium (_user)
+Icon[en_US]=/usr/share/icons/hicolor/256x256/apps/chromium.png
+Exec=chromium %u
 Categories=Network;GNOME;GTK;WebBrowser;
 MimeType=text/html;text/xml;application/xhtml+xml;x-scheme-handler/http;x-scheme-handler/https;
 StartupNotify=true
