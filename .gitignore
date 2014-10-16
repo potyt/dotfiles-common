@@ -42,7 +42,7 @@ cmus/command-history
 cmus/lib.pl
 cmus/playlist.pl
 cmus/search-history
-gimp-2.8/sessionrc
+gimp-2.8/*
 links/links.his
 mcabber/otr
 mutt/aliases.bak
