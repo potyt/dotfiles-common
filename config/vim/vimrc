@@ -24,11 +24,13 @@ Bundle "python.vim"
 Bundle "The-NERD-Commenter"
 Bundle "The-NERD-tree"
 Bundle "TaskList.vim"
-Bundle "FuzzyFinder"
 Bundle "buftabs"
 Bundle "grep.vim"
 Bundle "bufkill.vim"
 Bundle "Syntastic"
+Bundle "godlygeek/tabular"
+Bundle "plasticboy/vim-markdown"
+Bundle "farseer90718/vim-taskwarrior"
 "Bundle "Python-mode-klen"
 
 " vundle-end
@@ -193,6 +195,11 @@ inoremap <expr> <M-,> pumvisible() ? "\<C-n>" : '<C-x><C-o><C-n><C-p><C-r>=pumvi
 inoremap <Nul> <C-x><C-o>
 au CursorMovedI * if pumvisible() == 0|pclose|endif
 au InsertLeave * if pumvisible() == 0|pclose|endif
+
+" vim-markdown
+let g:vim_markdown_initial_foldlevel = 1
+let g:vim_markdown_math = 1
+let g:vim_markdown_frontmatter = 1
 
 " python-mode
 
