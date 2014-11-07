@@ -43,6 +43,8 @@ alias xpop='xprop | grep --color=none 'WM_CLASS\|^WM_NAME' | xmessage -file -'
 
 alias R='R --quiet'
 
+alias t='task'
+
 # kernel version
 alias linver='uname -r; pacman -Q linux'
 
@@ -64,7 +66,7 @@ alias v.cd='cdvirtualenv'
 alias v.lssitepackages='lssitepackages'
 
 # sandboxed app
-# alias app="xhost +local: && sudo -u app-$USERNAME `/usr/bin/which app`"
+# alias app="xhost +local: && sudo -u _$USERNAME `/usr/bin/which app`"
 
 # git
 alias g.inc='git fetch && git log ..origin/master'
