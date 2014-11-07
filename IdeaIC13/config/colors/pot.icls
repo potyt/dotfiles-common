@@ -580,7 +580,7 @@
     </option>
     <option name="INSTANCE_FIELD_ATTRIBUTES">
       <value>
-        <option name="FOREGROUND" value="9999ff" />
+        <option name="FOREGROUND" value="b8b899" />
         <option name="EFFECT_TYPE" value="0" />
       </value>
     </option>
@@ -1177,13 +1177,13 @@
     </option>
     <option name="STATIC_FIELD_ATTRIBUTES">
       <value>
-        <option name="FOREGROUND" value="7b7be1" />
+        <option name="FOREGROUND" value="b8b899" />
         <option name="EFFECT_TYPE" value="0" />
       </value>
     </option>
     <option name="STATIC_FINAL_FIELD_ATTRIBUTES">
       <value>
-        <option name="FOREGROUND" value="7b7be1" />
+        <option name="FOREGROUND" value="7b99b8" />
         <option name="EFFECT_TYPE" value="0" />
       </value>
     </option>
