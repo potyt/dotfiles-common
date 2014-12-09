@@ -1,0 +1,15 @@
+org.jetbrains.plugins.github
+XPathView
+AntSupport
+TestNG-J
+org.jetbrains.idea.maven
+hg4idea
+ByteCodeViewer
+XSLT-Debugger
+com.intellij.tasks
+com.intellij.commander
+org.jetbrains.idea.eclipse
+com.intellij.uiDesigner
+CVS
+Subversion
+DevKit

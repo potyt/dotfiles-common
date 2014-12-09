@@ -1,0 +1,31 @@
+<application>
+  <component name="UpdatesConfigurable">
+    <option name="myPluginHosts">
+      <value>
+        <list size="0" />
+      </value>
+    </option>
+    <option name="myKnownUpdateChannels">
+      <value>
+        <list size="7">
+          <item index="0" class="java.lang.String" itemvalue="idea90" />
+          <item index="1" class="java.lang.String" itemvalue="IDEA10" />
+          <item index="2" class="java.lang.String" itemvalue="IDEA11" />
+          <item index="3" class="java.lang.String" itemvalue="IDEA12" />
+          <item index="4" class="java.lang.String" itemvalue="IDEA_13_1_EAP" />
+          <item index="5" class="java.lang.String" itemvalue="IDEA13.1" />
+          <item index="6" class="java.lang.String" itemvalue="IDEA_14_EAP" />
+        </list>
+      </value>
+    </option>
+    <option name="myIgnoredBuildNumbers">
+      <value>
+        <list size="0" />
+      </value>
+    </option>
+    <option name="CHECK_NEEDED" value="false" />
+    <option name="LAST_TIME_CHECKED" value="1410920783618" />
+    <option name="LAST_BUILD_CHECKED" value="IC-135.1230" />
+    <option name="UPDATE_CHANNEL_TYPE" value="release" />
+  </component>
+</application>

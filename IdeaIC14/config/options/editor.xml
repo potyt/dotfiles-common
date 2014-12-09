@@ -1,0 +1,10 @@
+<application>
+  <component name="EditorSettings">
+    <option name="USE_SOFT_WRAPS" value="CONSOLE" />
+    <option name="STRIP_TRAILING_SPACES" value="Whole" />
+    <option name="ARE_LINE_NUMBERS_SHOWN" value="true" />
+    <option name="IS_ALL_SOFTWRAPS_SHOWN" value="true" />
+    <option name="IS_INDENT_GUIDES_SHOWN" value="false" />
+    <option name="REFRAIN_FROM_SCROLLING" value="true" />
+  </component>
+</application>

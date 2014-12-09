@@ -1,0 +1,6 @@
+FindBugs-IDEA
+VisualVMLauncher
+net.nicoulaj.idea.markdown
+CheckStyle-IDEA
+mobi.hsz.idea.gitignore
+com.github.setial

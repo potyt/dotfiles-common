@@ -1,0 +1,38 @@
+<application>
+  <component name="DimensionService">
+    <location key="FileChooserDialogImpl.1920.0.2560.1440" x="2293" y="287" />
+    <location key="WELCOME_SCREEN.1920.0.2560.1440" x="3194" y="300" />
+    <location key="OptionsEditor.0.0.1920.1080" x="692" y="-20" />
+    <location key="WELCOME_SCREEN.0.0.1920.1080" x="3712" y="709" />
+    <location key="OptionsEditor.1920.0.2560.1440" x="2423" y="-8" />
+    <location key="#com.intellij.openapi.projectRoots.ui.ProjectJdksEditor.1920.0.2560.1440" x="3286" y="320" />
+    <location key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog.1920.0.2560.1440" x="3553" y="599" />
+    <location key="new project wizard.1920.0.2560.1440" x="3338" y="430" />
+    <location key="#com.intellij.ide.util.MemberChooser.1920.0.2560.1440" x="3571" y="399" />
+    <location key="findTextDialog.1920.0.2560.1440" x="3555" y="371" />
+    <location key="#com.intellij.execution.impl.EditConfigurationsDialog.1920.0.2560.1440" x="2701" y="465" />
+    <location key="#com.intellij.ide.util.TreeClassChooserDialog.1920.0.2560.1440" x="3495" y="461" />
+    <location key="#Browse_Repositories.1920.0.2560.1440" x="2758" y="383" />
+    <location key="#Inspections.1920.0.2560.1440" x="3151" y="389" />
+    <size key="FileChooserDialogImpl.1920.0.2560.1440" width="525" height="511" />
+    <size key="OptionsEditor.0.0.1920.1080" width="1228" height="853" />
+    <size key="OptionsEditor.1920.0.2560.1440" width="1328" height="940" />
+    <size key="#com.intellij.openapi.projectRoots.ui.ProjectJdksEditor.1920.0.2560.1440" width="828" height="685" />
+    <size key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog.1920.0.2560.1440" width="308" height="215" />
+    <size key="new project wizard.1920.0.2560.1440" width="738" height="552" />
+    <size key="#com.intellij.ide.util.MemberChooser.1920.0.2560.1440" width="378" height="535" />
+    <size key="javadoc.popup.1920.0.2560.1440" width="585" height="310" />
+    <size key="findTextDialog.1920.0.2560.1440" width="402" height="511" />
+    <size key="GridCell.Tab.0.left.1920.0.2560.1440" width="1490" height="416" />
+    <size key="GridCell.Tab.0.center.1920.0.2560.1440" width="1490" height="416" />
+    <size key="GridCell.Tab.0.right.1920.0.2560.1440" width="1490" height="416" />
+    <size key="GridCell.Tab.0.bottom.1920.0.2560.1440" width="1490" height="416" />
+    <size key="#com.intellij.ide.util.TreeClassChooserDialog.1920.0.2560.1440" width="529" height="411" />
+    <size key="GridCell.Tab.1.left.1920.0.2560.1440" width="1490" height="509" />
+    <size key="GridCell.Tab.1.center.1920.0.2560.1440" width="1490" height="509" />
+    <size key="GridCell.Tab.1.right.1920.0.2560.1440" width="1490" height="509" />
+    <size key="GridCell.Tab.1.bottom.1920.0.2560.1440" width="1490" height="509" />
+    <size key="#Browse_Repositories.1920.0.2560.1440" width="828" height="685" />
+    <size key="#Inspections.1920.0.2560.1440" width="728" height="635" />
+  </component>
+</application>

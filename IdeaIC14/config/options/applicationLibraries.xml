@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<application>
+  <component name="libraryTable">
+    <library name="feedos">
+      <CLASSES>
+        <root url="file://$USER_HOME$/java-lib/feedos" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="file://$USER_HOME$/java-lib/feedos/docs/api" />
+      </JAVADOC>
+      <SOURCES />
+      <jarDirectory url="file://$USER_HOME$/java-lib/feedos" recursive="false" />
+    </library>
+    <library name="HDF-Java">
+      <CLASSES>
+        <root url="jar://$USER_HOME$/java-lib/hdf-java/jhdfobj.jar!/" />
+        <root url="jar://$USER_HOME$/java-lib/hdf-java/jhdf5obj.jar!/" />
+        <root url="jar://$USER_HOME$/java-lib/hdf-java/jhdf5.jar!/" />
+        <root url="jar://$USER_HOME$/java-lib/hdf-java/jhdf.jar!/" />
+        <root url="jar://$USER_HOME$/java-lib/hdf-java/jhdf4obj.jar!/" />
+      </CLASSES>
+      <JAVADOC />
+      <SOURCES />
+    </library>
+    <library name="hydra">
+      <CLASSES>
+        <root url="file://$USER_HOME$/java-lib/hydra" />
+      </CLASSES>
+      <JAVADOC />
+      <SOURCES />
+      <jarDirectory url="file://$USER_HOME$/java-lib/hydra" recursive="false" />
+    </library>
+    <library name="javassist">
+      <CLASSES>
+        <root url="jar://$USER_HOME$/java-lib/javassist/javassist-3.18.1-GA.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="file://$USER_HOME$/java-lib/javassist/docs/api" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="file://$USER_HOME$/java-lib/javassist/src" />
+      </SOURCES>
+    </library>
+    <library name="JeroMQ">
+      <CLASSES>
+        <root url="file://$USER_HOME$/java-lib/jeromq" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="file://$USER_HOME$/java-lib/jeromq/docs/api" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="file://$USER_HOME$/java-lib/jeromq/src" />
+      </SOURCES>
+      <jarDirectory url="file://$USER_HOME$/java-lib/jeromq" recursive="false" />
+    </library>
+    <library name="JewelCli">
+      <CLASSES>
+        <root url="file://$USER_HOME$/java-lib/jewelcli" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="file://$USER_HOME$/java-lib/jewelcli/docs/api" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="file://$USER_HOME$/java-lib/jewelcli/src" />
+      </SOURCES>
+      <jarDirectory url="file://$USER_HOME$/java-lib/jewelcli" recursive="false" />
+    </library>
+    <library name="Logback">
+      <CLASSES>
+        <root url="file://$USER_HOME$/java-lib/logback" />
+      </CLASSES>
+      <JAVADOC />
+      <SOURCES>
+        <root url="file://$USER_HOME$/java-lib/logback/src" />
+      </SOURCES>
+      <jarDirectory url="file://$USER_HOME$/java-lib/logback" recursive="false" />
+    </library>
+    <library name="msgpack">
+      <CLASSES>
+        <root url="file://$USER_HOME$/java-lib/msgpack" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="file://$USER_HOME$/java-lib/msgpack/docs/api" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="file://$USER_HOME$/java-lib/msgpack/src" />
+      </SOURCES>
+      <jarDirectory url="file://$USER_HOME$/java-lib/msgpack" recursive="false" />
+    </library>
+    <library name="nomura-util">
+      <CLASSES>
+        <root url="file://$USER_HOME$/java-lib/nomura-util" />
+      </CLASSES>
+      <JAVADOC />
+      <SOURCES />
+      <jarDirectory url="file://$USER_HOME$/java-lib/nomura-util" recursive="false" />
+    </library>
+    <library name="OpenMAMA">
+      <CLASSES>
+        <root url="jar://$USER_HOME$/java-lib/openmama/mamajni.jar!/" />
+        <root url="jar://$USER_HOME$/java-lib/openmama/mamda.jar!/" />
+        <root url="jar://$USER_HOME$/java-lib/openmama/mamda_book.jar!/" />
+        <root url="jar://$USER_HOME$/java-lib/openmama/mamda_options.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="file://$USER_HOME$/java-lib/openmama/docs/api" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="file://$USER_HOME$/java-lib/openmama/src" />
+      </SOURCES>
+    </library>
+    <library name="QuickFixJ-Core">
+      <CLASSES>
+        <root url="jar://$USER_HOME$/java-lib/quickfixj/quickfixj-core-1.5.3.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="file://$USER_HOME$/java-lib/quickfixj/docs/api" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="file://$USER_HOME$/java-lib/quickfixj/src" />
+      </SOURCES>
+    </library>
+    <library name="SLF4J-API">
+      <CLASSES>
+        <root url="jar://$USER_HOME$/java-lib/slf4j/slf4j-api-1.7.5.jar!/" />
+      </CLASSES>
+      <JAVADOC />
+      <SOURCES>
+        <root url="file://$USER_HOME$/java-lib/slf4j/src" />
+      </SOURCES>
+    </library>
+  </component>
+</application>
+
