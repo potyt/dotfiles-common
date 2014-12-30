@@ -2,9 +2,9 @@
 Type=Application
 Terminal=false
 GenericName=Web Browser
-Name=Firefox (_user)
+Name=Firefox (sandbox)
 Icon=firefox
-Name[en_US]=Firefox (_user)
+Name[en_US]=Firefox (sandbox)
 Icon[en_US]=firefox
 Categories=Application;Network;
 Encoding=UTF-8

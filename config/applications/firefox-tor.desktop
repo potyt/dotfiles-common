@@ -2,9 +2,9 @@
 Type=Application
 Terminal=false
 GenericName=Web Browser
-Name=Firefox (_user Tor)
+Name=Firefox Tor (sandbox)
 Icon=firefox
-Name[en_US]=Firefox (_user Tor)
+Name[en_US]=Firefox Tor (sandbox)
 Icon[en_US]=firefox
 Categories=Application;Network;
 Encoding=UTF-8
