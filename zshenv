@@ -18,8 +18,8 @@ export VISUAL=vim
 export EDITOR=$VISUAL
 export TERMINAL=urxvtc
 export XTERM=$TERMINAL
-export BROWSER=firefox-aurora
-export BROWSER_JOIN=firefox-aurora-join
+export BROWSER=firefox
+export BROWSER_JOIN=firefox-join
 
 # zsh related
 export HISTFILE="${TMPDIR}/zsh_history"
