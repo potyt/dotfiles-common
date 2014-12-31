@@ -48,6 +48,7 @@ mcabber/otr
 mutt/aliases.bak
 IdeaIC13/config/componentVersions/*
 IdeaIC13/config/options/appComponentVersions.xml
+IdeaIC14/config/options/dimensions.xml
 IdeaIC13/config/options/feature.usage.statistics.xml
 IdeaIC13/config/options/jdk.table.xml
 IdeaIC13/config/options/options.xml
@@ -61,6 +62,7 @@ IdeaIC13/config/plugins/*
 IdeaIC13/system/*
 IdeaIC14/config/componentVersions/*
 IdeaIC14/config/options/appComponentVersions.xml
+IdeaIC14/config/options/dimensions.xml
 IdeaIC14/config/options/feature.usage.statistics.xml
 IdeaIC14/config/options/jdk.table.xml
 IdeaIC14/config/options/options.xml
