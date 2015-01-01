@@ -4,7 +4,7 @@ Version=1.0
 Name=Git Annex
 Comment=Track and sync the files in your Git Annex
 Terminal=false
-Exec=/opt/git-annex.linux/git-annex webapp
+Exec=/usr/bin/git-annex webapp
 Icon=git-annex
 Categories=Network;FileTransfer;
 
