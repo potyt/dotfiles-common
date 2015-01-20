@@ -84,7 +84,7 @@
                "x": 0,
                "y": 0
             },
-            "name": "i3-save-tree --workspace 3:main > layout-main.json",
+            "name": "urxvt",
             "percent": 0.5,
             "swallows": [
                {
