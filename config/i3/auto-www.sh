@@ -1,4 +1,1 @@
-uzbl &
-uzbl &
-uzbl &
-uzbl &
+firefox &
