@@ -1,3 +1,4 @@
 urxvtc
 urxvtc
-idea.sh &
+urxvtc
+urxvtc
