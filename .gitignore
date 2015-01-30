@@ -45,7 +45,6 @@ cmus/search-history
 gimp-2.8/*
 links/links.his
 mcabber/otr
-
 mozilla/firefox/Crash Reports/
 mozilla/firefox/profile.*/.parentlock
 mozilla/firefox/profile.*/lock
@@ -66,6 +65,7 @@ mozilla/firefox/profile.*/cookies.sqlite-wal
 mozilla/firefox/profile.*/datareporting/
 mozilla/firefox/profile.*/extensions.ini
 mozilla/firefox/profile.*/extensions.json
+mozilla/firefox/profile.*/extensions/*
 mozilla/firefox/profile.*/firebug/
 mozilla/firefox/profile.*/formhistory.sqlite
 mozilla/firefox/profile.*/gmp-gmpopenh264/
