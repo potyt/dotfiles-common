@@ -1,5 +1,28 @@
 abook/addressbook~
 config/beets/state.pickle
+config/chromium*/Certificate Revocation Lists
+config/chromium*/Channels
+config/chromium*/chrome_shutdown_ms.txt
+config/chromium*/Default/Bookmarks
+config/chromium*/Default/Cookies
+config/chromium*/Default/Cookies-journal
+config/chromium*/Default/Origin Bound Certs
+config/chromium*/Default/Origin Bound Certs-journal
+config/chromium*/Default/README
+config/chromium*/Default/Shortcuts
+config/chromium*/Default/Shortcuts-journal
+config/chromium*/Default/TransportSecurity
+config/chromium*/First Run
+config/chromium*/Local State
+config/chromium*/Safe Browsing Bloom
+config/chromium*/Safe Browsing Bloom Prefix Set
+config/chromium*/Safe Browsing Cookies
+config/chromium*/Safe Browsing Cookies-journal
+config/chromium*/Safe Browsing Csd Whitelist
+config/chromium*/Safe Browsing Download
+config/chromium*/Safe Browsing Download Whitelist
+config/chromium*/Safe Browsing Extension Blacklist
+config/chromium*/Safe Browsing IP Blacklist
 config/darktable/library.db
 config/dconf/user
 config/easytag
