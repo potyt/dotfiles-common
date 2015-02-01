@@ -70,6 +70,7 @@ alias v.lssitepackages='lssitepackages'
 
 # git
 alias g.inc='git fetch && git log ..origin/master'
+alias g.s='git-sweep ~/.config/git.dirs'
 
 # sphinx docs
 alias mksphinx='sphinx-apidoc -f -o doc/source/api `basename $PWD`; (cd doc; make html)'
