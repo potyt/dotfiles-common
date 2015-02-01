@@ -37,6 +37,7 @@ user_pref("extensions.ui.locale.hidden", true);
 user_pref("general.useragent.override", "Mozilla/5.0 Gecko Firefox");
 user_pref("general.warnOnAboutConfig", false);
 user_pref("geo.enabled", false);
+user_pref("geo.wifi.uri", "");
 user_pref("layout.spellcheckDefault", 2);
 user_pref("middlemouse.contentLoadURL", false);
 user_pref("network.cookie.cookieBehavior", 2);
