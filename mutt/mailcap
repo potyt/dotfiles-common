@@ -1,6 +1,6 @@
 image/*; mutt-bgrun feh %s; needsterminal
 
-text/html; mutt-bgrun uzbl-browser --name=tmp  '%s' >/dev/null 2>&1 &; test=test-x; needsterminal;
+text/html; mutt-bgrun browser-join '%s' >/dev/null 2>&1 &; test=test-x; nametemplate=%s.html; needsterminal;
 text/html; links -dump -force-html %s; nametemplate=%s.html; copiousoutput;
 application/pdf; mutt-bgrun zathura %s; needsterminal;
 application/pdf; pdftohtml -q -stdout %s | links -dump -force-html; copiousoutput
