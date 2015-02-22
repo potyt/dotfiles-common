@@ -5,11 +5,14 @@ config/chromium*/Channels
 config/chromium*/chrome_shutdown_ms.txt
 config/chromium*/Default/Bookmarks*
 config/chromium*/Default/Cookies*
+config/chromium*/Default/Current*
 config/chromium*/Default/Favicons*
 config/chromium*/Default/History*
+config/chromium*/Default/Last*
 config/chromium*/Default/Login Data*
 config/chromium*/Default/Network Action Predictor*
 config/chromium*/Default/Origin Bound Certs*
+config/chromium*/Default/QuotaManager*
 config/chromium*/Default/README
 config/chromium*/Default/Shortcuts*
 config/chromium*/Default/Top Sites*
