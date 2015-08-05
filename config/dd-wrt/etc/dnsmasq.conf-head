@@ -1,0 +1,6 @@
+no-resolv    
+domain-needed
+bogus-priv  
+strict-order       
+local=/localdomain/
+local=/allus.home/

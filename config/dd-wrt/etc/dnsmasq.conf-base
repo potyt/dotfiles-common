@@ -1,0 +1,8 @@
+no-resolv    
+domain-needed
+bogus-priv  
+strict-order       
+local=/localdomain/
+local=/allus.home/
+server=208.67.222.222 # OpenDNS
+server=208.67.220.220 # OpenDNS
