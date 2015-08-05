@@ -29,6 +29,7 @@ config/chromium*/Safe Browsing Download
 config/chromium*/Safe Browsing Download Whitelist
 config/chromium*/Safe Browsing Extension Blacklist
 config/chromium*/Safe Browsing IP Blacklist
+config/chromium*/ev_hashes_whitelist.bin
 config/darktable/library.db
 config/dconf/user
 config/easytag
@@ -113,6 +114,9 @@ mozilla/firefox/profile.*/places.sqlite-shm
 mozilla/firefox/profile.*/places.sqlite-wal
 mozilla/firefox/profile.*/pluginreg.dat
 mozilla/firefox/profile.*/prefs.js
+mozilla/firefox/profile.*/reading-list.sqlite
+mozilla/firefox/profile.*/reading-list.sqlite-wal
+mozilla/firefox/profile.*/revocations.txt
 mozilla/firefox/profile.*/saved-telemetry-pings/
 mozilla/firefox/profile.*/search-metadata.json
 mozilla/firefox/profile.*/search.json
