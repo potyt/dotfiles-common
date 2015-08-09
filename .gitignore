@@ -12,6 +12,7 @@ config/chromium*/Default/Last*
 config/chromium*/Default/Login Data*
 config/chromium*/Default/Network Action Predictor*
 config/chromium*/Default/Origin Bound Certs*
+config/chromium*/Default/Preferences
 config/chromium*/Default/QuotaManager*
 config/chromium*/Default/README
 config/chromium*/Default/Shortcuts*
