@@ -20,6 +20,13 @@ config/chromium*/Default/Top Sites*
 config/chromium*/Default/TransportSecurity
 config/chromium*/Default/Visited Links*
 config/chromium*/Default/Web Data*
+config/chromium*/Default/Extension State/*
+config/chromium*/Default/GCM Store/*
+config/chromium*/Default/GPUCache/*
+config/chromium*/Default/Local Storage/*
+config/chromium*/Default/Session Storage/*
+config/chromium*/Default/databases/*
+config/chromium*/Dictionaries/*
 config/chromium*/First Run
 config/chromium*/Local State
 config/chromium*/Safe Browsing Bloom
