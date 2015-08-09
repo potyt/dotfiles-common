@@ -1,8 +1,10 @@
 .
 ..
+.cache
 .dbus
 .java
 .IdeaIC13
+.IdeaIC14
 .keychain
 .git-credential-cache
 .kde
