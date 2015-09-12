@@ -6,12 +6,19 @@ config/chromium*/chrome_shutdown_ms.txt
 config/chromium*/Default/Bookmarks*
 config/chromium*/Default/Cookies*
 config/chromium*/Default/Current*
+config/chromium*/Default/Extensions*
+config/chromium*/Default/Extension State*
 config/chromium*/Default/Favicons*
+config/chromium*/Default/GCM Store*
+config/chromium*/Default/GPUCache*
 config/chromium*/Default/History*
 config/chromium*/Default/Last*
+config/chromium*/Default/Local Extension Settings*
+config/chromium*/Default/Local Storage*
 config/chromium*/Default/Login Data*
 config/chromium*/Default/Network Action Predictor*
 config/chromium*/Default/Origin Bound Certs*
+config/chromium*/Default/Pepper Data*
 config/chromium*/Default/Preferences
 config/chromium*/Default/QuotaManager*
 config/chromium*/Default/README
@@ -20,13 +27,11 @@ config/chromium*/Default/Top Sites*
 config/chromium*/Default/TransportSecurity
 config/chromium*/Default/Visited Links*
 config/chromium*/Default/Web Data*
-config/chromium*/Default/Extension State/*
-config/chromium*/Default/GCM Store/*
-config/chromium*/Default/GPUCache/*
-config/chromium*/Default/Local Storage/*
-config/chromium*/Default/Session Storage/*
-config/chromium*/Default/databases/*
-config/chromium*/Dictionaries/*
+config/chromium*/Default/Local Storage*
+config/chromium*/Default/Session Storage*
+config/chromium*/Default/databases*
+config/chromium*/Dictionaries*
+config/chromium*/EVWhitelist*
 config/chromium*/First Run
 config/chromium*/Local State
 config/chromium*/Safe Browsing Bloom
@@ -38,6 +43,7 @@ config/chromium*/Safe Browsing Download Whitelist
 config/chromium*/Safe Browsing Extension Blacklist
 config/chromium*/Safe Browsing IP Blacklist
 config/chromium*/ev_hashes_whitelist.bin
+config/chromium*/pnacl*
 config/darktable/library.db
 config/dconf/user
 config/easytag
