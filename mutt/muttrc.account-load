@@ -1,0 +1,5 @@
+push "<change-folder>?<toggle-mailboxes>/$my_account<enter><enter>"
+
+# load default identity
+set my_idx = 1
+source $my_conf/muttrc.identity-rotate

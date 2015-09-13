@@ -2,7 +2,6 @@ set my_conf = $MUTT_DIR
 
 # global settings
 set quit = ask-yes
-set sendmail = ~/scripts/msmtp-enqueue
 set mbox_type = Maildir
 set folder = $MAILDIR
 set header_cache = $XDG_CACHE_HOME/mutt_hcache
@@ -20,13 +19,16 @@ unset metoo
 # status line
 set status_on_top
 
-# nagigation
+# navigation
 bind index,pager ] next-new-then-unread
 bind index,pager [ previous-new-then-unread
 
 # show the incoming mailboxes list (just like "mutt -y") and back when pressing "y"
 macro index,pager y "<change-folder>?<toggle-mailboxes>" "show incoming mailboxes list"
 bind browser y exit
+
+# make changing folder more contextual
+macro index,pager 'c' '<change-folder>?<change-dir><home>^K=<enter>'
 
 # launch folder browser when moving or copying
 macro index,pager M "<save-message>?" "move a message to a mailbox"
@@ -119,7 +121,7 @@ hdr_order Date From Reply-To To Cc Subject X-Label
 source $my_conf/color.zenburn
 
 # mailboxes
-mailboxes `find $MAILDIR -follow -mindepth 1 -maxdepth 1 -type d -printf "+'%f/Inbox' "`
+mailboxes `~/scripts/mutt-list-mailboxes "+" "/Inbox" "'" " "`
 
 # aliases
 set alias_file = $my_conf/aliases
@@ -149,8 +151,8 @@ set crypt_replyencrypt = yes
 set crypt_replysignencrypted = yes
 
 # folder hooks
-source "~/scripts/mutt-folder-hook-gen $folder |"
-folder-hook . source $my_conf/muttrc.folder
+source "~/scripts/mutt-folder-hook-gen |"
+folder-hook . source $my_conf/muttrc.account
 
 # notmuch
 macro index,pager <F8> \
@@ -171,14 +173,14 @@ macro index,pager <F9> \
 macro index,pager,compose I ":source $my_conf/muttrc.identity-rotate<enter>"
 
 # rotate folders
-macro index,pager <TAB> ":source $my_conf/muttrc.folder-rotate<enter>"
+macro index,pager <TAB> ":source $my_conf/muttrc.account-rotate<enter>"
+
+# optional config loading
 
 # sidebar
 source "`FILE=$MUTT_DIR/muttrc.sidebar; mutt -v | grep -Fq sidebar || FILE=/dev/null; echo $FILE`" 
-
 # notmuch
 source "`FILE=$MUTT_DIR/muttrc.notmuch; mutt -v | grep -Fq notmuch || FILE=/dev/null; echo $FILE`" 
-
 # xface
 source "`FILE=$MUTT_DIR/muttrc.xface; mutt -v | grep -Fq w3mface || FILE=/dev/null; echo $FILE`" 
 

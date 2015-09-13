@@ -12,4 +12,7 @@ macro index,pager A "<save-message>$my_archive<enter><sync-mailbox>" "archive me
 # trash
 macro index,pager d "<save-message>$my_trash<enter><sync-mailbox>" "move message to the trash"
 
+# recalculate sendmail command
+set sendmail = "~/scripts/msmtp-enqueue $my_account"
+
 source $my_conf/muttrc.status

@@ -1,0 +1,4 @@
+# need to push in reverse order as it appears push queue is FIFO
+push ":source $my_conf/muttrc.account-load<enter>"
+push ":set my_acx = \`echo $(( $my_acx % $(~/scripts/mutt-list-mailboxes | wc -l) + 1 ))\`<enter>"
+push ":set my_account = \`~/scripts/mutt-list-mailboxes | sed '$my_acx!d' | xargs -n 1 basename\`<enter>"
