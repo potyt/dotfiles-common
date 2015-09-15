@@ -121,6 +121,7 @@ mozilla/firefox/profile.*/jetpack/
 mozilla/firefox/profile.*/key3.db
 mozilla/firefox/profile.*/lightweighttheme-footer
 mozilla/firefox/profile.*/lightweighttheme-header
+mozilla/firefox/profile.*/logins.json
 mozilla/firefox/profile.*/lwtheme/
 mozilla/firefox/profile.*/mimeTypes.rdf
 mozilla/firefox/profile.*/permissions.sqlite
