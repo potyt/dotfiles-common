@@ -16,7 +16,7 @@ channels = (
 );
 
 settings = {
-  core = { real_name = "pot"; user_name = "pot"; nick = "pot"; };
+  core = { real_name = "potyt"; user_name = "potyt"; nick = "potyt"; };
   "fe-text" = { actlist_sort = "refnum"; };
 };
 
