@@ -15,7 +15,7 @@ set reverse_name = yes
 set reverse_realname = yes
 set send_charset = "utf-8"
 set mime_forward = ask-yes
-set mime_forward_decode = ask-no
+set mime_forward_decode = no
 unset metoo
 
 # status line
