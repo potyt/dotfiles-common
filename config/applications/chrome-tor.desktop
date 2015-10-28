@@ -1,0 +1,13 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Terminal=false
+Icon[en_US]=/usr/share/icons/hicolor/256x256/apps/google-chrome.png
+Name[en_US]=Chrome Tor (sandbox)
+Exec=chrome-tor %u
+Name=Chrome Tor (sandbox)
+GenericName=Web Browser
+Icon=/usr/share/icons/hicolor/256x256/apps/google-chrome.png
+Categories=Network;GNOME;GTK;WebBrowser;
+MimeType=text/html;text/xml;application/xhtml+xml;x-scheme-handler/http;x-scheme-handler/https;
+StartupNotify=true
