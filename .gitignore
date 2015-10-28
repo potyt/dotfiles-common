@@ -126,6 +126,7 @@ mozilla/firefox/profile.*/lwtheme/
 mozilla/firefox/profile.*/mimeTypes.rdf
 mozilla/firefox/profile.*/permissions.sqlite
 mozilla/firefox/profile.*/places.sqlite
+mozilla/firefox/profile.*/places.sqlite-journal
 mozilla/firefox/profile.*/places.sqlite-shm
 mozilla/firefox/profile.*/places.sqlite-wal
 mozilla/firefox/profile.*/pluginreg.dat
