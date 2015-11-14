@@ -29,6 +29,10 @@ URxvt*internalBorder:     0
 URxvt*externalBorder:     0
 URxvt.intensityStyles:    false
 !
+! URL Launcher
+URxvt.perl-ext-common:    default,matcher
+URxvt*urlLauncher:        urxvt-link-open
+!
 ! Annoying Ctrl-Shift mode
 URxvt*iso14755:     false
 URxvt*iso14755_52:  false
