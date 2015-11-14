@@ -30,9 +30,12 @@ URxvt*externalBorder:     0
 URxvt.intensityStyles:    false
 !
 ! URL Launcher
-URxvt.perl-ext-common:    default,matcher
-URxvt.urlLauncher:        urxvt-link-open
-URxvt.matcher.button:     1
+URxvt.perl-ext-common:        default,matcher,url-select
+URxvt.urlLauncher:            urxvt-link-open
+URxvt.matcher.button:         1
+URxvt.keysym.M-u:             perl:url-select:select_next
+URxvt.url-select.launcher:    urxvt-link-open
+URxvt.url-select.underline:   true
 !
 ! Annoying Ctrl-Shift mode
 URxvt*iso14755:     false
