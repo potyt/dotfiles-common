@@ -1,8 +1,10 @@
 REGEXP (((http|https|ftp|gopher)|mailto)[.:][^ >"\t]*|www\.[-a-z0-9.]+)[^ .,;\t>">\):]
-COMMAND $BROWSER_JOIN %s >/dev/null 2>&1 &
+COMMAND ${BROWSER_JOIN} %s >/dev/null 2>&1 &
 DEFAULT_VIEW url
 ALTSELECT Q
 SHORTCUT
+RAW_RESERVED
+DISPLAY_SANITIZED
 PERSISTENT
 IGNORE_EMPTY_TAGS
 HTML_TAGS a,iframe,link
