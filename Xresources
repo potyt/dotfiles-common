@@ -31,7 +31,8 @@ URxvt.intensityStyles:    false
 !
 ! URL Launcher
 URxvt.perl-ext-common:    default,matcher
-URxvt*urlLauncher:        urxvt-link-open
+URxvt.urlLauncher:        urxvt-link-open
+URxvt.matcher.button:     1
 !
 ! Annoying Ctrl-Shift mode
 URxvt*iso14755:     false
