@@ -198,9 +198,9 @@ mode "resize" {
 bindsym $mod+r mode "resize"
 
 # special keys
-bindsym XF86AudioLowerVolume exec /usr/bin/pactl set-sink-volume 1 -- '-5%'
-bindsym XF86AudioRaiseVolume exec /usr/bin/pactl set-sink-volume 1 -- '+5%'
-bindsym XF86AudioMute exec /usr/bin/pactl set-sink-volume 1 0
+bindsym XF86AudioLowerVolume exec pactl set-sink-volume 1 -5%
+bindsym XF86AudioRaiseVolume exec pactl set-sink-volume 1 +5%
+bindsym XF86AudioMute        exec pactl set-sink-mute 1 toggle
 bindsym XF86MonBrightnessUp exec /usr/bin/xbacklight -inc 10
 bindsym XF86MonBrightnessDown exec /usr/bin/xbacklight -dec 5
 
