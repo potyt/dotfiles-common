@@ -39,6 +39,7 @@ alias bat='acpitool -b'
 alias spell='aspell -a <<< '
 
 alias passgen='< /dev/urandom tr -cd \[:graph:\] | fold -w 32 | head -n 5'
+alias passphrase='pwgen-passphrase -L --min 3 --max 6 -e [a-z] -l'
 alias xpop='xprop | grep --color=none 'WM_CLASS\|^WM_NAME' | xmessage -file -'
 
 alias R='R --quiet'
