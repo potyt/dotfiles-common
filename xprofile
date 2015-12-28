@@ -20,7 +20,7 @@ syndaemon -t -k -i 2 -d &
 urxvtd -q -o -f
 
 # pulseaudio
-systemctl --user start pulseaudio.service
+/usr/bin/pulseaudio --start
 /usr/bin/start-pulseaudio-x11
 
 # no beep
