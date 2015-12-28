@@ -2,6 +2,7 @@
 ..
 .cache
 .dbus
+.electrum
 .esd_auth
 .java
 .IdeaIC13
