@@ -283,11 +283,9 @@ set $ws_0 tmp
 for_window [class="^Pinentry-gtk-2$" instance="^pinentry-gtk-2$"] floating enable
 
 # window rules
-for_window [class="^Uzbl-core$" instance="^tmp$"] floating enable
-for_window [class="^Uzbl-core$" instance="^uzbl-core$"] move window to workspace number $ws_www, layout stacking
-for_window [class="^jetbrains-idea-ce$"] move window to workspace number $ws_dev1
+for_window [class="^Uzbl-core$" instance="^uzbl-core$"] floating enable
 for_window [class="^Gvim$"] move window to workspace number $ws_dev2
-for_window [class="^Ltbin$"] move window to workspace number $ws_dev3
+for_window [class="^jetbrains-idea-ce$"] move window to workspace number $ws_dev3
 for_window [class="^Gimp$"] move window to workspace number $ws_gfx
 for_window [class="^Darktable$"] move window to workspace number $ws_photo
 

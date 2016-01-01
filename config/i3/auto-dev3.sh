@@ -1,1 +1,1 @@
-lighttable &
+idea.sh &
