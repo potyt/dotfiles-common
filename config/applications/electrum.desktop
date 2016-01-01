@@ -1,0 +1,13 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Terminal=false
+Icon[en_US]=/usr/share/pixmaps/electrum.png
+Name[en_US]=Electrum Bitcoin Wallet
+Exec=electrum
+Name=Electrum Bitcoin Wallet
+GenericName=Bitcoin Wallet
+Icon=/usr/share/pixmaps/electrum.png
+Categories=Network;
+MimeType=x-scheme-handler/bitcoin;
+StartupNotify=true
