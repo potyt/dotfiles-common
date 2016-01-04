@@ -21,7 +21,6 @@ urxvtd -q -o -f
 
 # pulseaudio
 /usr/bin/pulseaudio --start
-/usr/bin/start-pulseaudio-x11
 
 # no beep
 xset -b
