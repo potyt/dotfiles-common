@@ -9,6 +9,7 @@
 .IdeaIC14
 .keychain
 .git-credential-cache
+.gtk-bookmarks
 .kde
 .local
 .msmtpqueue
