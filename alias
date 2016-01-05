@@ -87,3 +87,6 @@ alias arp='sudo ettercap -Tqi wlan0 -l log -M arp:remote // //'
 
 # json
 alias pp='python -mjson.tool'
+
+# coins
+alias simplewallet='simplewallet --log-file ~/var/log/simplewallet.log'

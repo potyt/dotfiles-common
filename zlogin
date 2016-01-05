@@ -19,5 +19,8 @@ ssh-cache-keys
 # git annex assistant
 git annex assistant --autostart
 
+# coins
+/usr/bin/bitmonerod --no-igd --hide-my-port --log-file ~/var/log/bitmonero.log --detach
+
 # start mpd if no other user instance exists
 #[ ! -s ~/.config/mpd/pid ] && mpd
