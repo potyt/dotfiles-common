@@ -21,7 +21,7 @@ git annex assistant --autostart
 
 # coins
 bitmonerod --no-igd --hide-my-port --log-file ~/var/log/bitmonero.log --detach
-( . ~/.env.noproxy; minerd -a cryptonight -t 8 -o $MINE_XMR_URL -u $MINE_XMR_ADDR -p x -q -B >> ~/var/log/minerd.log 2>&1 )
+( . ~/.env.noproxy; minerd -a cryptonight -t 8 -o $MINE_XMR_URL -u $MINE_XMR_ADDR -p x -B >> ~/var/log/minerd.log 2>&1 )
 
 # start mpd if no other user instance exists
 #[ ! -s ~/.config/mpd/pid ] && mpd
