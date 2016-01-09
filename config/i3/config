@@ -276,8 +276,8 @@ set $ws_gfx 8
 set $ws_8 gfx
 set $ws_photo 9
 set $ws_9 photo
-set $ws_tmp 0
-set $ws_0 tmp
+set $ws_coin 0
+set $ws_0 coin
 
 # floating dialogs
 for_window [class="^Pinentry-gtk-2$" instance="^pinentry-gtk-2$"] floating enable
@@ -292,7 +292,7 @@ for_window [class="^Darktable$"] move window to workspace number $ws_photo
 # load layout
 exec --no-startup-id "~/.config/i3/workspace.sh $ws_1 $ws_2 $ws_3 $ws_4 $ws_5 $ws_6 $ws_7 $ws_8 $ws_9 $ws_0"
 exec --no-startup-id "~/.config/i3/layout.sh 1 LVDS $ws_msg $ws_mon"
-exec --no-startup-id "~/.config/i3/layout.sh 2 DisplayPort-0 $ws_main $ws_www $ws_dev1 $ws_dev2 $ws_dev3 $ws_gfx $ws_photo $ws_tmp"
+exec --no-startup-id "~/.config/i3/layout.sh 2 DisplayPort-0 $ws_main $ws_www $ws_dev1 $ws_dev2 $ws_dev3 $ws_gfx $ws_photo $ws_coin"
 exec --no-startup-id "~/.config/i3/visit.sh 3 $ws_msg $ws_main"
 
 # launch scratchpad
