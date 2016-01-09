@@ -12,14 +12,21 @@
     </library>
     <library name="HDF-Java">
       <CLASSES>
-        <root url="file:///usr/share/java/hdf-java/lib" />
+        <root url="jar:///usr/share/java/hdf-java/lib/netcdf.jar!/" />
+        <root url="jar:///usr/share/java/hdf-java/lib/jarnc2obj.jar!/" />
+        <root url="jar:///usr/share/java/hdf-java/lib/jarhdfobj.jar!/" />
+        <root url="jar:///usr/share/java/hdf-java/lib/jarhdf5-2.11.0.jar!/" />
+        <root url="jar:///usr/share/java/hdf-java/lib/jarhdf-2.11.0.jar!/" />
+        <root url="jar:///usr/share/java/hdf-java/lib/jarh5obj.jar!/" />
+        <root url="jar:///usr/share/java/hdf-java/lib/jarh4obj.jar!/" />
+        <root url="jar:///usr/share/java/hdf-java/lib/jarfitsobj.jar!/" />
+        <root url="jar:///usr/share/java/hdf-java/lib/fits.jar!/" />
       </CLASSES>
       <JAVADOC />
       <NATIVE>
         <root url="file:///usr/share/java/hdf-java/lib" />
       </NATIVE>
       <SOURCES />
-      <jarDirectory url="file:///usr/share/java/hdf-java/lib" recursive="false" />
     </library>
     <library name="javassist">
       <CLASSES>
