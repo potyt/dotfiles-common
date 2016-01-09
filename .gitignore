@@ -183,9 +183,11 @@ IdeaIC15/config/componentVersions/*
 IdeaIC15/config/options/appComponentVersions.xml
 IdeaIC15/config/options/dimensions.xml
 IdeaIC15/config/options/feature.usage.statistics.xml
+IdeaIC15/config/options/find.recents.xml
 IdeaIC15/config/options/jdk.table.xml
 IdeaIC15/config/options/options.xml
 IdeaIC15/config/options/other.xml
+IdeaIC15/config/options/recentProjects.xml
 IdeaIC15/config/options/runner.layout.xml
 IdeaIC15/config/options/statistics.application.usages.xml
 IdeaIC15/config/options/usage.statistics.xml
