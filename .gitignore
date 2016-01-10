@@ -1,5 +1,8 @@
 abook/addressbook~
 config/beets/state.pickle
+config/chromium/SingletonCookie
+config/chromium/SingletonLock
+config/chromium/SingletonSocket
 config/chromium*/Certificate Revocation Lists
 config/chromium*/Channels
 config/chromium*/chrome_shutdown_ms.txt
