@@ -13,6 +13,11 @@ chatnets = {
 channels = ( 
   { name = "#irssi"; chatnet = "Freenode"; autojoin = "yes"; },
   { name = "#mutt"; chatnet = "Freenode"; autojoin = "yes"; }
+  { name = "#monero"; chatnet = "Freenode"; autojoin = "yes"; }
+  { name = "#monero-dev"; chatnet = "Freenode"; autojoin = "yes"; }
+  { name = "#monero-otc"; chatnet = "Freenode"; autojoin = "yes"; }
+  { name = "#monero-markets"; chatnet = "Freenode"; autojoin = "yes"; }
+  { name = "#monero-pools"; chatnet = "Freenode"; autojoin = "yes"; }
 );
 
 settings = {
