@@ -171,6 +171,10 @@ macro index,pager <F9> \
     <enter-command>set pipe_decode=\$my_old_pipe_decode wait_key=\$my_old_wait_key<enter>" \
     "notmuch: reconstruct thread"
 
+# limit to flagged
+macro index .i  "<limit>(~N|~F)<Enter>"  "view new/flag"
+macro index .a  "<limit>~A<Enter>"       "view all"
+
 # rotate identities
 macro index,pager,compose I ":source $my_conf/muttrc.identity-rotate<enter>"
 
