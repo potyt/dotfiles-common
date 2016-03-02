@@ -19,7 +19,7 @@ config/chromium*/Default/Last*
 config/chromium*/Default/Local Extension Settings*
 config/chromium*/Default/Local Storage*
 config/chromium*/Default/Login Data*
-config/chromium*/Default/Network Action Predictor*
+config/chromium*/Default/Network*
 config/chromium*/Default/Origin Bound Certs*
 config/chromium*/Default/Pepper Data*
 config/chromium*/Default/Preferences
@@ -51,10 +51,12 @@ config/darktable/library.db
 config/dconf/user
 config/easytag
 config/gtk-2.0/gtkfilechooser.ini
+config/gtk-3.0/bookmarks
 config/geeqie/*
 config/gconf/*
 config/icedtea-web/*
 config/libreoffice/4/.lock
+config/libreoffice/4/cache/*
 config/libreoffice/4/user/backup/*
 config/libreoffice/4/user/config/fontnameboxmruentries
 config/libreoffice/4/user/config/javasettings_Linux_X86_64.xml
@@ -140,6 +142,8 @@ mozilla/firefox/profile.*/revocations.txt
 mozilla/firefox/profile.*/saved-telemetry-pings/
 mozilla/firefox/profile.*/search-metadata.json
 mozilla/firefox/profile.*/search.json
+mozilla/firefox/profile.*/search.json.mozlz4
+mozilla/firefox/profile.*/serviceworker.txt
 mozilla/firefox/profile.*/searchplugins/
 mozilla/firefox/profile.*/secmod.db
 mozilla/firefox/profile.*/sessionCheckpoints.json
