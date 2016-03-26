@@ -54,14 +54,16 @@ hide_edge_borders none
 bindsym $mod+Control+r exec i3-input -f $i3_font -F "rename workspace to %s" -P "Rename Workspace: "
 
 # display layout
-bindsym $mod+Control+l exec --no-startup-id display-layout
+bindsym $mod+Shift+Control+r exec --no-startup-id display-layout
 
 # i3-dmenu-desktop
 bindsym $mod+d exec --no-startup-id i3-dmenu-desktop --entry-type=name --dmenu='dmenu -fn $dm_font'
 
 # passmenu
-bindsym $mod+Control+p exec --no-startup-id passmenu -fn $dm_font 
-bindsym $mod+Control+o exec --no-startup-id passmenu --type -fn $dm_font 
+bindsym $mod+Control+p exec --no-startup-id epassmenu -fn $dm_font 
+bindsym $mod+Control+o exec --no-startup-id epassmenu --type -fn $dm_font 
+bindsym $mod+Control+l exec --no-startup-id epassmenu --login -fn $dm_font 
+bindsym $mod+Control+k exec --no-startup-id epassmenu --type --login -fn $dm_font 
 
 # change focus
 bindsym $mod+h focus left
