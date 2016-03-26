@@ -201,6 +201,7 @@ IdeaIC15/config/options/usage.statistics.xml
 IdeaIC15/config/options/vcs.xml
 IdeaIC15/config/options/window.manager.xml
 IdeaIC15/config/plugins/*
+IdeaIC15/config/port
 IdeaIC15/system/*
 VirtualBox/*.log*
 VirtualBox/VirtualBox.xml
