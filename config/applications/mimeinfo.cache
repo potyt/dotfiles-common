@@ -1,0 +1,17 @@
+[MIME Cache]
+application/rdf+xml=firefox.desktop;firefox-tor.desktop;firefox-aurora-tor.desktop;firefox-aurora.desktop;
+application/rss+xml=firefox.desktop;firefox-tor.desktop;firefox-aurora-tor.desktop;firefox-aurora.desktop;
+application/vnd.mozilla.xul+xml=firefox.desktop;firefox-tor.desktop;firefox-aurora-tor.desktop;firefox-aurora.desktop;
+application/xhtml+xml=chromium.desktop;uzbl.desktop;uzbl-tor.desktop;chrome.desktop;firefox.desktop;firefox-tor.desktop;chromium-tor.desktop;chrome-tor.desktop;firefox-aurora-tor.desktop;firefox-aurora.desktop;
+application/xml=firefox.desktop;firefox-tor.desktop;firefox-aurora-tor.desktop;firefox-aurora.desktop;
+image/gif=firefox.desktop;firefox-tor.desktop;firefox-aurora-tor.desktop;firefox-aurora.desktop;
+image/jpeg=firefox.desktop;firefox-tor.desktop;firefox-aurora-tor.desktop;firefox-aurora.desktop;
+image/png=firefox.desktop;firefox-tor.desktop;firefox-aurora-tor.desktop;firefox-aurora.desktop;
+text/html=chromium.desktop;uzbl.desktop;uzbl-tor.desktop;chrome.desktop;firefox.desktop;firefox-tor.desktop;chromium-tor.desktop;chrome-tor.desktop;firefox-aurora-tor.desktop;firefox-aurora.desktop;
+text/xml=chromium.desktop;uzbl.desktop;uzbl-tor.desktop;chrome.desktop;firefox.desktop;firefox-tor.desktop;chromium-tor.desktop;chrome-tor.desktop;firefox-aurora-tor.desktop;firefox-aurora.desktop;
+x-scheme-handler/bitcoin=electrum.desktop;
+x-scheme-handler/chrome=firefox.desktop;firefox-tor.desktop;firefox-aurora-tor.desktop;firefox-aurora.desktop;
+x-scheme-handler/ftp=firefox.desktop;firefox-tor.desktop;firefox-aurora-tor.desktop;firefox-aurora.desktop;
+x-scheme-handler/http=chromium.desktop;uzbl.desktop;uzbl-tor.desktop;chrome.desktop;firefox.desktop;firefox-tor.desktop;chromium-tor.desktop;chrome-tor.desktop;firefox-aurora-tor.desktop;firefox-aurora.desktop;
+x-scheme-handler/https=chromium.desktop;uzbl.desktop;uzbl-tor.desktop;chrome.desktop;firefox.desktop;firefox-tor.desktop;chromium-tor.desktop;chrome-tor.desktop;firefox-aurora-tor.desktop;firefox-aurora.desktop;
+x-scheme-handler/mailto=mutt-mailto.desktop;

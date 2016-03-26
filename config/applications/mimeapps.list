@@ -1,3 +1,4 @@
 [Default Applications]
 x-scheme-handler/http=uzbl.desktop
 x-scheme-handler/https=uzbl.desktop
+x-scheme-handler/mailto=mutt-mailto.desktop
