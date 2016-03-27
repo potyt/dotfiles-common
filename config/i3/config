@@ -60,7 +60,7 @@ bindsym $mod+Shift+Control+r exec --no-startup-id display-layout
 bindsym $mod+d exec --no-startup-id i3-dmenu-desktop --entry-type=name --dmenu='dmenu -fn $dm_font'
 
 # email
-bindsym $mod+F10 exec --no-startup-id "urxvtc -name tmp -e lock-email"
+bindsym $mod+F10 exec --no-startup-id "urxvtc -name tmp -e confirm lock-email"
 
 # passmenu
 bindsym $mod+Control+p exec --no-startup-id epassmenu -fn $dm_font 
