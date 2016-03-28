@@ -304,7 +304,7 @@ exec --no-startup-id "~/.config/i3/layout.sh 2 DisplayPort-0 $ws_main $ws_www $w
 exec --no-startup-id "~/.config/i3/visit.sh 3 $ws_msg $ws_main"
 
 # launch scratchpad
-for_window [class="^URxvt$" instance="^scratchpad$"] border 1pixel; move scratchpad
+for_window [class="^URxvt$" instance="^scratchpad$"] border 1pixel move scratchpad
 exec --no-startup-id "urxvtc -name scratchpad"
 
 # set background
