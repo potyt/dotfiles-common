@@ -1,0 +1,214 @@
+<application>
+  <component name="ProjectManager">
+    <defaultProject>
+      <component name="CheckStyle-IDEA">
+        <option name="configuration">
+          <map>
+            <entry key="active-configuration" value="LOCAL_FILE:/home/pot/dotfiles/dotfiles-common/config/checkstyle/checkstyle.xml:Customized Checkstyle rules" />
+            <entry key="check-nonjava-files" value="false" />
+            <entry key="check-test-classes" value="true" />
+            <entry key="location-0" value="CLASSPATH:/sun_checks.xml:The default CheckStyle rules" />
+            <entry key="location-1" value="LOCAL_FILE:/home/pot/dotfiles/dotfiles-common/config/checkstyle/checkstyle.xml:Customized Checkstyle rules" />
+            <entry key="suppress-errors" value="true" />
+            <entry key="thirdparty-classpath" value="" />
+          </map>
+        </option>
+      </component>
+      <component name="CompilerConfiguration">
+        <option name="DEFAULT_COMPILER" />
+        <resourceExtensions />
+        <wildcardResourcePatterns>
+          <entry name="!?*.java" />
+          <entry name="!?*.form" />
+          <entry name="!?*.class" />
+          <entry name="!?*.groovy" />
+          <entry name="!?*.scala" />
+          <entry name="!?*.flex" />
+          <entry name="!?*.kt" />
+          <entry name="!?*.clj" />
+        </wildcardResourcePatterns>
+        <annotationProcessing>
+          <profile default="true" name="Default" enabled="false">
+            <processorPath useClasspath="true" />
+          </profile>
+        </annotationProcessing>
+      </component>
+      <component name="CopyrightManager">
+        <copyright>
+          <option name="notice" value="Copyright (c) &amp;#36;today.year. Allus, Inc. All rights reserved." />
+          <option name="keyword" value="Copyright" />
+          <option name="allowReplaceKeyword" value="" />
+          <option name="myName" value="Allus, Inc." />
+          <option name="myLocal" value="true" />
+        </copyright>
+        <copyright>
+          <option name="notice" value="Copyright (c) &amp;#36;today.year. pot. All rights reserved." />
+          <option name="keyword" value="Copyright" />
+          <option name="allowReplaceKeyword" value="" />
+          <option name="myName" value="pot" />
+          <option name="myLocal" value="true" />
+        </copyright>
+        <LanguageOptions name="HTML">
+          <option name="fileTypeOverride" value="1" />
+          <option name="prefixLines" value="false" />
+        </LanguageOptions>
+        <LanguageOptions name="Properties">
+          <option name="fileTypeOverride" value="1" />
+        </LanguageOptions>
+        <LanguageOptions name="XML">
+          <option name="fileTypeOverride" value="1" />
+          <option name="prefixLines" value="false" />
+        </LanguageOptions>
+      </component>
+      <component name="Encoding">
+        <file url="PROJECT" charset="UTF-8" />
+      </component>
+      <component name="GantSettings">
+        <option name="SDK_HOME" value="/opt/gant" />
+      </component>
+      <component name="ProjectDictionaryState">
+        <dictionary name="pot" />
+      </component>
+      <component name="ProjectInspectionProfilesVisibleTreeState">
+        <entry key="Project Default">
+          <profile-state>
+            <expanded-state>
+              <State>
+                <id />
+              </State>
+            </expanded-state>
+            <selected-state>
+              <State>
+                <id>Abstraction issues</id>
+              </State>
+            </selected-state>
+          </profile-state>
+        </entry>
+      </component>
+      <component name="ProjectLevelVcsManager" settingsEditedManually="false">
+        <OptionsSetting value="true" id="Add" />
+        <OptionsSetting value="true" id="Remove" />
+        <OptionsSetting value="true" id="Checkout" />
+        <OptionsSetting value="true" id="Update" />
+        <OptionsSetting value="true" id="Status" />
+        <OptionsSetting value="true" id="Edit" />
+        <ConfirmationsSetting value="0" id="Add" />
+        <ConfirmationsSetting value="0" id="Remove" />
+      </component>
+      <component name="ProjectRootManager" version="2" languageLevel="JDK_1_6" assert-keyword="true" jdk-15="true" />
+      <component name="PropertiesComponent">
+        <property name="GoToClass.includeLibraries" value="false" />
+        <property name="GoToClass.toSaveIncludeLibraries" value="false" />
+        <property name="GoToFile.includeJavaFiles" value="false" />
+        <property name="MemberChooser.sorted" value="false" />
+        <property name="MemberChooser.showClasses" value="true" />
+        <property name="MemberChooser.copyJavadoc" value="false" />
+        <property name="last_opened_file_path" value="/opt/gant" />
+        <property name="options.lastSelected" value="terminal" />
+        <property name="options.splitter.main.proportions" value="0.3" />
+        <property name="options.splitter.details.proportions" value="0.2" />
+        <property name="options.searchVisible" value="true" />
+        <property name="settings.editor.selected.configurable" value="configurable.group.appearance" />
+        <property name="settings.editor.splitter.proportion" value="0.2" />
+      </component>
+      <component name="RunManager">
+        <configuration default="true" type="Applet" factoryName="Applet">
+          <option name="WIDTH" value="400" />
+          <option name="HEIGHT" value="300" />
+          <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+          <module />
+          <method />
+        </configuration>
+        <configuration default="true" type="Application" factoryName="Application">
+          <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+          <option name="MAIN_CLASS_NAME" />
+          <option name="VM_PARAMETERS" />
+          <option name="PROGRAM_PARAMETERS" />
+          <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+          <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+          <option name="ALTERNATIVE_JRE_PATH" />
+          <option name="ENABLE_SWING_INSPECTOR" value="false" />
+          <option name="ENV_VARIABLES" />
+          <option name="PASS_PARENT_ENVS" value="true" />
+          <module name="" />
+          <envs />
+          <method />
+        </configuration>
+        <configuration default="true" type="JUnit" factoryName="JUnit">
+          <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+          <module name="" />
+          <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+          <option name="ALTERNATIVE_JRE_PATH" />
+          <option name="PACKAGE_NAME" />
+          <option name="MAIN_CLASS_NAME" />
+          <option name="METHOD_NAME" />
+          <option name="TEST_OBJECT" value="class" />
+          <option name="VM_PARAMETERS" value="-ea" />
+          <option name="PARAMETERS" />
+          <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+          <option name="ENV_VARIABLES" />
+          <option name="PASS_PARENT_ENVS" value="true" />
+          <option name="TEST_SEARCH_SCOPE">
+            <value defaultName="moduleWithDependencies" />
+          </option>
+          <envs />
+          <patterns />
+          <method />
+        </configuration>
+        <configuration default="true" type="Remote" factoryName="Remote">
+          <option name="USE_SOCKET_TRANSPORT" value="true" />
+          <option name="SERVER_MODE" value="false" />
+          <option name="SHMEM_ADDRESS" value="javadebug" />
+          <option name="HOST" value="localhost" />
+          <option name="PORT" value="5005" />
+          <method />
+        </configuration>
+        <configuration name="&lt;template&gt;" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" default="true" selected="false">
+          <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m -ea" />
+        </configuration>
+        <configuration name="&lt;template&gt;" type="WebApp" default="true" selected="false">
+          <Host>localhost</Host>
+          <Port>5050</Port>
+        </configuration>
+      </component>
+      <component name="VcsContentAnnotationSettings">
+        <option name="myLimit" value="2678400000" />
+      </component>
+      <component name="VcsManagerConfiguration">
+        <option name="myTodoPanelSettings">
+          <TodoPanelSettings />
+        </option>
+      </component>
+      <component name="masterDetails">
+        <states>
+          <state key="Copyright.UI">
+            <settings>
+              <last-edited>pot</last-edited>
+              <splitter-proportions>
+                <option name="proportions">
+                  <list>
+                    <option value="0.2" />
+                  </list>
+                </option>
+              </splitter-proportions>
+            </settings>
+          </state>
+          <state key="ScopeChooserConfigurable.UI">
+            <settings>
+              <splitter-proportions>
+                <option name="proportions">
+                  <list>
+                    <option value="0.2" />
+                  </list>
+                </option>
+              </splitter-proportions>
+            </settings>
+          </state>
+        </states>
+      </component>
+      <component name="uidesigner-configuration">
+        <option name="DEFAULT_LAYOUT_MANAGER" value="GridBagLayout" />
+      </component>
+    </defaultProject>
+  </component>
+</application>
