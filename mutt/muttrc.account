@@ -1,6 +1,6 @@
 set folder = "$HOME/mail/$my_account"
 set spoolfile = "+Inbox"
-set record = "+Sent Items"
+set record = "+Sent"
 set postponed = "+Drafts"
 set my_trash = "+Trash"
 set my_archive = "+Archive"
