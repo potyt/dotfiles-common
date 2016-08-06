@@ -5,6 +5,8 @@ text/html; links -dump -force-html %s; nametemplate=%s.html; copiousoutput;
 application/pdf; mutt-bgrun zathura %s; needsterminal;
 application/pdf; pdftohtml -q -stdout %s | links -dump -force-html; copiousoutput
 
+text/calendar; mutt-ics; copiousoutput;
+
 application/msword; mutt-bgrun libreoffice %s; test=test-x
 application/vnd.ms-word.document.macroenabled.12; mutt-bgrun libreoffice %s; test=test-x
 application/vnd.ms-word.template.macroenabled.12; mutt-bgrun libreoffice %s; test=test-x

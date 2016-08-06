@@ -38,7 +38,7 @@ macro index,pager C "<copy-message>?" "copy a message to a mailbox"
 
 # reading
 set mailcap_path = ~/.mutt/mailcap
-auto_view text/html application/pdf
+auto_view text/html text/calendar application/pdf
 alternative_order text/plain text/enriched text/html
 
 # extract urls
