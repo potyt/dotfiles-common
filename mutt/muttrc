@@ -125,15 +125,17 @@ source $my_conf/color.zenburn
 # mailboxes
 mailboxes `~/scripts/mutt-list-mailboxes "+" "/Inbox" "'" " "`
 
-# aliases
-set alias_file = $my_conf/aliases
+# alias settings
+set alias_file = $my_conf/aliases-new
 set sort_alias = alias
 set reverse_alias = yes
-source $alias_file
-set query_command = "abook --mutt-query '%s'"
-bind editor <tab> complete-query
-bind editor ^T complete
-macro index,pager a "<pipe-message>abook --add-email<return>"
+
+# abook integration
+
+#set query_command = "abook --mutt-query '%s'"
+#bind editor <tab> complete-query
+#bind editor ^T complete
+#macro index,pager a "<pipe-message>abook --add-email<return>"
 
 # gpg
 source $my_conf/gpg.rc
@@ -183,8 +185,6 @@ macro index,pager <TAB> ":source $my_conf/muttrc.account-rotate<enter>"
 
 # optional config loading
 
-# sidebar
-source "`FILE=$MUTT_DIR/muttrc.sidebar; mutt -v | grep -Fq sidebar || FILE=/dev/null; echo $FILE`" 
 # notmuch
 source "`FILE=$MUTT_DIR/muttrc.notmuch; mutt -v | grep -Fq notmuch || FILE=/dev/null; echo $FILE`" 
 # xface

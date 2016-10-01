@@ -106,6 +106,7 @@ mozilla/firefox/profile.*/cookies.sqlite
 mozilla/firefox/profile.*/cookies.sqlite-shm
 mozilla/firefox/profile.*/cookies.sqlite-wal
 mozilla/firefox/profile.*/datareporting/
+mozilla/firefox/profile.*/downloads.json
 mozilla/firefox/profile.*/enumerate_devices.txt
 mozilla/firefox/profile.*/extensions.ini
 mozilla/firefox/profile.*/extensions.json

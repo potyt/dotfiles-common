@@ -1,4 +1,4 @@
 # need to push in reverse order as it appears push queue is FIFO
 push ":source $my_conf/muttrc.identity-load<enter>"
-push ":set my_idx = \`echo $(( $my_idx % $(ls $my_conf/identity/$my_account/* | wc -l) + 1 ))\`<enter>"
-push ":set my_identity = \`ls $my_conf/identity/$my_account/* | sed '$my_idx!d' | xargs -n 1 basename\`<enter>"
+push ":set my_idx = \`echo $(( $my_idx % $(ls $my_conf/account/$my_account/identity/* | wc -l) + 1 ))\`<enter>"
+push ":set my_identity = \`ls $my_conf/account/$my_account/identity/* | sed '$my_idx!d' | xargs -n 1 basename\`<enter>"
