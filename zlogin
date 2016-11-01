@@ -16,9 +16,6 @@ gpg-cache-key
 . ~/.env.keychain
 ssh-cache-keys
 
-# git annex assistant
-git annex assistant --autostart
-
 # coins
 ( . ~/.env.noproxy; minerd -a cryptonight -t 8 -o $MINE_XMR_URL -u $MINE_XMR_ADDR -p x -B >> ~/var/log/minerd.log 2>&1 )
 
