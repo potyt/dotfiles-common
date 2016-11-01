@@ -91,6 +91,7 @@ mcabber/otr
 mozilla/firefox/Crash Reports/
 mozilla/firefox/profile.*/.parentlock
 mozilla/firefox/profile.*/lock
+mozilla/firefox/profile.*/blocklist-*.json
 mozilla/firefox/profile.*/crashes/
 mozilla/firefox/profile.*/SiteSecurityServiceState
 mozilla/firefox/profile.*/SiteSecurityServiceState.txt
