@@ -49,7 +49,7 @@ bindsym $mod+Shift+q kill
 # borders
 new_window normal 2
 hide_edge_borders none
-    
+
 # rename workspace
 bindsym $mod+Control+r exec i3-input -f $i3_font -F "rename workspace to %s" -P "Rename Workspace: "
 
@@ -63,11 +63,11 @@ bindsym $mod+d exec --no-startup-id i3-dmenu-desktop --entry-type=name --dmenu='
 bindsym $mod+F10 exec --no-startup-id "urxvtc -name tmp -e confirm lock-email"
 
 # passmenu
-bindsym $mod+Control+p exec --no-startup-id epassmenu -fn $dm_font 
-bindsym $mod+Control+o exec --no-startup-id epassmenu --type -fn $dm_font 
-bindsym $mod+Control+k exec --no-startup-id epassmenu --type --login -fn $dm_font 
-bindsym $mod+Control+u exec --no-startup-id epassmenu --type --url -fn $dm_font 
-bindsym $mod+Control+l exec --no-startup-id epassmenu --login -fn $dm_font 
+bindsym $mod+Control+p exec --no-startup-id epassmenu --type -fn $dm_font
+bindsym $mod+Control+l exec --no-startup-id epassmenu --type --login -fn $dm_font
+bindsym $mod+Control+m exec --no-startup-id epassmenu --type --email -fn $dm_font
+bindsym $mod+Control+u exec --no-startup-id epassmenu --type --username -fn $dm_font
+bindsym $mod+Control+h exec --no-startup-id epassmenu --type --url -fn $dm_font
 
 # change focus
 bindsym $mod+h focus left

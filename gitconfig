@@ -27,3 +27,5 @@
 	sizeLimit = 256m
 [web]
 	browser = browser
+[gcrypt]
+        gpg-args = --use-agent
