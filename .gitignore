@@ -115,6 +115,7 @@ mozilla/firefox/profile.*/extensions/*
 mozilla/firefox/profile.*/firebug/
 mozilla/firefox/profile.*/formhistory.sqlite
 mozilla/firefox/profile.*/gmp-gmpopenh264/
+mozilla/firefox/profile.*/gmp-widevinecdm/
 mozilla/firefox/profile.*/healthreport.sqlite
 mozilla/firefox/profile.*/healthreport.sqlite-shm
 mozilla/firefox/profile.*/healthreport.sqlite-wal
