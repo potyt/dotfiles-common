@@ -93,6 +93,7 @@ mozilla/firefox/profile.*/.parentlock
 mozilla/firefox/profile.*/lock
 mozilla/firefox/profile.*/blocklist-*.json
 mozilla/firefox/profile.*/crashes/
+mozilla/firefox/profile.*/SecurityPreloadState.txt
 mozilla/firefox/profile.*/SiteSecurityServiceState
 mozilla/firefox/profile.*/SiteSecurityServiceState.txt
 mozilla/firefox/profile.*/Telemetry.ShutdownTime.txt
