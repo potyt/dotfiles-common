@@ -1,0 +1,14 @@
+backends:
+    - pushover
+pushover:
+    user_key: uUcceUg3BjQuLpSDADdMpkye7oKvEG
+    #sound
+    #priority
+    #expire
+    #retry
+    #callback
+    #api_token
+    #device
+    #url
+    #url_title
+    #html
