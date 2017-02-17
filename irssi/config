@@ -18,6 +18,7 @@ channels = (
   { name = "#monero-otc"; chatnet = "Freenode"; autojoin = "yes"; }
   { name = "#monero-markets"; chatnet = "Freenode"; autojoin = "yes"; }
   { name = "#monero-pools"; chatnet = "Freenode"; autojoin = "yes"; }
+  { name = "#Exploiteers"; chatnet = "Freenode"; autojoin = "yes"; }
 );
 
 settings = {
