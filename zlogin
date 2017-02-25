@@ -5,9 +5,7 @@
 # source base environment
 . ~/.env.base
 
-# start gpg-agent if needed
-. ~/scripts/gpg-agent-start
-. ~/.env.gpg
+# cycle gpg agent
 gpg-flush-cache
 gpg-cache-key
 
