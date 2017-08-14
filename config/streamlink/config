@@ -1,0 +1,4 @@
+# Player options
+player=vlc --file-caching=5000
+player-no-close
+default-stream=best
