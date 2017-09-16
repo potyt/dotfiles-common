@@ -1,4 +1,5 @@
 alias sudo='sudo '
+alias suroot='sudo -u admin su -l'
 
 alias ls='ls --color=auto'
 alias ll='ls -l'
