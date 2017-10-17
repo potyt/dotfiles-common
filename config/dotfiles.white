@@ -5,6 +5,8 @@
 .dbus
 .electrum
 .esd_auth
+.gtkrc-2.0
+.icons
 .java
 .IdeaIC13
 .IdeaIC14

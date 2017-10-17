@@ -16,3 +16,4 @@ ssh-cache-keys
 
 # machine specific
 . ~/.env.$HOSTNAME
+. ~/.zlogin.$HOSTNAME
