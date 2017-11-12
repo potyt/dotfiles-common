@@ -1,1 +1,1 @@
-firefox-aurora &
+chrome &

@@ -1,2 +1,2 @@
 REGEXP (((http|https|ftp|gopher)|mailto)[.:][^ >"\t]*|www\.[-a-z0-9.]+)[^ .,;\t>">\):]
-COMMAND uzbl-browser --name=tmp %s >/dev/null 2>&1
+COMMAND $BROWSER --name=tmp %s >/dev/null 2>&1
