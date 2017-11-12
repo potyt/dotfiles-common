@@ -1,0 +1,22 @@
+// vim:ts=4:sw=4:et
+{
+    "border": "normal",
+    "current_border_width": 2,
+    "floating": "auto_off",
+    "geometry": {
+        "height": 765,
+        "width": 1430,
+        "x": 240,
+        "y": 153
+    },
+    "name": "darktable",
+    "percent": 1,
+    "swallows": [
+        {
+            "class": "^darktable$",
+            "transient_for": "^$"
+        }
+    ],
+    "type": "con"
+}
+
