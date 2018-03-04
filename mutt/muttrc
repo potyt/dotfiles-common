@@ -16,6 +16,7 @@ set reverse_realname = yes
 set send_charset = "utf-8"
 set mime_forward = ask-yes
 set mime_forward_decode = no
+set tmpdir = $TMPDIR/mutt
 unset metoo
 
 # status line
@@ -53,6 +54,12 @@ macro index,pager ,B "<enter-command> set my_pdsave=\$pipe_decode<enter>\
 
 message-hook .  'macro index,pager \cb ,b "URL viewer"'
 message-hook ~G 'macro index,pager \cb ,B "URL viewer"'
+
+macro attach O "\
+    <enter-command>unset wait_key<enter>\
+    <shell-escape>rm -f ~/.tmp/mutt-attach<enter>\
+    <save-entry><kill-line>/tmp/mutt-attach<enter>\
+    <shell-escape> ~/.tmp/mutt-attach &^A" "open attachment specifying command"
 
 # printing
 set print_command="/usr/bin/muttprint"
@@ -109,7 +116,10 @@ unset markers
 set quote_regexp = "^( {0,4}[>|:#%]| {0,4}[a-z0-9]+[>|]+)+"
 bind pager gg top
 bind pager G bottom
+
+# attachments
 bind attach <return> view-mailcap
+unset wait_key
 
 # index/pager
 bind index,pager R group-reply
@@ -174,8 +184,8 @@ macro index,pager <F9> \
     "notmuch: reconstruct thread"
 
 # limit to flagged
-macro index .i  "<limit>(~N|~F)<Enter>"  "view new/flag"
-macro index .a  "<limit>~A<Enter>"       "view all"
+macro index .i  "<limit>(~N|~F)<enter>"  "view new/flag"
+macro index .a  "<limit>~A<enter>"       "view all"
 
 # rotate identities
 macro index,pager,compose I ":source $my_conf/muttrc.identity-rotate<enter>"
@@ -189,6 +199,10 @@ macro index,pager <TAB> ":source $my_conf/muttrc.account-rotate<enter>"
 source "`FILE=$MUTT_DIR/muttrc.notmuch; mutt -v | grep -Fq notmuch || FILE=/dev/null; echo $FILE`" 
 # xface
 source "`FILE=$MUTT_DIR/muttrc.xface; mutt -v | grep -Fq w3mface || FILE=/dev/null; echo $FILE`" 
+
+macro index,pager ,t \
+    "<pipe-message>mutt-todo<enter>" \
+    "create todo.txt item from subject"
 
 # load private setup
 source $my_conf/muttrc.private

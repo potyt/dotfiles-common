@@ -1,1 +1,1 @@
-urxvtc -name scratchpad
+urxvtc -name scratchpad -e todotxt-machine

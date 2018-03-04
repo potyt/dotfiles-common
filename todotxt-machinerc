@@ -1,0 +1,34 @@
+[settings]
+file = ~/todo/todo.txt
+archive = ~/todo/done.txt
+auto-save = False
+show-toolbar = False
+show-filter-panel = False
+enable-borders = False
+enable-word-wrap = False
+colorscheme = zenburn
+
+[colorscheme-zenburn]
+plain=h181
+selected=,h236
+header=h223,h235
+header_todo_count=h231,h235
+header_todo_pending_count=h254,h235
+header_todo_done_count=h108,h235
+header_file=h223,h235
+dialog_background=,h240
+dialog_color=,h240
+dialog_shadow=,h240
+footer=h39,h235
+search_match=h222,h235
+completed=h249
+context=h229
+project=h230
+creation_date=h253
+due_date=h187
+priority_a=h226
+priority_b=h228
+priority_c=h181
+priority_d=h181
+priority_e=h181
+priority_f=h181

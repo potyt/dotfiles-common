@@ -1,4 +1,4 @@
 urxvtc
 urxvtc
 urxvtc -name files -e ranger
-urxvtc
+urxvtc -name notes -e cd notes

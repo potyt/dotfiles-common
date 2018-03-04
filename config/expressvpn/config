@@ -1,0 +1,3 @@
+auto_connect = false
+preferred_protocol = "Auto"
+send_diagnostics = true

@@ -45,7 +45,8 @@ alias xpop='xprop | grep --color=none 'WM_CLASS\|^WM_NAME' | xmessage -file -'
 
 alias R='R --quiet'
 
-alias t='task'
+alias t='todo.sh'
+alias vtd='vim ~/todo/todo.txt'
 
 # kernel version
 alias linver='uname -r; pacman -Q linux'
@@ -92,3 +93,19 @@ alias pp='python -mjson.tool'
 # coins
 alias mw.1='rlwrap monero-wallet-cli --wallet-file ~/private/bitmonero/wallets/wallet-1/wallet-1 --log-file ~/var/log/monero-wallet-cli.log'
 
+# jrnl
+alias vj='jrnl --export markdown | mdv -'
+
+# elevensports.tw
+alias elvn1='. ~/.env.noproxy && streamlink https://www.elevensports.tw/channel/eleven-zh 3000k --ufctv-username $(pass-email www/elevensports) --ufctv-password $(pass-password www/elevensports) --hls-segment-threads 2'
+alias elvn1_med='. ~/.env.noproxy && streamlink https://www.elevensports.tw/channel/eleven-zh 1600k --ufctv-username $(pass-email www/elevensports) --ufctv-password $(pass-password www/elevensports) --hls-segment-threads 2'
+alias elvn1_low='. ~/.env.noproxy && streamlink https://www.elevensports.tw/channel/eleven-zh 1200k --ufctv-username $(pass-email www/elevensports) --ufctv-password $(pass-password www/elevensports) --hls-segment-threads 2'
+alias elvn2='. ~/.env.noproxy && streamlink https://www.elevensports.tw/channel/eleven-sports-en 3000k --ufctv-username $(pass-email www/elevensports) --ufctv-password $(pass-password www/elevensports) --hls-segment-threads 2'
+alias elvn2_med='. ~/.env.noproxy && streamlink https://www.elevensports.tw/channel/eleven-sports-en 1600k --ufctv-username $(pass-email www/elevensports) --ufctv-password $(pass-password www/elevensports) --hls-segment-threads 2'
+alias elvn2_low='. ~/.env.noproxy && streamlink https://www.elevensports.tw/channel/eleven-sports-en 1200k --ufctv-username $(pass-email www/elevensports) --ufctv-password $(pass-password www/elevensports) --hls-segment-threads 2'
+alias elvn3='. ~/.env.noproxy && streamlink https://www.elevensports.tw/channel/eleven-plus-en 3000k --ufctv-username $(pass-email www/elevensports) --ufctv-password $(pass-password www/elevensports) --hls-segment-threads 2'
+alias elvn3_med='. ~/.env.noproxy && streamlink https://www.elevensports.tw/channel/eleven-plus-en 1600k --ufctv-username $(pass-email www/elevensports) --ufctv-password $(pass-password www/elevensports) --hls-segment-threads 2'
+alias elvn3_low='. ~/.env.noproxy && streamlink https://www.elevensports.tw/channel/eleven-plus-en 1200k --ufctv-username $(pass-email www/elevensports) --ufctv-password $(pass-password www/elevensports) --hls-segment-threads 2'
+
+# syncthing binding
+alias st_panthor='ssh -f -N -L 10001:localhost:8384 panthor.segfa.lt'
