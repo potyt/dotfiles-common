@@ -1,6 +1,5 @@
 .
 ..
-.bitmonero
 .cache
 .cmake
 .dbus
@@ -19,6 +18,7 @@
 .oh-my-zsh
 .pki
 .recently-used
+.shared_ringdb
 .virtualenvs
 .Xauthority
 .zcompdump
