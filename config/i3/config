@@ -68,6 +68,7 @@ bindsym $mod+Control+l exec --no-startup-id epassmenu --type --login -fn $dm_fon
 bindsym $mod+Control+m exec --no-startup-id epassmenu --type --email -fn $dm_font
 bindsym $mod+Control+u exec --no-startup-id epassmenu --type --username -fn $dm_font
 bindsym $mod+Control+h exec --no-startup-id epassmenu --type --url -fn $dm_font
+bindsym $mod+Control+t exec --no-startup-id epassmenu --type --hash -fn $dm_font
 
 # change focus
 bindsym $mod+h focus left
