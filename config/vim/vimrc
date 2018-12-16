@@ -146,6 +146,7 @@ let g:NERDTreeShowBookmarks = 1
 let g:NERDTreeHightlightCursorline = 1
 let g:NERDTreeMouseMode = 3
 let g:NERDTreeChDirMode = 2
+let g:NERDTreeIgnore = ['\.pyc$', '__pycache__']
 nmap <silent> <F3> :NERDTreeToggle<CR>
 
 " tag list

@@ -107,5 +107,8 @@ alias elvn3='. ~/.env.noproxy && streamlink https://www.elevensports.tw/channel/
 alias elvn3_med='. ~/.env.noproxy && streamlink https://www.elevensports.tw/channel/eleven-plus-en 1600k --ufctv-username $(pass-email www/elevensports) --ufctv-password $(pass-password www/elevensports) --hls-segment-threads 2'
 alias elvn3_low='. ~/.env.noproxy && streamlink https://www.elevensports.tw/channel/eleven-plus-en 1200k --ufctv-username $(pass-email www/elevensports) --ufctv-password $(pass-password www/elevensports) --hls-segment-threads 2'
 
+# aur install
+alias aurinst='function _aurinst(){ rm -rf "$TMPDIR/$1" && git clone https://aur.archlinux.org/$1.git "$TMPDIR/$1" && cd "$TMPDIR/$1" && makepkg -si && cd -; };_aurinst'
+
 # syncthing binding
 alias st_panthor='ssh -f -N -L 10001:localhost:8384 panthor.segfa.lt'

@@ -12,13 +12,14 @@
 .keychain
 .git-credential-cache
 .gtk-bookmarks
+.ICAClient
 .kde
 .local
 .msmtpqueue
 .oh-my-zsh
 .pki
 .recently-used
-.shared_ringdb
+.shared-ringdb
 .virtualenvs
 .Xauthority
 .zcompdump

@@ -1,0 +1,4 @@
+
+[Default Applications]
+text/html=firefox.desktop
+x-scheme-handler/ftps=firefox.desktop

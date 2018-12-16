@@ -1,51 +1,64 @@
 */__pycache__/*
 abook/addressbook~
 config/beets/state.pickle
-config/chromium/SingletonCookie
-config/chromium/SingletonLock
-config/chromium/SingletonSocket
-config/chromium*/Certificate Revocation Lists
-config/chromium*/Channels
-config/chromium*/chrome_shutdown_ms.txt
-config/chromium*/Default/Bookmarks*
-config/chromium*/Default/Cookies*
-config/chromium*/Default/Current*
-config/chromium*/Default/Extensions*
-config/chromium*/Default/Extension State*
-config/chromium*/Default/Favicons*
-config/chromium*/Default/GCM Store*
-config/chromium*/Default/GPUCache*
-config/chromium*/Default/History*
-config/chromium*/Default/Last*
-config/chromium*/Default/Local Extension Settings*
-config/chromium*/Default/Local Storage*
-config/chromium*/Default/Login Data*
-config/chromium*/Default/Network*
-config/chromium*/Default/Origin Bound Certs*
-config/chromium*/Default/Pepper Data*
-config/chromium*/Default/Preferences
-config/chromium*/Default/QuotaManager*
-config/chromium*/Default/README
-config/chromium*/Default/Shortcuts*
-config/chromium*/Default/Top Sites*
-config/chromium*/Default/TransportSecurity
-config/chromium*/Default/Visited Links*
-config/chromium*/Default/Web Data*
-config/chromium*/Default/Local Storage*
-config/chromium*/Default/Session Storage*
-config/chromium*/Default/databases*
-config/chromium*/Dictionaries*
-config/chromium*/EVWhitelist*
-config/chromium*/First Run
-config/chromium*/Local State
-config/chromium*/Safe Browsing*
-config/chromium*********/Default/WebRTC*
-config/chromium*/ev_hashes_whitelist.bin
-config/chromium*/pnacl*
+config/*chrom*/SingletonCookie
+config/*chrom*/SingletonLock
+config/*chrom*/SingletonSocket
+config/*chrom*/Certificate Revocation Lists
+config/*chrom*/Channels
+config/*chrom*/chrome_shutdown_ms.txt
+config/*chrom*/Default/Bookmarks*
+config/*chrom*/Default/Cookies*
+config/*chrom*/Default/Current*
+config/*chrom*/Default/Download Service*
+config/*chrom*/Default/Extensions*
+config/*chrom*/Default/Extension State*
+config/*chrom*/Default/Favicons*
+config/*chrom*/Default/Feature Engagement Tracker*
+config/*chrom*/Default/GCM Store*
+config/*chrom*/Default/GPUCache*
+config/*chrom*/Default/History*
+config/*chrom*/Default/Last*
+config/*chrom*/Default/Local Extension Settings*
+config/*chrom*/Default/Local Storage*
+config/*chrom*/Default/Login Data*
+config/*chrom*/Default/Network*
+config/*chrom*/Default/Origin Bound Certs*
+config/*chrom*/Default/Pepper Data*
+config/*chrom*/Default/Preferences
+config/*chrom*/Default/QuotaManager*
+config/*chrom*/Default/README
+config/*chrom*/Default/Secure Preferences
+config/*chrom*/Default/Shortcuts*
+config/*chrom*/Default/Storage*
+config/*chrom*/Default/Sync Data*
+config/*chrom*/Default/Sync Extension Settings*
+config/*chrom*/Default/Thumbnails*
+config/*chrom*/Default/Top Sites*
+config/*chrom*/Default/TransportSecurity
+config/*chrom*/Default/Translate Ranker Model
+config/*chrom*/Default/Visited Links*
+config/*chrom*/Default/Web Data*
+config/*chrom*/Default/WebRTC*
+config/*chrom*/Default/Local Storage*
+config/*chrom*/Default/Session Storage*
+config/*chrom*/Default/databases*
+config/*chrom*/Default/data_reduction_proxy_leveldb*
+config/*chrom*/Default/previews_opt_out.db
+config/*chrom*/Default/previews_opt_out.db-journal
+config/*chrom*/Dictionaries*
+config/*chrom*/EVWhitelist*
+config/*chrom*/First Run
+config/*chrom*/Local State
+config/*chrom*/Safe Browsing*
+config/*chrom*/ShaderCache*
+config/*chrom*/ev_hashes_whitelist.bin
+config/*chrom*/pnacl*
 config/darktable/data.db
 config/darktable/library.db
 config/dconf/user
 config/easytag
+config/expressvpn/network_lock_message
 config/gtk-2.0/gtkfilechooser.ini
 config/gtk-3.0/bookmarks
 config/geeqie/*
