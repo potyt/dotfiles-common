@@ -14,8 +14,8 @@ set $win Mod4
 #set $opt Muhenkan
 #set $opt Henkan_Mode
 
-set $i3_font "xft:DejaVu Sans Mono 10"
-set $dm_font "DejaVu Sans Mono-10"
+set $i3_font "xft:DejaVu Sans Mono for Powerline 10"
+set $dm_font "DejaVu Sans Mono for Powerline-10"
 
 # Font for window titles. Will also be used by the bar unless a different font
 # is used in the bar {} block below. ISO 10646 = Unicode
@@ -27,13 +27,13 @@ set $dm_font "DejaVu Sans Mono-10"
 font $i3_font
 
 # class                 border  backgrd text    indicator
-client.unfocused        #506070 #3f3f3f #a96f89 #ec93d3
-client.focused_inactive #506070 #3f3f3f #a96f89 #ec93d3
-client.focused          #506070 #306fa9 #ffafaf #1e2320
-client.urgent           #506070 #ca4040 #34ff83 #705050
-client.background       #3f3f3f
+client.unfocused        #073642 #073642 #93a1a1 #586e75
+client.focused_inactive #073642 #073642 #eee8d5 #6c71c4
+client.focused          #859900 #859900 #fdf6e3 #859900
+client.urgent           #d33682 #d33682 #fdf6e3 #dc322f
+client.background       #002b36
 
-exec --no-startup-id xsetroot -solid "#3f3f3f"
+exec --no-startup-id xsetroot -solid "#002b36"
 
 # Use Mouse+$mod to drag floating windows to their wanted position
 floating_modifier $mod
@@ -216,14 +216,15 @@ bindsym XF86MonBrightnessDown exec /usr/bin/xbacklight -dec 5
 
 # i3bar
 bar {
-    status_command i3status | ~/scripts/i3status-wrapper
+    status_command python /usr/lib/python3.7/site-packages/powerline/bindings/i3/powerline-i3.py | ~/scripts/i3status-wrapper
     colors {
-        background #343434
-        statusline #dcdccc
-        focused_workspace  #dca3a3 #343434 #f0dfaf
-        active_workspace   #343434 #343434 #c0bed1
-        inactive_workspace #343434 #343434 #c0bed1
-        urgent_workspace   #f8f893 #f8f893 #385f38
+        separator  #859900
+        background #002b36
+        statusline #268bd2
+        focused_workspace   #fdf6e3 #859900 #fdf6e3
+        active_workspace    #fdf6e3 #6c71c4 #fdf6e3
+        inactive_workspace  #586e75 #93a1a1 #002b36
+        urgent_workspace    #d33682 #d33682 #fdf6e3
     }
     position top
     modifier Mod4
@@ -242,8 +243,8 @@ mode "focused" {
     bindsym x [instance="xmpp"] focus; mode "default"
 
     # keybindings for marking and jumping to clients
-    bindsym a exec i3-input -f 'xft:DejaVu Sans Mono 12' -F "mark %s" -P "Mark: "
-    bindsym g exec i3-input -f 'xft:DejaVu Sans Mono 12' -F "[con_mark=%s] focus" -P "Goto: "
+    bindsym a exec i3-input -f 'xft:Mensch 12' -F "mark %s" -P "Mark: "
+    bindsym g exec i3-input -f 'xft:Mensch 12' -F "[con_mark=%s] focus" -P "Goto: "
 
     # Assign marks to keys 1-5
     bindsym Shift+1 mark mark1; mode "default"
@@ -279,10 +280,6 @@ set $ws_dev2 6
 set $ws_6 dev2
 set $ws_dev3 7
 set $ws_7 dev3
-set $ws_photo 8
-set $ws_8 photo
-set $ws_coin 9
-set $ws_9 coin
 
 # floating dialogs
 for_window [class="^Pinentry-gtk-2$" instance="^pinentry-gtk-2$"] floating enable
@@ -298,10 +295,10 @@ for_window [class="^Gimp$"] move window to workspace number $ws_gfx
 for_window [class="^Darktable$"] move window to workspace number $ws_photo
 
 # load layout
-exec --no-startup-id "~/.config/i3/workspace.sh $ws_1 $ws_2 $ws_3 $ws_4 $ws_5 $ws_6 $ws_7 $ws_8 $ws_9"
+exec --no-startup-id "~/.config/i3/workspace.sh $ws_1 $ws_2 $ws_3 $ws_4 $ws_5 $ws_6 $ws_7"
 exec --no-startup-id "~/.config/i3/layout.sh 1 LVDS $ws_msg $ws_mon"
-exec --no-startup-id "~/.config/i3/layout.sh 2 DisplayPort-0 $ws_main $ws_www $ws_dev1 $ws_dev2 $ws_dev3 $ws_photo $ws_coin"
-exec --no-startup-id "~/.config/i3/visit.sh 3 $ws_msg $ws_main"
+exec --no-startup-id "~/.config/i3/layout.sh 2 DisplayPort-0 $ws_main $ws_www $ws_dev1 $ws_dev2 $ws_dev3"
+exec --no-startup-id "~/.config/i3/visit.sh $ws_msg $ws_main"
 
 # launch scratchpad
 for_window [class="^URxvt$" instance="^scratchpad$"] border 1pixel move scratchpad

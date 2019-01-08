@@ -30,6 +30,7 @@ Bundle "bufkill.vim"
 Bundle "Syntastic"
 Bundle "godlygeek/tabular"
 Bundle "plasticboy/vim-markdown"
+Bundle "altercation/vim-colors-solarized"
 
 " vundle-end
 call vundle#end()
@@ -200,6 +201,10 @@ au InsertLeave * if pumvisible() == 0|pclose|endif
 let g:vim_markdown_initial_foldlevel = 2
 let g:vim_markdown_math = 1
 let g:vim_markdown_frontmatter = 1
+
+" powerline
+let g:powerline_pycmd = "py3"
+let g:powerline_symbols = "fancy"
 
 " spelling
 set spelllang=en

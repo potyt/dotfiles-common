@@ -4,6 +4,9 @@
 #
 # Executed by startx (run your window manager from here)
 
+# set color temperature
+/usr/bin/xcalib -d :0 /usr/share/color/icc/colord/Gamma5000K.icc
+
 # custom host xmodmap
 rm -f ~/.Xmodmap; ln -s .Xmodmap.`hostname` .Xmodmap
 

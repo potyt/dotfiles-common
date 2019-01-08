@@ -1,7 +1,79 @@
 ! X application resource database
 
+! Solarized color scheme for the X Window System
+!
+! http://ethanschoonover.com/solarized
 
-!{{{ XFT
+
+! Common
+
+#define S_yellow        #b58900
+#define S_orange        #cb4b16
+#define S_red           #dc322f
+#define S_magenta       #d33682
+#define S_violet        #6c71c4
+#define S_blue          #268bd2
+#define S_cyan          #2aa198
+#define S_green         #859900
+
+
+! Dark
+
+#define S_base03        #002b36
+#define S_base02        #073642
+#define S_base01        #586e75
+#define S_base00        #657b83
+#define S_base0         #839496
+#define S_base1         #93a1a1
+#define S_base2         #eee8d5
+#define S_base3         #fdf6e3
+
+
+! Light
+
+! #define S_base03        #fdf6e3
+! #define S_base02        #eee8d5
+! #define S_base01        #93a1a1
+! #define S_base00        #839496
+! #define S_base0         #657b83
+! #define S_base1         #586e75
+! #define S_base2         #073642
+! #define S_base3         #002b36
+
+
+! To only apply colors to your terminal, for example, prefix
+! the color assignment statement with its name. Example:
+!
+! URxvt*background:            S_base03
+
+*background:              S_base03
+*foreground:              S_base0
+*fading:                  40
+*fadeColor:               S_base03
+*cursorColor:             S_base1
+*pointerColorBackground:  S_base01
+*pointerColorForeground:  S_base1
+
+*color0:                  S_base02
+*color1:                  S_red
+*color2:                  S_green
+*color3:                  S_yellow
+*color4:                  S_blue
+*color5:                  S_magenta
+*color6:                  S_cyan
+*color7:                  S_base2
+*color9:                  S_orange
+*color8:                  S_base03
+*color10:                 S_base01
+*color11:                 S_base00
+*color12:                 S_base0
+*color13:                 S_violet
+*color14:                 S_base1
+*color15:                 S_base3
+
+
+! XFT
+
 Xft.dpi:       96
 Xft.antialias: 1
 Xft.hinting:   1
@@ -9,11 +81,10 @@ Xft.hintstyle: hintmedium
 Xft.autohint:  0
 Xft.lcdfilter: lcddefault
 Xft.rgba:      rgb
-!}}}
 
 
-!{{{ URxvt
-!
+! URxvt
+
 ! General
 URxvt*termName:           rxvt-unicode-256color
 URxvt*loginShell:         false
@@ -28,7 +99,7 @@ URxvt*borderLess:         false
 URxvt*internalBorder:     0
 URxvt*externalBorder:     0
 URxvt.intensityStyles:    false
-!
+
 ! URL Launcher
 URxvt.perl-ext-common:        default,matcher,url-select
 URxvt.urlLauncher:            urxvt-link-open
@@ -36,167 +107,26 @@ URxvt.matcher.button:         1
 URxvt.keysym.M-u:             perl:url-select:select_next
 URxvt.url-select.launcher:    urxvt-link-open
 URxvt.url-select.underline:   true
-!
+
 ! Annoying Ctrl-Shift mode
 URxvt*iso14755:     false
 URxvt*iso14755_52:  false
-!
+
 ! Appearance
-URxvt*font:        xft:ubuntu mono:pixelsize=14
-URxvt*boldFont:    xft:ubuntu mono:pixelsize=14:style=bold
-!
-! Cursor
-URxvt*cursorColor: #dcdccc
-!
-! Pseudo Transparency
-!URxvt*transparent: true
-!URxvt*shading:     30
-!
-! Fading
-!URxvt*fading:       50
-!URxvt*fadeColor:    #dcdccc
-! 
-! Zenburn color-scheme
-URxvt*depth:       32
-URxvt*background:  [95]#3f3f3f
-URxvt*foreground:  #dcdccc
-! black + red
-URxvt*color0:      #1e2320
-URxvt*color1:      #705050
-! green + yellow
-URxvt*color2:      #60b48a
-URxvt*color3:      #dfaf8f
-! blue + purple
-URxvt*color4:      #506070
-URxvt*color5:      #dc8cc3
-! cyan + white
-URxvt*color6:      #8cd0d3
-URxvt*color7:      #dcdccc
-! bright-black + bright-red
-URxvt*color8:      #709080
-URxvt*color9:      #dca3a3
-! bright-green + bright-yellow
-URxvt*color10:     #c3bf9f
-URxvt*color11:     #f0dfaf
-! bright-blue + bright-purple
-URxvt*color12:     #94bff3
-URxvt*color13:     #ec93d3
-! bright-cyan + bright-white
-URxvt*color14:     #93e0e3
-URxvt*color15:     #ffffff
-!
+URxvt*font:        xft:DejaVu\ Sans\ Mono\ for\ Powerline:pixelsize=12
+URxvt*boldFont:    xft:DejaVu\ Sans\ Mono\ for\ Powerline:pixelsize=12:style=bold
+
 ! Colored man pages
-!
+
 URxvt.colorIT:     #dc8cc3
 URxvt.colorBD:     #f0dfaf
 URxvt.colorUL:     #93e0e3
-!}}}
 
 
-!{{{ XTERM
-xterm*internalBorder:     0
-xterm*loginShell:         false
-xterm*scrollBar:          false
-xterm*cursorBlink:        false
-!xterm*geometry:          80x26
-xterm*saveLines:          65535
-xterm*dynamicColors:      on
-xterm*highlightSelection: true
-! Appearance
-xterm*utf8:               2
-xterm*eightBitInput:      true
-xterm*metaSendsEscape:    true
-xterm*renderFont:  true
-xterm*faceName:    xft:Ubuntu Mono:pixelsize=14
-!
-! Cursor
-xterm*cursorColor: #dcdccc
-!
-! Zenburn color-scheme
-xterm*depth:       24
-xterm*background:  #3f3f3f
-xterm*foreground:  #dcdccc
-! black + red
-xterm*color0:      #1e2320
-xterm*color1:      #705050
-! green + yellow
-xterm*color2:      #60b48a
-xterm*color3:      #dfaf8f
-! blue + purple
-xterm*color4:      #506070
-xterm*color5:      #dc8cc3
-! cyan + white
-xterm*color6:      #8cd0d3
-xterm*color7:      #dcdccc
-! bright-black + bright-red
-xterm*color8:      #709080
-xterm*color9:      #dca3a3
-! bright-green + bright-yellow
-xterm*color10:     #c3bf9f
-xterm*color11:     #f0dfaf
-! bright-blue + bright-purple
-xterm*color12:     #94bff3
-xterm*color13:     #ec93d3
-! bright-cyan + bright-white
-xterm*color14:     #93e0e3
-xterm*color15:     #ffffff
-!
 ! Consistent bold colors
-!
+
 *VT100.colorBDMode:false
 *VT100.colorBLMode:false
 *VT100.colorULMode:false
 *VT100.colorRVMode:false
 *VT100.veryBoldColors: 0
-!}}}
-
-
-!{{{ XFONTSEL
-XFontSel*menu*showUnselectable:       false
-XFontSel*sampleText.background:      TEXTBG
-XFontSel*MenuButton.shadowWidth:          0
-XFontsel*Toggle*ToggleStyle:          check
-XFontsel*MenuButton*Justify:           left
-XFontsel*MenuButton*MenuButtonStyle: select
-xfontsel*Font: -xos4-terminus-medium-*-*-*-14-*-*-*-*-*-iso8859-2
-xfontsel.pane.commandBox.quitButton.background:           #777777
-xfontsel.pane.commandBox.quitButton.foreground:           snow
-xfontsel.pane.commandBox.ownButton.background:            orange3
-xfontsel.pane.commandBox.ownButton.foreground:            snow
-xfontsel.pane.commandBox.countLabel.background:           snow
-xfontsel.pane.viewPort.sampleText.background:             #777777
-xfontsel.pane.viewPort.sampleText.foreground:             snow
-xfontsel.pane.fieldBox.field0.background:  #777777
-xfontsel.pane.fieldBox.field0.foreground:  snow
-xfontsel.pane.fieldBox.field1.background:  #777777
-xfontsel.pane.fieldBox.field1.foreground:  snow
-xfontsel.pane.fieldBox.field2.background:  #777777
-xfontsel.pane.fieldBox.field2.foreground:  snow
-xfontsel.pane.fieldBox.field3.background:  #777777
-xfontsel.pane.fieldBox.field3.foreground:  snow
-xfontsel.pane.fieldBox.field4.background:  #777777
-xfontsel.pane.fieldBox.field4.foreground:  snow
-xfontsel.pane.fieldBox.field5.background:  #777777
-xfontsel.pane.fieldBox.field5.foreground:  snow
-xfontsel.pane.fieldBox.field6.background:  #777777
-xfontsel.pane.fieldBox.field6.foreground:  snow
-xfontsel.pane.fieldBox.field7.background:  #777777
-xfontsel.pane.fieldBox.field7.foreground:  snow
-xfontsel.pane.fieldBox.field8.background:  #777777
-xfontsel.pane.fieldBox.field8.foreground:  snow
-xfontsel.pane.fieldBox.field9.background:  #777777
-xfontsel.pane.fieldBox.field9.foreground:  snow
-xfontsel.pane.fieldBox.field10.background: #777777
-xfontsel.pane.fieldBox.field10.foreground: snow
-xfontsel.pane.fieldBox.field11.background: #777777
-xfontsel.pane.fieldBox.field11.foreground: snow
-xfontsel.pane.fieldBox.field12.background: #777777
-xfontsel.pane.fieldBox.field12.foreground: snow
-xfontsel.pane.fieldBox.field13.background: #777777
-xfontsel.pane.fieldBox.field13.foreground: snow
-xfontsel.pane.fieldBox*foreground:         #000000
-xfontsel.pane.fieldBox.MenuButton.borderWidth:   1
-xfontsel.pane.fieldBox.MenuButton.internalHeight:1
-xfontsel.pane.fieldBox.MenuButton.internalWidth: 2
-xfontsel.pane.fieldBox.MenuButton.shapeStyle:    rectangle
-!}}}

@@ -1,5 +1,5 @@
 set mouse-=a
-set guifont=Andale\ Mono
+set guifont=DejaVu\ Sans\ Mono\ for\ Powerline\ 10
 set guioptions=caig
 set guioptions-=LlrbtT
 set mouseshape=n:beam,ve:beam,sd:updown

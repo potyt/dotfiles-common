@@ -10,7 +10,7 @@ for n in "$@"; do
         i3-msg "workspace $w"
         i3-msg "append_layout $layout"
         . $auto
-        sleep 0.1
+        sleep 1.0
         let i=i+1
     fi
 done

@@ -130,7 +130,7 @@ unignore Date From Reply-To To Cc Subject X-Label
 hdr_order Date From Reply-To To Cc Subject X-Label
 
 # color scheme
-source $my_conf/color.zenburn
+source $my_conf/color.solarized-dark-256
 
 # mailboxes
 mailboxes `~/scripts/mutt-list-mailboxes "+" "/Inbox" "'" " "`

@@ -1,12 +1,3 @@
 set t_Co=256
 set background=dark
-let g:zenburn_alternate_Visual = 1
-let g:zenburn_force_dark_Background = 0
-let g:zenburn_high_Contrast = 0
-let g:zenburn_unified_CursorColumn = 1
-colors zenburn
-" Customisations
-hi Search gui=bold guifg=LightBlue guibg=#3f3f3f
-hi Search cterm=bold ctermfg=LightBlue ctermbg=237
-"hi clear TagListFileName
-"hi TagListFileName cterm=bold gui=bold
+colorscheme solarized
