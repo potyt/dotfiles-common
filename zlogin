@@ -15,5 +15,9 @@ gpg-cache-key
 ssh-cache-keys
 
 # machine specific
-. ~/.env.$HOSTNAME
-. ~/.zlogin.$HOSTNAME
+if [ -r ~/.env.$HOSTNAME ]; then
+    . ~/.env.$HOSTNAME
+fi
+if [ -r ~/.zlogin.$HOSTNAME ]; then
+    . ~/.zlogin.$HOSTNAME
+fi
