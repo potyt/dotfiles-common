@@ -16,6 +16,7 @@
 .kde
 .local
 .msmtpqueue
+.mypy_cache
 .oh-my-zsh
 .pki
 .recently-used
