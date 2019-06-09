@@ -142,7 +142,7 @@ map <silent> <leader>f :FufFile<CR>
 map <silent> <leader>b :FufBuffer<CR>
 
 " NERDTree
-let g:NERDTreeWinPos = "right"
+let g:NERDTreeWinPos = "left"
 let g:NERDTreeWinSize = 40
 let g:NERDTreeShowBookmarks = 1
 let g:NERDTreeHightlightCursorline = 1
