@@ -1,5 +1,5 @@
 alias sudo='sudo '
-alias suroot='sudo -u admin su -l'
+alias suroot='sudo -u admin sudo su -l'
 
 alias ls='ls --color=auto'
 alias ll='ls -l'
@@ -87,8 +87,9 @@ alias nmap-syn='sudo nmap -sS'
 # arp poison
 alias arp='sudo ettercap -Tqi wlan0 -l log -M arp:remote // //'
 
-# json
-alias pp='python -mjson.tool'
+# python
+alias pp='python -m json.tool'
+alias doctest='python -c "import doctest,importlib,sys; mod=importlib.import_module(sys.argv[1]); doctest.testmod(mod)"'
 
 # coins
 alias mw.1='rlwrap monero-wallet-cli --wallet-file ~/private/bitmonero/wallets/wallet-1/wallet-1 --log-file ~/var/log/monero-wallet-cli.log'

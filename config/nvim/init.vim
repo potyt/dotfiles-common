@@ -1,0 +1,231 @@
+"" initial setup
+set shada='100,:200,<50,s10,h
+
+" XDG spec
+if !isdirectory($XDG_CACHE_HOME."/nvim")
+    call mkdir($XDG_CACHE_HOME."/nvim", "p", "0700")
+endif
+set directory=$XDG_CACHE_HOME/nvim,/var/tmp,/tmp
+set backupdir=$XDG_CACHE_HOME/nvim,/var/tmp,/tmp
+set viminfo+=n$XDG_CACHE_HOME/nvim/viminfo
+
+" leaders
+let mapleader = "\\"
+let maplocalleader = ","
+
+" fat finger F1
+inoremap <F1> <Esc>
+noremap <F1> :call MapF1()<CR>
+
+" make all commands easier
+nnoremap ; :
+
+set filetype=auto
+set bs=2
+set number
+set numberwidth=5
+set visualbell
+set mouse-=a
+
+set autowrite
+set noautochdir
+
+set formatprg=par
+
+syntax enable
+set wrap
+let loaded_matchparen = 1
+
+set shortmess=atI
+
+set wildmenu
+set wildmode=list:longest,full
+
+set history=1000
+
+set tw=120
+set smartindent
+set tabstop=8
+set softtabstop=4
+set expandtab
+set shiftwidth=4
+
+set incsearch
+set hlsearch
+nmap <silent> <leader> :silent :nohlsearch <CR>
+
+set nolist listchars=tab:>-,trail:·,eol:$
+nmap <silent> <leader>s :set nolist!<CR>
+
+set ignorecase
+set smartcase
+set wildignore=*.o,*.obj,*.bak,*.exe,*.pyc
+
+set ttyfast
+set title
+set laststatus=2
+set statusline=%a%=\ [%{&fo}]\ [%{&tw}]\ %(%m%h%w%y%r%)\ %4l,%3c/%4L\ (%P)
+
+" folding
+nnoremap <space> za
+vnoremap <space> zf
+set foldlevel=1
+set foldnestmax=2
+
+set hidden
+set bufhidden=hide
+nmap <leader>d :bprevious<CR>:bdelete #<CR>
+nmap <leader>D :bprevious<CR>:bdelete! #<CR>
+
+set scrolloff=5
+
+set sm
+
+filetype on
+filetype indent on
+filetype plugin on
+
+" disable arrow keys
+map <Up> <nop>
+map <Down> <nop>
+map <Left> <nop>
+map <Right> <nop>
+
+" paste sensibly
+set pastetoggle=<F2>
+
+" quickfix toggle
+au BufRead quickfix setlocal nobuflisted
+nnoremap <silent> <F6> :let lbn = winnr()<CR>:QFix<CR>:exe lbn . "wincmd w"<CR>
+map <M-h> :colder<CR>
+map <M-l> :cnewer<CR>
+map <M-j> :cnext<CR>
+map <M-k> :cprevious<CR>
+
+" switch buffers easily
+nnoremap <C-n> :bnext<CR>
+nnoremap <C-p> :bprevious<CR>
+nnoremap <F5> :buffers<CR>:buffer<Space>
+
+" kill buffers easily
+nnoremap <leader>d :BD<CR>
+
+" spelling
+set spelllang=en
+autocmd FileType * set nospell
+
+" make
+nnoremap <C-b> :let lbn = winnr()<CR> :make<CR><CR> :let lbn = winnr()<CR>:QFix<CR>:exe lbn . "wincmd w"<CR>
+
+" run
+nnoremap <F9> :run<CR>
+
+" debug
+nnoremap <S-F9> :debug<CR>
+
+"" vundle-start
+"filetype off
+"set rtp+=$HOME/var/vim/bundle/vundle/
+"call vundle#begin($HOME."/var/vim/bundle")
+"
+"" bundles
+"Bundle "gmarik/vundle"
+"Bundle "Zenburn"
+"Bundle "L9"
+"Bundle "taglist.vim"
+"Bundle "python.vim"
+"Bundle "virtualenv.vim"
+"Bundle "The-NERD-Commenter"
+"Bundle "The-NERD-tree"
+"Bundle "TaskList.vim"
+""Bundle "buftabs"
+"Bundle "grep.vim"
+"Bundle "bufkill.vim"
+"Bundle "Syntastic"
+"Bundle "godlygeek/tabular"
+"Bundle "plasticboy/vim-markdown"
+"Bundle "altercation/vim-colors-solarized"
+"
+"" vundle-end
+"call vundle#end()
+"filetype plugin indent on
+
+"" clear whitespace
+"nnoremap <C-c> :call TrimWhiteSpace()<CR>
+"
+"" maximizing window
+"nnoremap <silent> <F12> :call Maximize_Window()<CR>
+"
+"" grep
+"map <C-F> <ESC>:Grep<CR>
+"
+"" task support
+"let g:taskPattern = "\\(TODO\\|FIXME\\|XXX\\)"
+""nnoremap <leader>t :exe ":GrepBuffer ".g:taskPattern<CR>
+""nnoremap <leader>T :exe ":Grep ".g:taskPattern." *"<CR>
+"
+"" FuzzyFinder
+"let g:fuf_dataDir = ""
+"map <silent> <leader>f :FufFile<CR>
+"map <silent> <leader>b :FufBuffer<CR>
+"
+"" NERDTree
+"let g:NERDTreeWinPos = "right"
+"let g:NERDTreeWinSize = 40
+"let g:NERDTreeShowBookmarks = 1
+"let g:NERDTreeHightlightCursorline = 1
+"let g:NERDTreeMouseMode = 3
+"let g:NERDTreeChDirMode = 2
+"let g:NERDTreeIgnore = ['\.pyc$', '__pycache__']
+"nmap <silent> <F3> :NERDTreeToggle<CR>
+"
+"" tag list
+"let g:Tlist_Auto_Highlight_Tag = 1
+"let g:Tlist_Display_Prototype = 0
+"let g:Tlist_Display_Tag_Scope = 1
+"let g:Tlist_File_Fold_Auto_Close = 0
+"let g:Tlist_Exit_OnlyWindow = 1
+"let g:Tlist_Use_SingleClick = 1
+"let g:Tlist_WinWidth = 35
+"au FileType taglist set statusline=\ %=\ 
+"nnoremap t :TlistToggle<CR>
+"
+"" syntastic
+"let g:syntastic_python_checkers = ['pylint']
+"
+"" buftabs
+""let g:buftabs_only_basename = 1
+""let g:buftabs_no_number = 1
+""let g:buftabs_in_statusline = 1
+""let g:buftabs_active_highlight_group = "Search"
+""let g:buftabs_separator = " "
+""let g:buftabs_marker_start = "["
+""let g:buftabs_marker_end = "]"
+""let g:buftabs_marker_modified = "*"
+"
+"" syntax completion
+"set ofu=syntaxcomplete#Complete
+"set completeopt=longest,menuone,preview
+"inoremap <expr> <CR> pumvisible() ? "\<C-y>" : "\<C-g>u\<CR>"
+"inoremap <expr> <C-n> pumvisible() ? "\<C-n>" : '<C-n><C-r>=pumvisible() ? "\<lt>Down>" : ""<CR>'
+"inoremap <expr> <M-,> pumvisible() ? "\<C-n>" : '<C-x><C-o><C-n><C-p><C-r>=pumvisible() ? "\<lt>Down>" : ""<CR>'
+"inoremap <Nul> <C-x><C-o>
+"au CursorMovedI * if pumvisible() == 0|pclose|endif
+"au InsertLeave * if pumvisible() == 0|pclose|endif
+"
+"" vim-markdown
+"let g:vim_markdown_initial_foldlevel = 2
+"let g:vim_markdown_math = 1
+"let g:vim_markdown_frontmatter = 1
+"
+"" powerline
+"let g:powerline_pycmd = "py3"
+"let g:powerline_symbols = "fancy"
+"
+"" mutt
+"autocmd BufRead /tmp/mutt* :set ft=mail
+
+" custom
+source $XDG_CONFIG_HOME/nvim/user/functions
+source $XDG_CONFIG_HOME/nvim/user/colors
+autocmd FileType mail :source $XDG_CONFIG_HOME/vim/user/ft.mail

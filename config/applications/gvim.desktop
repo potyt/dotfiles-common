@@ -1,0 +1,13 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Terminal=false
+Icon[en_US]=/usr/share/icons/HighContrast/256x256/apps/vim.png
+Name[en_US]=GVim
+Exec=gvim
+Name=GVim
+GenericName=Text Editor
+Icon=/usr/share/icons/HighContrast/256x256/apps/vim.png
+Categories=
+MimeType=text/plain
+StartupNotify=true

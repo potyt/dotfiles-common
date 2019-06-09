@@ -21,10 +21,11 @@ Bundle "Zenburn"
 Bundle "L9"
 Bundle "taglist.vim"
 Bundle "python.vim"
+Bundle "virtualenv.vim"
 Bundle "The-NERD-Commenter"
 Bundle "The-NERD-tree"
 Bundle "TaskList.vim"
-Bundle "buftabs"
+"Bundle "buftabs"
 Bundle "grep.vim"
 Bundle "bufkill.vim"
 Bundle "Syntastic"
@@ -142,7 +143,7 @@ map <silent> <leader>b :FufBuffer<CR>
 
 " NERDTree
 let g:NERDTreeWinPos = "right"
-let g:NERDTreeWinSize = 30
+let g:NERDTreeWinSize = 40
 let g:NERDTreeShowBookmarks = 1
 let g:NERDTreeHightlightCursorline = 1
 let g:NERDTreeMouseMode = 3
@@ -177,15 +178,18 @@ nnoremap <F5> :buffers<CR>:buffer<Space>
 " kill buffers easily
 nnoremap <leader>d :BD<CR>
 
+" syntastic
+let g:syntastic_python_checkers = ['pylint']
+
 " buftabs
-let g:buftabs_only_basename = 1
-let g:buftabs_no_number = 1
-let g:buftabs_in_statusline = 1
-let g:buftabs_active_highlight_group = "Search"
-let g:buftabs_separator = " "
-let g:buftabs_marker_start = "["
-let g:buftabs_marker_end = "]"
-let g:buftabs_marker_modified = "*"
+"let g:buftabs_only_basename = 1
+"let g:buftabs_no_number = 1
+"let g:buftabs_in_statusline = 1
+"let g:buftabs_active_highlight_group = "Search"
+"let g:buftabs_separator = " "
+"let g:buftabs_marker_start = "["
+"let g:buftabs_marker_end = "]"
+"let g:buftabs_marker_modified = "*"
 
 " syntax completion
 set ofu=syntaxcomplete#Complete

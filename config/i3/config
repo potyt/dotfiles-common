@@ -161,8 +161,8 @@ bindsym $mod+Shift+p move container to workspace prev
 
 # workspace toggle
 workspace_auto_back_and_forth no
-bindsym $mod+z workspace back_and_forth
-bindsym $mod+Shift+z move container to workspace back_and_forth
+#bindsym $mod+z workspace back_and_forth
+#bindsym $mod+Shift+z move container to workspace back_and_forth
 
 # reload the configuration file
 bindsym $mod+Shift+c reload

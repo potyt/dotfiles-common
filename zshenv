@@ -7,14 +7,16 @@
 
 # Vim
 export MYVIMDIR="$XDG_CONFIG_HOME/vim"
-export VIMINIT='let $MYVIMRC="$MYVIMDIR/vimrc" | let $MYGVIMRC="$MYVIMDIR/gvimrc" | source $MYVIMRC | source $MYGVIMRC'
+export MYNVIMDIR="$XDG_CONFIG_HOME/nvim"
+export _VIMINIT='let $MYVIMRC="$MYVIMDIR/vimrc" | let $MYGVIMRC="$MYVIMDIR/gvimrc" | source $MYVIMRC | source $MYGVIMRC'
+export _NVIMINIT='let $MYNVIMRC="$MYNVIMDIR/init.vim" | source $MYNVIMRC'
 
 # GPG
 export GPG_TTY=$(tty)
 
 # standard environment variables
 export PAGER=less
-export VISUAL=vim
+export VISUAL=nvim
 export EDITOR=$VISUAL
 export TERMINAL=urxvtc
 export XTERM=$TERMINAL
