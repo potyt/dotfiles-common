@@ -8,7 +8,7 @@
 .gtkrc-2.0
 .icons
 .java
-.IdeaIC2019.1
+.IdeaIC2019.2
 .keychain
 .git-credential-cache
 .gtk-bookmarks
@@ -16,6 +16,7 @@
 .ipython
 .kde
 .local
+.mono
 .msmtpqueue
 .mypy_cache
 .oh-my-zsh

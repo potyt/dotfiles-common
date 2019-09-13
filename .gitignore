@@ -87,7 +87,9 @@ config/LightTable/ltcache/*
 config/LightTable/SingletonCookie
 config/LightTable/SingletonLock
 config/LightTable/SingletonSocket
+config/mono.addins
 config/pavucontrol.ini
+config/Pinta
 config/pulse/*
 config/Trolltech.conf
 config/ranger/bookmarks

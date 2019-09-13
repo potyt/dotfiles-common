@@ -11,9 +11,6 @@ export MYNVIMDIR="$XDG_CONFIG_HOME/nvim"
 export _VIMINIT='let $MYVIMRC="$MYVIMDIR/vimrc" | let $MYGVIMRC="$MYVIMDIR/gvimrc" | source $MYVIMRC | source $MYGVIMRC'
 export _NVIMINIT='let $MYNVIMRC="$MYNVIMDIR/init.vim" | source $MYNVIMRC'
 
-# GPG
-export GPG_TTY=$(tty)
-
 # standard environment variables
 export PAGER=less
 export VISUAL=nvim
@@ -21,6 +18,9 @@ export EDITOR=$VISUAL
 export TERMINAL=urxvtc
 export XTERM=$TERMINAL
 export BROWSER=firefox
+
+# GPG
+export GPG_TTY=$(tty)
 
 # zsh related
 export HISTFILE="${TMPDIR}/zsh_history"
