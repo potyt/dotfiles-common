@@ -1,3 +1,4 @@
 LVDS 1920x1080 0+0
-DisplayPort-0 2560x1440 R:LVDS primary
-DisplayPort-1 2560x1440 R:DisplayPort-0
+DisplayPort-0 2560x1440 L:LVDS primary
+DisplayPort-1 2560x1440 L:DisplayPort-0
+DisplayPort-2 2560x1440 L:DisplayPort-1

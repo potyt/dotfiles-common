@@ -7,4 +7,5 @@
 .sqlite_history
 .thumbnails
 .viminfo
+.wget-hsts
 .w3m

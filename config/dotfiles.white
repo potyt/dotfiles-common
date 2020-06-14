@@ -24,6 +24,7 @@
 .python_history
 .recently-used
 .shared-ringdb
+.tig_history
 .virtualenvs
 .Xauthority
 .zcompdump

@@ -1,0 +1,15 @@
+<application>
+  <component name="FindRecents">
+    <findStrings>
+      <find>Graph</find>
+      <find>ArrayList</find>
+      <find>asLilst</find>
+      <find>asList</find>
+      <find>$USER_HOME$/data/swarm/hive/taq.eu.h5</find>
+    </findStrings>
+    <replaceStrings>
+      <replace>Pipeline</replace>
+      <replace>Span</replace>
+    </replaceStrings>
+  </component>
+</application>

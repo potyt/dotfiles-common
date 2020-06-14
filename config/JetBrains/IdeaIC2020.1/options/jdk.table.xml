@@ -1,0 +1,89 @@
+<application>
+  <component name="ProjectJdkTable">
+    <jdk version="2">
+      <name value="1.7" />
+      <type value="JavaSDK" />
+      <version value="java version &quot;1.7.0_171&quot;" />
+      <homePath value="/usr/lib/jvm/java-7-openjdk" />
+      <roots>
+        <annotationsPath>
+          <root type="composite">
+            <root url="jar://$APPLICATION_HOME_DIR$/lib/jdkAnnotations.jar!/" type="simple" />
+          </root>
+        </annotationsPath>
+        <classPath>
+          <root type="composite">
+            <root url="jar:///usr/lib/jvm/java-7-openjdk/jre/lib/charsets.jar!/" type="simple" />
+            <root url="jar:///usr/lib/jvm/java-7-openjdk/jre/lib/ext/dnsns.jar!/" type="simple" />
+            <root url="jar:///usr/lib/jvm/java-7-openjdk/jre/lib/ext/localedata.jar!/" type="simple" />
+            <root url="jar:///usr/lib/jvm/java-7-openjdk/jre/lib/ext/sunjce_provider.jar!/" type="simple" />
+            <root url="jar:///usr/lib/jvm/java-7-openjdk/jre/lib/ext/sunpkcs11.jar!/" type="simple" />
+            <root url="jar:///usr/lib/jvm/java-7-openjdk/jre/lib/ext/zipfs.jar!/" type="simple" />
+            <root url="jar:///usr/lib/jvm/java-7-openjdk/jre/lib/jce.jar!/" type="simple" />
+            <root url="jar:///usr/lib/jvm/java-7-openjdk/jre/lib/jsse.jar!/" type="simple" />
+            <root url="jar:///usr/lib/jvm/java-7-openjdk/jre/lib/management-agent.jar!/" type="simple" />
+            <root url="jar:///usr/lib/jvm/java-7-openjdk/jre/lib/resources.jar!/" type="simple" />
+            <root url="jar:///usr/lib/jvm/java-7-openjdk/jre/lib/rhino.jar!/" type="simple" />
+            <root url="jar:///usr/lib/jvm/java-7-openjdk/jre/lib/rt.jar!/" type="simple" />
+          </root>
+        </classPath>
+        <javadocPath>
+          <root type="composite">
+            <root url="file:///usr/share/doc/openjdk7-doc/api" type="simple" />
+            <root url="http://docs.oracle.com/javafx/2/api/" type="simple" />
+          </root>
+        </javadocPath>
+        <sourcePath>
+          <root type="composite">
+            <root url="jar:///usr/lib/jvm/java-7-openjdk/src.zip!/" type="simple" />
+          </root>
+        </sourcePath>
+      </roots>
+      <additional />
+    </jdk>
+    <jdk version="2">
+      <name value="1.8" />
+      <type value="JavaSDK" />
+      <version value="java version &quot;1.8.0_131&quot;" />
+      <homePath value="/usr/lib/jvm/java-8-openjdk" />
+      <roots>
+        <annotationsPath>
+          <root type="composite">
+            <root url="jar://$APPLICATION_HOME_DIR$/lib/jdkAnnotations.jar!/" type="simple" />
+            <root url="jar://$APPLICATION_HOME_DIR$/plugins/java/lib/jdkAnnotations.jar!/" type="simple" />
+          </root>
+        </annotationsPath>
+        <classPath>
+          <root type="composite">
+            <root url="jar:///usr/lib/jvm/java-8-openjdk/jre/lib/charsets.jar!/" type="simple" />
+            <root url="jar:///usr/lib/jvm/java-8-openjdk/jre/lib/ext/cldrdata.jar!/" type="simple" />
+            <root url="jar:///usr/lib/jvm/java-8-openjdk/jre/lib/ext/dnsns.jar!/" type="simple" />
+            <root url="jar:///usr/lib/jvm/java-8-openjdk/jre/lib/ext/jaccess.jar!/" type="simple" />
+            <root url="jar:///usr/lib/jvm/java-8-openjdk/jre/lib/ext/localedata.jar!/" type="simple" />
+            <root url="jar:///usr/lib/jvm/java-8-openjdk/jre/lib/ext/nashorn.jar!/" type="simple" />
+            <root url="jar:///usr/lib/jvm/java-8-openjdk/jre/lib/ext/sunec.jar!/" type="simple" />
+            <root url="jar:///usr/lib/jvm/java-8-openjdk/jre/lib/ext/sunjce_provider.jar!/" type="simple" />
+            <root url="jar:///usr/lib/jvm/java-8-openjdk/jre/lib/ext/sunpkcs11.jar!/" type="simple" />
+            <root url="jar:///usr/lib/jvm/java-8-openjdk/jre/lib/ext/zipfs.jar!/" type="simple" />
+            <root url="jar:///usr/lib/jvm/java-8-openjdk/jre/lib/jce.jar!/" type="simple" />
+            <root url="jar:///usr/lib/jvm/java-8-openjdk/jre/lib/jsse.jar!/" type="simple" />
+            <root url="jar:///usr/lib/jvm/java-8-openjdk/jre/lib/management-agent.jar!/" type="simple" />
+            <root url="jar:///usr/lib/jvm/java-8-openjdk/jre/lib/resources.jar!/" type="simple" />
+            <root url="jar:///usr/lib/jvm/java-8-openjdk/jre/lib/rt.jar!/" type="simple" />
+          </root>
+        </classPath>
+        <javadocPath>
+          <root type="composite">
+            <root url="file:///usr/share/doc/java8-openjdk/api" type="simple" />
+          </root>
+        </javadocPath>
+        <sourcePath>
+          <root type="composite">
+            <root url="jar:///usr/lib/jvm/java-8-openjdk/src.zip!/" type="simple" />
+          </root>
+        </sourcePath>
+      </roots>
+      <additional />
+    </jdk>
+  </component>
+</application>
