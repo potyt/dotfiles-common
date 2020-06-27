@@ -13,7 +13,7 @@ export _NVIMINIT='let $MYNVIMRC="$MYNVIMDIR/init.vim" | source $MYNVIMRC'
 
 # standard environment variables
 export PAGER=less
-export VISUAL=nvim
+export VISUAL=vim
 export EDITOR=$VISUAL
 export TERMINAL=urxvtc
 export XTERM=$TERMINAL

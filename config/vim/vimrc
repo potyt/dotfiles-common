@@ -1,3 +1,7 @@
+" force python version
+if has('python3')
+endif
+
 " initial setup
 set nocompatible
 set viminfo='100,:200,<50,s10,h
