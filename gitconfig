@@ -29,3 +29,5 @@
 	browser = browser
 [gcrypt]
         gpg-args = --use-agent
+[pull]
+	rebase = false
