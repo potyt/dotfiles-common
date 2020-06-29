@@ -1,7 +1,0 @@
-/**
- * 
- *
- * @author ${USER}
- * @see 
- * @since 
- */
