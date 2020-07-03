@@ -92,6 +92,7 @@ config/mono.addins
 config/pavucontrol.ini
 config/Pinta
 config/pulse/*
+config/QtProject.conf
 config/Trolltech.conf
 config/ranger/bookmarks
 config/ranger/history
