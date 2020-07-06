@@ -1,0 +1,14 @@
+[Desktop Entry]
+Type=Application
+Terminal=false
+GenericName=Email Client
+Name=Mutt
+Icon=mutt
+Name[en_US]=Mutt
+Icon[en_US]=mutt
+Categories=Application;Network;
+Encoding=UTF-8
+Exec=mutt-mailto %u
+MultipleArgs=false
+StartupNotify=true
+MimeType=x-scheme-handler/mailto;
