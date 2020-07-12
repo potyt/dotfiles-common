@@ -200,9 +200,5 @@ source "`FILE=$MUTT_DIR/muttrc.notmuch; mutt -v | grep -Fq notmuch || FILE=/dev/
 # xface
 source "`FILE=$MUTT_DIR/muttrc.xface; mutt -v | grep -Fq w3mface || FILE=/dev/null; echo $FILE`" 
 
-macro index,pager ,t \
-    "<pipe-message>mutt-todo<enter>" \
-    "create todo.txt item from subject"
-
 # load private setup
 source $my_conf/muttrc.private
