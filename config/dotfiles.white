@@ -4,6 +4,7 @@
 .cmake
 .dbus
 .electrum
+.elinks
 .esd_auth
 .gtkrc-2.0
 .icons
