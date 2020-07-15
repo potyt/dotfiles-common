@@ -198,8 +198,5 @@ config/JetBrains/Idea*/options/window.manager.xml
 config/JetBrains/Idea*/plugins/*
 config/JetBrains/Idea*/port
 config/JetBrains/Idea*/system/*
-VirtualBox/*.log*
-VirtualBox/VirtualBox.xml
-VirtualBox/VirtualBox.xml-prev
-VirtualBox/compreg.dat
-VirtualBox/xpti.dat
+config/VirtualBox/*.log*
+config/VirtualBox/VirtualBox.xml-prev
