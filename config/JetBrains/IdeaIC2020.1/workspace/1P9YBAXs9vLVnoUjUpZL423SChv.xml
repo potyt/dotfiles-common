@@ -150,44 +150,44 @@
   </component>
   <component name="ToolWindowManager">
     <layout>
-      <window_info anchor="right" auto_hide="true" content_ui="combo" id="Ant Build" internal_type="SLIDING" order="0" type="SLIDING" weight="0.24980111" />
       <window_info anchor="bottom" id="FindBugs-IDEA" order="14" />
       <window_info anchor="bottom" id="Application Servers" order="7" />
       <window_info anchor="right" id="Designer" order="3" />
+      <window_info id="Favorites" internal_type="SLIDING" order="0" side_tool="true" type="SLIDING" weight="0.09178229" />
       <window_info anchor="right" id="Palette" order="2" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.39958805" />
+      <window_info anchor="right" id="Properties" order="4" />
+      <window_info id="Image Layers" order="2" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.4469619" />
-      <window_info id="Commander" order="3" weight="0.66984886" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info id="aws.explorer" order="8" side_tool="true" weight="0.13046937" />
+      <window_info anchor="right" auto_hide="true" content_ui="combo" id="Ant Build" internal_type="SLIDING" order="0" type="SLIDING" weight="0.24980111" />
       <window_info anchor="bottom" id="Changes" order="9" weight="0.32921812" />
       <window_info anchor="right" id="Multi Preview" order="8" />
       <window_info anchor="bottom" content_ui="combo" id="Terminal" order="11" weight="0.3281893" />
       <window_info id="Capture Tool" order="6" />
       <window_info anchor="right" id="Capture Analysis" order="9" />
+      <window_info id="Commander" order="3" weight="0.66984886" />
       <window_info anchor="bottom" id="CheckStyle" order="15" />
       <window_info anchor="bottom" id="Event Log" order="12" side_tool="true" weight="0.32925585" />
-      <window_info anchor="bottom" id="TODO" order="6" weight="0.3285273" />
       <window_info anchor="right" x="59" y="84" width="1720" height="859" id="Documentation" order="5" type="FLOATING" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="1" weight="0.25" />
-      <window_info anchor="bottom" id="Project Problems" order="10" />
       <window_info anchor="bottom" id="Run with VisualVM" order="16" />
-      <window_info anchor="right" id="Theme Preview" order="6" />
       <window_info anchor="bottom" id="Services" order="19" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="13" weight="0.32831326" />
       <window_info id="Nl-Palette" order="4" />
       <window_info id="Commit" order="7" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.36382756" />
+      <window_info id="aws.explorer" order="8" side_tool="true" weight="0.13046937" />
       <window_info anchor="right" content_ui="combo" x="847" y="44" width="221" height="972" id="Project" order="7" visible="true" weight="0.09546166" />
       <window_info anchor="bottom" id="Messages" order="17" weight="0.32749742" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Debug with VisualVM" order="18" />
-      <window_info id="Image Layers" order="2" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.3285273" />
       <window_info id="Palette&#9;" order="5" />
-      <window_info id="Favorites" internal_type="SLIDING" order="0" side_tool="true" type="SLIDING" weight="0.09178229" />
+      <window_info anchor="right" id="Theme Preview" order="6" />
       <window_info id="Structure" internal_type="SLIDING" order="1" side_tool="true" type="SLIDING" weight="0.19570406" />
       <window_info anchor="bottom" id="Problems View" order="8" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.39958805" />
-      <window_info anchor="right" id="Properties" order="4" />
+      <window_info anchor="bottom" id="Project Problems" order="10" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.36382756" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.3491062" />
     </layout>
   </component>

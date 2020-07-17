@@ -9,14 +9,14 @@
   <Global>
     <ExtraData>
       <ExtraDataItem name="GUI/Details/Elements" value="general,system,preview,display,storage,audio,network,usb,sharedFolders,description"/>
-      <ExtraDataItem name="GUI/GroupDefinitions/" value="nf=GLOBAL"/>
+      <ExtraDataItem name="GUI/GroupDefinitions/" value="nf=GLOBAL,m=01a1fc69-9cd1-498a-b94a-d621542f8a5e"/>
       <ExtraDataItem name="GUI/Input/HostKeyCombination" value="65514"/>
       <ExtraDataItem name="GUI/LastItemSelected" value="n=GLOBAL"/>
-      <ExtraDataItem name="GUI/LastWindowPosition" value="-189,55,1280,720"/>
+      <ExtraDataItem name="GUI/LastWindowPosition" value="2,42,2556,1396"/>
+      <ExtraDataItem name="GUI/LogViewerOptions" value="monospace,noFontStyleName,9"/>
       <ExtraDataItem name="GUI/SnapshotManager/Details/Expanded" value="true"/>
-      <ExtraDataItem name="GUI/SplitterSizes" value="423,856"/>
-      <ExtraDataItem name="GUI/SuppressMessages" value="remindAboutAutoCapture,confirmInputCapture"/>
-      <ExtraDataItem name="GUI/Toolbar" value="false"/>
+      <ExtraDataItem name="GUI/SplitterSizes" value="707,1848"/>
+      <ExtraDataItem name="GUI/SuppressMessages" value="remindAboutAutoCapture,confirmInputCapture,remindAboutMouseIntegration,confirmGoingScale"/>
       <ExtraDataItem name="GUI/Tools/LastItemsSelected" value="Welcome,Details"/>
       <ExtraDataItem name="GUI/UpdateDate" value="never"/>
     </ExtraData>
