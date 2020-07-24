@@ -219,7 +219,7 @@ bindsym XF86MonBrightnessDown exec /usr/bin/xbacklight -dec 5
 
 # i3bar
 bar {
-    status_command python /usr/lib/python3.7/site-packages/powerline/bindings/i3/powerline-i3.py | ~/scripts/i3status-wrapper
+    status_command ~/scripts/powerline-i3.sh | ~/scripts/i3status-wrapper
     colors {
         separator  #859900
         background #002b36
