@@ -42,7 +42,7 @@
     <property name="ShowDocumentationInToolWindow" value="false" />
     <property name="UITheme.relaunch" value="true" />
     <property name="android-component-compatibility-check" value="1532297575553" />
-    <property name="appcds.runOnSecondStart" value="IC-201.8538.31-a8e1c04b0c5d2569fc1fbce18b9f092afc741406505b34324c887705bede99ed" />
+    <property name="appcds.runOnSecondStart" value="IC-201.8743.12-43aacd25b798ba8a5039aa92ec952022ab6293800bdc01126efaa30e7dc34a7f" />
     <property name="com.chrisrm.idea.MaterialThemeUI.theme" value="SOLARIZED_DARK" />
     <property name="com.intellij.openapi.roots.ui.configuration.TabbedModuleEditor.selectedEditor" value="Dependencies" />
     <property name="decompiler.legal.notice.accepted" value="true" />
