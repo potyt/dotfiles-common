@@ -34,7 +34,7 @@ COMPLETION_WAITING_DOTS="true"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # plugins=(archlinux battery git history mercurial pip python ssh-agent vi-mode)
-plugins=(archlinux battery git history mercurial pip python vi-mode)
+plugins=(archlinux battery git history mercurial pip python vi-mode nvm)
 
 zmodload zsh/zle
 
@@ -43,9 +43,18 @@ source $ZSH/oh-my-zsh.sh
 
 # Customize to your needs...
 
+# functions
+. ~/.zshrc.functions
+
+# nvm
+. /usr/share/nvm/init-nvm.sh
+autoload -U add-zsh-hook
+add-zsh-hook chpwd auto-switch-node-version
+auto-switch-node-version
+
 # powerline
 powerline-daemon -q
-. /usr/lib/python3.8/site-packages/powerline/bindings/zsh/powerline.zsh
+. ~/scripts/powerline-zsh.sh
 
 setopt histignorespace
 unsetopt correct_all
@@ -53,12 +62,17 @@ unsetopt nomatch
 unsetopt share_history
 
 # completion
+zstyle ':completion:*' rehash true
 zstyle ':completion:*:cd:*' ignore-parents parent pwd
 zstyle ':completion:*:(all-|)files' ignored-patterns '(|*/)CVS'
 zstyle ':completion:*:cd:*' ignored-patterns '(*/)#CVS'
 zstyle ':completion:*:(all-|)files' ignored-patterns '(|*/)__pycache__'
 zstyle ':completion:*:cd:*' ignored-patterns '(*/)#__pycache__'
 
+# colors and shell aliases
 eval $(dircolors -b ~/.dir_colors)
-. ~/.zshrc.functions
 . ~/.alias
+
+# nvm
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"

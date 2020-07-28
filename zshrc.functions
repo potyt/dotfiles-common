@@ -23,6 +23,49 @@ function extract () {
     fi
 }
 
-function gp2d(){
+function gp2d() {
     gprof2dot -f pstats $1 | dot -Tpng -o $2
+}
+
+function auto-switch-node-version() {
+    NVMRC_PATH=$(nvm_find_nvmrc)
+    CUR_VERSION=$(nvm version)
+
+    if [[ ! -z "$NVMRC_PATH" ]]; then
+        REQ_VERSION=$(cat $NVMRC_PATH)
+        LOC_VERSION=$(nvm_match_version $REQ_VERSION)
+
+        if [[ ! -z "$LOC_VERSION" && $LOC_VERSION != "N/A" ]]; then
+
+            unset AUTOSWITCH_NODE_SUPPRESS_WARN
+
+            if [[ $CUR_VERSION != $LOC_VERSION ]]; then
+                nvm use $REQ_VERSION
+            fi
+        else
+            if [[ $AUTOSWITCH_NODE_SUPPRESS_WARN == $NVMRC_PATH ]]; then
+                return
+            fi
+
+            REL_NVMRC_PATH="$(realpath --relative-to=$(pwd) $NVMRC_PATH 2> /dev/null || echo $NVMRC_PATH)"
+
+            echo ""
+            echo "WARNING"
+            echo "  Found file: $REL_NVMRC_PATH"
+            echo "  specifying: $REQ_VERSION"
+            echo "  ...but no installed Node version satisfies this."
+            echo "  "
+            echo "  Current node version: $CUR_VERSION"
+            echo "  "
+            echo "  You might want to run \"nvm install\""
+
+            export AUTOSWITCH_NODE_SUPPRESS_WARN=$NVMRC_PATH
+        fi
+    else
+        unset AUTOSWITCH_NODE_SUPPRESS_WARN
+
+        if [[ $CUR_VERSION != $(nvm version default)  ]]; then
+            nvm use default
+        fi
+    fi
 }

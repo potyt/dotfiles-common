@@ -44,3 +44,6 @@ aws_zsh_completer=$(which aws_zsh_completer.sh | grep -v "not found")
 if [[ -n $aws_zsh_completer ]]; then
     source $aws_zsh_completer
 fi
+
+# nvm
+export NVM_DIR="$HOME/.nvm"
