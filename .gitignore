@@ -1,6 +1,8 @@
 */__pycache__/*
 abook/addressbook~
 config/beets/state.pickle
+config/*chrom*/Cache/*
+config/*chrom*/Code Cache/*
 config/*chrom*/SingletonCookie
 config/*chrom*/SingletonLock
 config/*chrom*/SingletonSocket
@@ -8,6 +10,8 @@ config/*chrom*/Certificate Revocation Lists
 config/*chrom*/Channels
 config/*chrom*/chrome_shutdown_ms.txt
 config/*chrom*/Default/Bookmarks*
+config/*chrom*/Default/Cache/*
+config/*chrom*/Default/Code Cache/*
 config/*chrom*/Default/Cookies*
 config/*chrom*/Default/Current*
 config/*chrom*/Default/Download Service*
@@ -54,59 +58,16 @@ config/*chrom*/Safe Browsing*
 config/*chrom*/ShaderCache*
 config/*chrom*/ev_hashes_whitelist.bin
 config/*chrom*/pnacl*
-config/Electron/SingletonCookie
-config/Electron/SingletonLock
-config/Electron/SingletonSocket
-config/Electron/Certificate Revocation Lists
-config/Electron/Channels
-config/Electron/chrome_shutdown_ms.txt
-config/Electron/Default/Bookmarks*
-config/Electron/Default/Cookies*
-config/Electron/Default/Current*
-config/Electron/Default/Download Service*
-config/Electron/Default/Extensions*
-config/Electron/Default/Extension State*
-config/Electron/Default/Favicons*
-config/Electron/Default/Feature Engagement Tracker*
-config/Electron/Default/GCM Store*
-config/Electron/Default/GPUCache*
-config/Electron/Default/History*
-config/Electron/Default/Last*
-config/Electron/Default/Local Extension Settings*
-config/Electron/Default/Local Storage*
-config/Electron/Default/Login Data*
-config/Electron/Default/Network*
-config/Electron/Default/Origin Bound Certs*
-config/Electron/Default/Pepper Data*
-config/Electron/Default/Preferences
-config/Electron/Default/QuotaManager*
-config/Electron/Default/README
-config/Electron/Default/Secure Preferences
-config/Electron/Default/Shortcuts*
-config/Electron/Default/Storage*
-config/Electron/Default/Sync Data*
-config/Electron/Default/Sync Extension Settings*
-config/Electron/Default/Thumbnails*
-config/Electron/Default/Top Sites*
-config/Electron/Default/TransportSecurity
-config/Electron/Default/Translate Ranker Model
-config/Electron/Default/Visited Links*
-config/Electron/Default/Web Data*
-config/Electron/Default/WebRTC*
-config/Electron/Default/Local Storage*
-config/Electron/Default/Session Storage*
-config/Electron/Default/databases*
-config/Electron/Default/data_reduction_proxy_leveldb*
-config/Electron/Default/previews_opt_out.db
-config/Electron/Default/previews_opt_out.db-journal
+config/Electron/blob storage*
+config/Electron/Local Storage*
+config/Electron/Cache/*
+config/Electron/Code Cache*
+config/Electron/Crash Reports*
 config/Electron/Dictionaries*
-config/Electron/EVWhitelist*
-config/Electron/First Run
-config/Electron/Local State
-config/Electron/Safe Browsing*
-config/Electron/ShaderCache*
-config/Electron/ev_hashes_whitelist.bin
-config/Electron/pnacl*
+config/Electron/GPUCache*
+config/Electron/Local Storage*
+config/Electron/Network Persistent State
+config/Electron/Session Storage*
 config/darktable/data.db
 config/darktable/library.db
 config/dconf/user
