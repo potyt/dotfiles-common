@@ -20,6 +20,7 @@
 .mono
 .msmtpqueue
 .mypy_cache
+.nvm
 .oh-my-zsh
 .pki
 .python_history
