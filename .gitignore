@@ -101,7 +101,10 @@ config/JetBrains/Idea*/port
 config/JetBrains/Idea*/system/*
 config/JetBrains/Idea*/workspace/*
 config/VirtualBox/*.log*
+config/VirtualBox/compreg.dat
 config/VirtualBox/VirtualBox.xml-prev
+config/VirtualBox/VirtualBox.xml
+config/VirtualBox/xpti.dat
 config/libreoffice/4/.lock
 config/libreoffice/4/cache/*
 config/libreoffice/4/user/backup/*
