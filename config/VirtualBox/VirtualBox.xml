@@ -11,9 +11,11 @@
       <ExtraDataItem name="GUI/Details/Elements" value="general,system,preview,display,storage,audio,network,usb,sharedFolders,description"/>
       <ExtraDataItem name="GUI/GroupDefinitions/" value="nf=GLOBAL,m=01a1fc69-9cd1-498a-b94a-d621542f8a5e"/>
       <ExtraDataItem name="GUI/Input/HostKeyCombination" value="65514"/>
-      <ExtraDataItem name="GUI/LastItemSelected" value="n=GLOBAL"/>
+      <ExtraDataItem name="GUI/LastItemSelected" value="m=MSEdge - Win10"/>
       <ExtraDataItem name="GUI/LastWindowPosition" value="2,42,2556,1396"/>
       <ExtraDataItem name="GUI/LogViewerOptions" value="monospace,noFontStyleName,9"/>
+      <ExtraDataItem name="GUI/RecentFolderCD" value="/usr/lib/virtualbox/additions"/>
+      <ExtraDataItem name="GUI/RecentListCD" value="/usr/lib/virtualbox/additions/VBoxGuestAdditions.iso"/>
       <ExtraDataItem name="GUI/SnapshotManager/Details/Expanded" value="true"/>
       <ExtraDataItem name="GUI/SplitterSizes" value="707,1848"/>
       <ExtraDataItem name="GUI/SuppressMessages" value="remindAboutAutoCapture,confirmInputCapture,remindAboutMouseIntegration,confirmGoingScale"/>
@@ -23,6 +25,11 @@
     <MachineRegistry>
       <MachineEntry uuid="{01a1fc69-9cd1-498a-b94a-d621542f8a5e}" src="/home/pot/data/virtualbox/MSEdge - Win10/MSEdge - Win10.vbox"/>
     </MachineRegistry>
+    <MediaRegistry>
+      <HardDisks>
+        <HardDisk uuid="{3220ea0a-f3dd-4bc2-b21b-24fbaf91fea5}" location="/home/pot/MSEdge - Win10-disk001.img" format="RAW" type="Normal"/>
+      </HardDisks>
+    </MediaRegistry>
     <NetserviceRegistry>
       <DHCPServers>
         <DHCPServer networkName="HostInterfaceNetworking-vboxnet0" IPAddress="192.168.56.100" networkMask="255.255.255.0" lowerIP="192.168.56.101" upperIP="192.168.56.254" enabled="1"/>
