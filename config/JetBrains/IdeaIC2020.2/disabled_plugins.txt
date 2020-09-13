@@ -1,0 +1,16 @@
+AntSupport
+ByteCodeViewer
+CVS
+DevKit
+Subversion
+TestNG-J
+XPathView
+XSLT-Debugger
+com.intellij.tasks
+com.intellij.uiDesigner
+hg4idea
+org.jetbrains.android
+org.jetbrains.idea.eclipse
+org.jetbrains.idea.maven
+org.jetbrains.kotlin
+org.jetbrains.plugins.github
