@@ -14,6 +14,12 @@ gpg-cache-key
 . ~/.env.keychain
 ssh-cache-keys
 
+# aws completion
+aws_zsh_completer=$(which aws_zsh_completer.sh | grep -v "not found")
+if [[ -n $aws_zsh_completer ]]; then
+    source $aws_zsh_completer
+fi
+
 # machine specific
 if [ -r ~/.env.$HOSTNAME ]; then
     . ~/.env.$HOSTNAME

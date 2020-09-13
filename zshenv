@@ -39,11 +39,5 @@ export RXVT_SOCKET="${TMPDIR}/urxvt-`hostname`"
 # par
 export PARINIT="rTbgqR B=.,?_A_a Q=_s>|"
 
-# aws completion
-aws_zsh_completer=$(which aws_zsh_completer.sh | grep -v "not found")
-if [[ -n $aws_zsh_completer ]]; then
-    source $aws_zsh_completer
-fi
-
 # nvm
 export NVM_DIR="$HOME/.nvm"
