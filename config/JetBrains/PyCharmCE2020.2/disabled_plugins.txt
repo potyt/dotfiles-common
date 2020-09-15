@@ -1,0 +1,5 @@
+Subversion
+aws.toolkit
+hg4idea
+net.seesharpsoft.intellij.plugins.csv
+org.jetbrains.settingsRepository
