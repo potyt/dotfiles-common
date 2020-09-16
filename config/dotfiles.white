@@ -26,6 +26,7 @@
 .python_history
 .recently-used
 .shared-ringdb
+.sqlite_history
 .tig_history
 .virtualenvs
 .Xauthority
