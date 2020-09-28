@@ -22,6 +22,7 @@
 .mypy_cache
 .nvm
 .oh-my-zsh
+.passwd-s3fs
 .pki
 .python_history
 .recently-used

@@ -114,3 +114,6 @@ alias aurinst='function _aurinst(){ rm -rf "$TMPDIR/$1" && git clone https://aur
 
 # syncthing binding
 alias st_panthor='ssh -f -N -L 10001:localhost:8384 panthor.segfa.lt'
+
+# s3 buckets
+alias s3_mount_fpldata='s3fs fpldata-dev-fpl-archive mnt/aws-fpldata-dev-fpl-archive -o passwd_file=${HOME}/.passwd-s3fs'
