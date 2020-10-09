@@ -1,3 +1,7 @@
+if [ -r ~/dotfiles/dotfiles-private/alias ]; then
+    . ~/dotfiles/dotfiles-private/alias
+fi
+
 alias sudo='sudo '
 alias suroot='sudo -u admin sudo su -l'
 alias suadmin='sudo -u admin sudo su -l admin'
@@ -92,9 +96,6 @@ alias arp='sudo ettercap -Tqi wlan0 -l log -M arp:remote // //'
 alias pp='python -m json.tool'
 alias doctest='python -c "import doctest,importlib,sys; mod=importlib.import_module(sys.argv[1]); doctest.testmod(mod)"'
 
-# coins
-alias mw.1='rlwrap monero-wallet-cli --wallet-file ~/private/monero/wallets/wallet-1/wallet-1 --log-file ~/var/log/monero-wallet-cli.log'
-
 # jrnl
 alias vj='jrnl --export markdown | mdv -'
 
@@ -114,6 +115,3 @@ alias aurinst='function _aurinst(){ rm -rf "$TMPDIR/$1" && git clone https://aur
 
 # syncthing binding
 alias st_panthor='ssh -f -N -L 10001:localhost:8384 panthor.segfa.lt'
-
-# s3 buckets
-alias s3_mount_fpldata='s3fs fpldata-dev-fpl-archive mnt/aws-fpldata-dev-fpl-archive -o passwd_file=${HOME}/.passwd-s3fs'
