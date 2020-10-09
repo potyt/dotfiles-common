@@ -65,6 +65,9 @@ bindsym $mod+F10 exec --no-startup-id "urxvtc -name tmp -e confirm lock-email"
 # screenshot
 bindsym $mod+F7 exec --no-startup-id "screenshot"
 
+# sort out display flicker
+bindsym $mod+Control+d exec --no-startup-id "display-fix-flicker"
+
 # passmenu
 bindsym $mod+Control+p exec --no-startup-id epassmenu --type -fn $dm_font
 bindsym $mod+Control+l exec --no-startup-id epassmenu --type --login -fn $dm_font
