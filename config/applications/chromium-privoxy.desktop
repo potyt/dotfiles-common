@@ -2,12 +2,12 @@
 Version=1.0
 Type=Application
 Terminal=false
+Icon[en_US]=/usr/share/icons/hicolor/256x256/apps/chromium.png
+Name[en_US]=Chromium Privoxy (sandbox)
+Exec=chromium-privoxy %u
+Name=Chromium Privoxy (sandbox)
 GenericName=Web Browser
-Name=Chrome UA (sandbox)
-Icon=/usr/share/icons/hicolor/256x256/apps/google-chrome.png
-Name[en_US]=Chrome UA (sandbox)
-Icon[en_US]=/usr/share/icons/hicolor/256x256/apps/google-chrome.png
-Exec=chrome-ua %u
+Icon=/usr/share/icons/hicolor/256x256/apps/chromium.png
 Categories=Network;GNOME;GTK;WebBrowser;
 MimeType=text/html;text/xml;application/xhtml+xml;x-scheme-handler/http;x-scheme-handler/https;
 StartupNotify=true
